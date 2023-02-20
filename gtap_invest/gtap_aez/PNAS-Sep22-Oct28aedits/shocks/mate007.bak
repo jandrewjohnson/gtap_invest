@@ -1,0 +1,692 @@
+File
+ MacFile01 # macro file #;
+ MacFile02 # macro file #;
+ MacFile03 # macro file #;
+ MacFile04 # macro file #;
+ MacFile05 # macro file #;
+ MacFile06 # macro file #;
+ MacFile07 # macro file #;
+ MacFile08 # macro file #;
+ MacFile09 # macro file #;
+ MacFile10 # macro file #;
+
+ SecFile01 # crop productivity file 2014-21 #;
+ SecFile02 # ruminant productivity file 2014-21 #;
+ SecFile03 # non ruminant productivity file 2014-21 #;
+ SecFile04 # crop productivity file 2021-30 #;
+ SecFile05 # ruminant productivity file 2021-30 #;
+ SecFile06 # non ruminant productivity file 2021-30 #;
+
+ InVFile01 # marine_fisheries_bau_shock #;
+ InVFile02 # carbon_forestry_bau_shock #;
+ InVFile03 # pollination_bau_shock_pfb #;
+ InVFile04 # pollination_bau_shock_gro #;
+ InVFile05 # pollination_bau_shock_v_f #;
+ InVFile06 # pollination_bau_shock_osd #;
+ InVFile07 # pollination_bau_shock_ocr #;
+
+ InVFile08 # X2030_PESGC_marine_fisheries_shock #;
+ InVFile09 # X2030_PESGC_carbon_forestry_shock  #;
+ InVFile10 # X2030_PESGC_pollination_shock_pfb  #;
+ InVFile11 # X2030_PESGC_pollination_shock_gro  #;
+ InVFile12 # X2030_PESGC_pollination_shock_v_f  #;
+ InVFile13 # X2030_PESGC_pollination_shock_osd  #;
+ InVFile14 # X2030_PESGC_pollination_shock_ocr  #;
+
+ InVFile15 # X2030_PESLC_marine_fisheries_shock #;
+ InVFile16 # X2030_PESLC_carbon_forestry_shock  #;
+ InVFile17 # X2030_PESLC_pollination_shock_pfb  #;
+ InVFile18 # X2030_PESLC_pollination_shock_gro  #;
+ InVFile19 # X2030_PESLC_pollination_shock_v_f  #;
+ InVFile20 # X2030_PESLC_pollination_shock_osd  #;
+ InVFile21 # X2030_PESLC_pollination_shock_ocr  #;
+ InVFile22 # 2021_30_PESLC_shock  #;
+
+ InVFile23 # X2030_SR_Land_marine_fisheries_shock.txt #;
+ InVFile24 # X2030_SR_Land_carbon_forestry_shock.txt  #;
+ InVFile25 # X2030_SR_Land_pollination_shock_pfb.txt  #;
+ InVFile26 # X2030_SR_Land_pollination_shock_gro.txt  #;
+ InVFile27 # X2030_SR_Land_pollination_shock_v_f.txt  #;
+ InVFile28 # X2030_SR_Land_pollination_shock_osd.txt  #;
+ InVFile29 # X2030_SR_Land_pollination_shock_ocr.txt  #;
+ InVFile30 # 2021_30_SR_Land_allES_shocks  #;
+
+ InVFile31 # X2030_SR_RnD_20p_marine_fisheries_shock #; 
+ InVFile32 # X2030_SR_RnD_20p_carbon_forestry_shock  #;
+ InVFile33 # X2030_SR_RnD_20p_pollination_shock_pfb  #;
+ InVFile34 # X2030_SR_RnD_20p_pollination_shock_gro  #;
+ InVFile35 # X2030_SR_RnD_20p_pollination_shock_v_f  #;
+ InVFile36 # X2030_SR_RnD_20p_pollination_shock_osd  #;
+ InVFile37 # X2030_SR_RnD_20p_pollination_shock_ocr  #;
+ InVFile38 # 2021_2030_RnD_20pct                     #;
+
+ InVFile39 # X2030_SR_RnD_20p_PESGC_marine_fisheries_shock #;
+ InVFile40 # X2030_SR_RnD_20p_PESGC_carbon_forestry_shock  #;
+ InVFile41 # X2030_SR_RnD_20p_PESGC_pollination_shock_pfb  #;
+ InVFile42 # X2030_SR_RnD_20p_PESGC_pollination_shock_gro  #;
+ InVFile43 # X2030_SR_RnD_20p_PESGC_pollination_shock_v_f  #;
+ InVFile44 # X2030_SR_RnD_20p_PESGC_pollination_shock_osd  #;
+ InVFile45 # X2030_SR_RnD_20p_PESGC_pollination_shock_ocr  #;
+
+ InVFile46 # X2030_SR_RnD_20p_PESGC_30_marine_fisheries_shock  #;
+ InVFile47 # X2030_SR_RnD_20p_PESGC_30_carbon_forestry_shock  #;
+ InVFile48 # X2030_SR_RnD_20p_PESGC_30_pollination_shock_pfb  #;
+ InVFile49 # X2030_SR_RnD_20p_PESGC_30_pollination_shock_gro  #;
+ InVFile50 # X2030_SR_RnD_20p_PESGC_30_pollination_shock_v_f  #;
+ InVFile51 # X2030_SR_RnD_20p_PESGC_30_pollination_shock_osd  #;
+ InVFile52 # X2030_SR_RnD_20p_PESGC_30_pollination_shock_ocr  #;
+
+ InVFile53 # X2030_SR_RnD_PESGC_marine_fisheries_shock  #;
+ InVFile54 # X2030_SR_RnD_PESGC_carbon_forestry_shock  #;
+ InVFile55 # X2030_SR_RnD_PESGC_pollination_shock_pfb  #;
+ InVFile56 # X2030_SR_RnD_PESGC_pollination_shock_gro  #;
+ InVFile57 # X2030_SR_RnD_PESGC_pollination_shock_v_f  #;
+ InVFile58 # X2030_SR_RnD_PESGC_pollination_shock_osd  #;
+ InVFile59 # X2030_SR_RnD_PESGC_pollination_shock_ocr  #;
+
+ InVFile60 # X2030_RnD_marine_fisheries_shock.har #;
+ InVFile61 # X2030_RnD_carbon_forestry_shock.har  #;
+ InVFile62 # X2030_RnD_pollination_shock_pfb.har  #;
+ InVFile63 # X2030_RnD_pollination_shock_gro.har  #;
+ InVFile64 # X2030_RnD_pollination_shock_v_f.har  #;
+ InVFile65 # X2030_RnD_pollination_shock_osd.har  #;
+ InVFile66 # X2030_RnD_pollination_shock_ocr.har  #;
+
+ InVFile67 # X2030_SR_RnD_marine_fisheries_shock.har #; 
+ InVFile68 # X2030_SR_RnD_carbon_forestry_shock.har  #;
+ InVFile69 # X2030_SR_RnD_pollination_shock_pfb.har  #;
+ InVFile70 # X2030_SR_RnD_pollination_shock_gro.har  #;
+ InVFile71 # X2030_SR_RnD_pollination_shock_v_f.har  #;
+ InVFile72 # X2030_SR_RnD_pollination_shock_osd.har  #;
+ InVFile73 # X2030_SR_RnD_pollination_shock_ocr.har  #;
+
+ InVFile74 # X2030_SR_RnD_PESLC_marine_fisheries_shock.har #;
+ InVFile75 # X2030_SR_RnD_PESLC_carbon_forestry_shock .har  #;
+ InVFile76 # X2030_SR_RnD_PESLC__pollination_shock_pfb.har  #;
+ InVFile77 # X2030_SR_RnD_PESLC__pollination_shock_gro.har  #;
+ InVFile78 # X2030_SR_RnD_PESLC__pollination_shock_v_f.har  #;
+ InVFile79 # X2030_SR_RnD_PESLC__pollination_shock_osd.har  #;
+ InVFile80 # X2030_SR_RnD_PESLC__pollination_shock_ocr.har  #;
+ InVFile81 # 2021_30_SR_RnD_PESLC_allES.har  #;
+ InVFile82 # 2021_2030_RnD_Half              #;
+
+ InVFile83 # X2030_SR_PESLC_marine_fisheries_shock.har #;
+ InVFile84 # X2030_SR_PESLC_carbon_forestry_shock .har  #;
+ InVFile85 # X2030_SR_PESLC_pollination_shock_pfb.har  #;
+ InVFile86 # X2030_SR_PESLC_pollination_shock_gro.har  #;
+ InVFile87 # X2030_SR_PESLC_pollination_shock_v_f.har  #;
+ InVFile88 # X2030_SR_PESLC_pollination_shock_osd.har  #;
+ InVFile89 # X2030_SR_PESLC_pollination_shock_ocr.har  #;
+ InVFile90 # X2030_SR_PESLC tax  #;
+
+ InVFile91 # X2030_SR_Land_PESGC_marine_fisheries_shock  #;
+ InVFile92 # X2030_SR_Land_PESGC_carbon_forestry_shock   #;
+ InVFile93 # X2030_SR_Land_PESGC_pollination_shock_pfb   #;
+ InVFile94 # X2030_SR_Land_PESGC_pollination_shock_gro   #;
+ InVFile95 # X2030_SR_Land_PESGC_pollination_shock_v_f   #;
+ InVFile96 # X2030_SR_Land_PESGC_pollination_shock_osd   #;
+ InVFile97 # X2030_SR_Land_PESGC_pollination_shock_ocr   #;
+ InVFile98 # 2021_30_SR_Land_PESGC_allES_shocks          #;
+
+ (new) OutFile # output file #;
+ GTAPSETS  # sets file #;
+Set 
+ REG    # regions # read elements from file GTAPSETS header "H1";
+ MACVAR # macro variables # 
+        (qgdp, aoreg, usklab, sklab, cap, pop);
+
+Coefficient 
+ (all,r,REG) qgdp14_21(r)   # gdp #;
+ (all,r,REG) usklab14_21(r) # unskilled lab #;
+ (all,r,REG) sklab14_21(r)  # skilled lab  #;
+ (all,r,REG) cap14_21(r)    # capital #;
+ (all,r,REG) pop14_21(r)    # population #;
+Read
+ qgdp14_21   from file MacFile01 header "N001";
+ usklab14_21 from file MacFile02 header "N001";
+ sklab14_21  from file MacFile03 header "N001";
+ cap14_21    from file MacFile04 header "N001";
+ pop14_21    from file MacFile05 header "N001";
+
+Coefficient 
+ (all,r,REG)(all,v,MACVAR) MACSHK14_21(r,v) # Macro shocks 2014-2021 #;
+Formula 
+ (all,r,REG)(all,v,MACVAR) MACSHK14_21(r,v) = 0.0;
+ (all,r,REG) MACSHK14_21(r,"qgdp")  = qgdp14_21(r);
+! (all,r,REG) MACSHK14_21("aoreg") = ;!
+ (all,r,REG) MACSHK14_21(r,"usklab")= usklab14_21(r);
+ (all,r,REG) MACSHK14_21(r,"sklab") = sklab14_21(r);
+ (all,r,REG) MACSHK14_21(r,"cap")   = cap14_21(r);
+ (all,r,REG) MACSHK14_21(r,"pop")   = pop14_21(r);
+
+Coefficient 
+ (all,r,REG)(all,v,MACVAR) MACSHK21_30(r,v) # Macro shocks 2021-2030 #;
+ (all,r,REG) aoreg21_30(r)  # aoreg #;
+ (all,r,REG) usklab21_30(r) # unskilled lab #;
+ (all,r,REG) sklab21_30(r)  # skilled lab #;
+ (all,r,REG) cap21_30(r)    # capital #;
+ (all,r,REG) pop21_30(r)    # population #;
+Read
+ aoreg21_30  from file MacFile06 header "N001";
+ usklab21_30 from file MacFile07 header "N001";
+ sklab21_30  from file MacFile08 header "N001";
+ cap21_30    from file MacFile09 header "N001";
+ pop21_30    from file MacFile10 header "N001";
+Formula 
+ (all,r,REG)(all,v,MACVAR) MACSHK21_30(r,v) = 0.0;
+ (all,r,REG) MACSHK21_30(r,"aoreg") = aoreg21_30(r);
+ (all,r,REG) MACSHK21_30(r,"usklab")= usklab21_30(r);
+ (all,r,REG) MACSHK21_30(r,"sklab") = sklab21_30(r);
+ (all,r,REG) MACSHK21_30(r,"cap")   = cap21_30(r);
+ (all,r,REG) MACSHK21_30(r,"pop")   = pop21_30(r);
+
+Set 
+ CROPLVSTK # Crops and livestock # (crops, rum, nrum);
+Coefficient 
+ (all,r,REG)(all,v,CROPLVSTK) CRLVSHK14_21(r,v) # Productivity shocks 2014-2021 #;
+ (all,r,REG) aocrop14_21(r)  # ao for crops #;
+ (all,r,REG) aorum14_21(r)   # ao for ruminant #;
+ (all,r,REG) aonrum14_21(r)  # ao for non ruminant #;
+Read
+ aocrop14_21  from file SecFile01 header "N001";
+ aorum14_21   from file SecFile02 header "N001";
+ aonrum14_21  from file SecFile03 header "N001";
+Formula 
+ (all,r,REG) CRLVSHK14_21(r,"crops") = aocrop14_21(r);
+ (all,r,REG) CRLVSHK14_21(r,"rum")   = aorum14_21(r);
+ (all,r,REG) CRLVSHK14_21(r,"nrum")  = aonrum14_21(r);
+
+Coefficient 
+ (all,r,REG)(all,v,CROPLVSTK) CRLVSHK21_30(r,v) # Productivity shocks 2021-2030 #;
+ (all,r,REG) aocrop21_30(r)  # ao for crops #;
+ (all,r,REG) aorum21_30(r)   # ao for ruminant #;
+ (all,r,REG) aonrum21_30(r)  # ao for non ruminant #;
+Read
+ aocrop21_30  from file SecFile04 header "N001";
+ aorum21_30   from file SecFile05 header "N001";
+ aonrum21_30  from file SecFile06 header "N001";
+Formula 
+ (all,r,REG) CRLVSHK21_30(r,"crops") = aocrop21_30(r);
+ (all,r,REG) CRLVSHK21_30(r,"rum")   = aorum21_30(r);
+ (all,r,REG) CRLVSHK21_30(r,"nrum")  = aonrum21_30(r);
+
+Write
+ MACSHK14_21  to file OutFile header "M142";
+ CRLVSHK14_21 to file OutFile header "S142";
+ MACSHK21_30  to file OutFile header "M213";
+ CRLVSHK21_30 to file OutFile header "S213";
+
+Set 
+ ECSEC # Ecosystemt service activities #
+ (fishery, forestsec, cotton, crsgrns, fruitveg, oilsds, othercrps);
+
+Coefficient 
+ (all,r,REG)(all,v,ECSEC) BAUESSHK(r,v) # BAU Ecosystem services shocks #;
+ (all,r,REG) MARFishBAUES(r) # BAU ES: marine_fisheries_bau_shoc #;
+ (all,r,REG) CARBforBAUES(r) # BAU ES: carbon_forestry_bau_shock #;
+ (all,r,REG) POLIpfbBAUES(r) # BAU ES: pollination_bau_shock_pfb #;
+ (all,r,REG) POLIgroBAUES(r) # BAU ES: pollination_bau_shock_gro #;
+ (all,r,REG) POLIv_fBAUES(r) # BAU ES: pollination_bau_shock_v_f #;
+ (all,r,REG) POLIosdBAUES(r) # BAU ES: pollination_bau_shock_osd #;
+ (all,r,REG) POLIocrBAUES(r) # BAU ES: pollination_bau_shock_ocr #;
+Read
+ MARFishBAUES from file InVFile01 header "N001";
+ CARBforBAUES from file InVFile02 header "N001";
+ POLIpfbBAUES from file InVFile03 header "N001";
+ POLIgroBAUES from file InVFile04 header "N001";
+ POLIv_fBAUES from file InVFile05 header "N001";
+ POLIosdBAUES from file InVFile06 header "N001";
+ POLIocrBAUES from file InVFile07 header "N001";
+Formula
+ (all,r,REG) BAUESSHK(r,"fishery")   = MARFishBAUES(r);
+ (all,r,REG) BAUESSHK(r,"forestsec") = CARBForBAUES(r);
+ (all,r,REG) BAUESSHK(r,"cotton")    = POLIpfbBAUES(r);
+ (all,r,REG) BAUESSHK(r,"crsgrns")   = POLIgroBAUES(r);
+ (all,r,REG) BAUESSHK(r,"fruitveg")  = POLIv_fBAUES(r);
+ (all,r,REG) BAUESSHK(r,"oilsds")    = POLIosdBAUES(r);
+ (all,r,REG) BAUESSHK(r,"othercrps") = POLIocrBAUES(r);
+Write
+  BAUESSHK to file OutFile header "BAES";
+
+Coefficient 
+ (all,r,REG)(all,v,ECSEC) PESGCALLESHK(r,v) # PESGC all Ecosystem services shocks #;
+ (all,r,REG) MARFishPESGC(r) # 2030 PESGC: marine_fisheries_shoc #;
+ (all,r,REG) CARBforPESGC(r) # 2030 PESGC: carbon_forestry_shock #;
+ (all,r,REG) POLIpfbPESGC(r) # 2030 PESGC: pollination_shock_pfb #;
+ (all,r,REG) POLIgroPESGC(r) # 2030 PESGC: pollination_shock_gro #;
+ (all,r,REG) POLIv_fPESGC(r) # 2030 PESGC: pollination_shock_v_f #;
+ (all,r,REG) POLIosdPESGC(r) # 2030 PESGC: pollination_shock_osd #;
+ (all,r,REG) POLIocrPESGC(r) # 2030 PESGC: pollination_shock_ocr #;
+Read
+ MARFishPESGC from file InVFile08 header "N001";
+ CARBforPESGC from file InVFile09 header "N001";
+ POLIpfbPESGC from file InVFile10 header "N001";
+ POLIgroPESGC from file InVFile11 header "N001";
+ POLIv_fPESGC from file InVFile12 header "N001";
+ POLIosdPESGC from file InVFile13 header "N001";
+ POLIocrPESGC from file InVFile14 header "N001";
+Formula
+ (all,r,REG) PESGCALLESHK(r,"fishery")   = MARFishPESGC(r);
+ (all,r,REG) PESGCALLESHK(r,"forestsec") = CARBForPESGC(r);
+ (all,r,REG) PESGCALLESHK(r,"cotton")    = POLIpfbPESGC(r);
+ (all,r,REG) PESGCALLESHK(r,"crsgrns")   = POLIgroPESGC(r);
+ (all,r,REG) PESGCALLESHK(r,"fruitveg")  = POLIv_fPESGC(r);
+ (all,r,REG) PESGCALLESHK(r,"oilsds")    = POLIosdPESGC(r);
+ (all,r,REG) PESGCALLESHK(r,"othercrps") = POLIocrPESGC(r);
+Write
+  PESGCALLESHK to file OutFile header "PESG";
+
+Coefficient 
+ (all,r,REG)(all,v,ECSEC) PESGCNETESHK(r,v) # Net shock for PESGC relative to BAU #;
+Formula 
+ (all,r,REG)(all,v,ECSEC) PESGCNETESHK(r,v) = PESGCALLESHK(r,v) - BAUESSHK(r,v);
+Write
+  PESGCNETESHK to file OutFile header "NPEG";
+
+Coefficient
+ (all,r,REG)(all,v,ECSEC) PESLCALLESHK(r,v) # PESLC all Ecosystem services shocks #;
+ (all,r,REG) MARFishPESLC(r) # 2030 PESLC: marine_fisheries_shoc #;
+ (all,r,REG) CARBforPESLC(r) # 2030 PESLC: carbon_forestry_shock #;
+ (all,r,REG) POLIpfbPESLC(r) # 2030 PESLC: pollination_shock_pfb #;
+ (all,r,REG) POLIgroPESLC(r) # 2030 PESLC: pollination_shock_gro #;
+ (all,r,REG) POLIv_fPESLC(r) # 2030 PESLC: pollination_shock_v_f #;
+ (all,r,REG) POLIosdPESLC(r) # 2030 PESLC: pollination_shock_osd #;
+ (all,r,REG) POLIocrPESLC(r) # 2030 PESLC: pollination_shock_ocr #;
+ (all,r,REG) PESLCLDTXSHK(r) # PESLC land tax shock #;
+Read
+ MARFishPESLC from file InVFile15 header "N001";
+ CARBforPESLC from file InVFile16 header "N001";
+ POLIpfbPESLC from file InVFile17 header "N001";
+ POLIgroPESLC from file InVFile18 header "N001";
+ POLIv_fPESLC from file InVFile19 header "N001";
+ POLIosdPESLC from file InVFile20 header "N001";
+ POLIocrPESLC from file InVFile21 header "N001";
+ PESLCLDTXSHK from file InVFile22 header "N001";
+Formula
+ (all,r,REG) PESLCALLESHK(r,"fishery")   = MARFishPESLC(r);
+ (all,r,REG) PESLCALLESHK(r,"forestsec") = CARBForPESLC(r);
+ (all,r,REG) PESLCALLESHK(r,"cotton")    = POLIpfbPESLC(r);
+ (all,r,REG) PESLCALLESHK(r,"crsgrns")   = POLIgroPESLC(r);
+ (all,r,REG) PESLCALLESHK(r,"fruitveg")  = POLIv_fPESLC(r);
+ (all,r,REG) PESLCALLESHK(r,"oilsds")    = POLIosdPESLC(r);
+ (all,r,REG) PESLCALLESHK(r,"othercrps") = POLIocrPESLC(r);
+Write
+  PESLCALLESHK to file OutFile header "PESL";
+
+Coefficient
+ (all,r,REG)(all,v,ECSEC) PESLCNETESHK(r,v) # Net shock for PESLC relative to BAU #;
+Formula
+ (all,r,REG)(all,v,ECSEC) PESLCNETESHK(r,v) = PESLCALLESHK(r,v) - BAUESSHK(r,v);
+Write
+ PESLCNETESHK to file OutFile header "NPEL";
+ PESLCLDTXSHK to file OutFile header "PELT";
+
+Coefficient
+ (all,r,REG)(all,v,ECSEC) SRLNDALLESHK(r,v) # SRLND all Ecosystem services shocks #;
+ (all,r,REG) MARFishSRLND(r) # 2030 SRLNDALLES: marine_fisheries_shock #;
+ (all,r,REG) CARBforSRLND(r) # 2030 SRLNDALLES: carbon_forestry_shock  #;
+ (all,r,REG) POLIpfbSRLND(r) # 2030 SRLNDALLES: pollination_shock_pfb  #;
+ (all,r,REG) POLIgroSRLND(r) # 2030 SRLNDALLES: pollination_shock_gro  #;
+ (all,r,REG) POLIv_fSRLND(r) # 2030 SRLNDALLES: pollination_shock_v_f  #;
+ (all,r,REG) POLIosdSRLND(r) # 2030 SRLNDALLES: pollination_shock_osd  #;
+ (all,r,REG) POLIocrSRLND(r) # 2030 SRLNDALLES: pollination_shock_ocr  #;
+ (all,r,REG) SRLNDLDTXSHK(r) # PESLC land tax shock #;
+Read
+ MARFishSRLND from file InVFile23 header "N001";
+ CARBforSRLND from file InVFile24 header "N001";
+ POLIpfbSRLND from file InVFile25 header "N001";
+ POLIgroSRLND from file InVFile26 header "N001";
+ POLIv_fSRLND from file InVFile27 header "N001";
+ POLIosdSRLND from file InVFile28 header "N001";
+ POLIocrSRLND from file InVFile29 header "N001";
+ SRLNDLDTXSHK from file InVFile30 header "N001";
+Formula
+ (all,r,REG) SRLNDALLESHK(r,"fishery")   = MARFishSRLND(r);
+ (all,r,REG) SRLNDALLESHK(r,"forestsec") = CARBForSRLND(r);
+ (all,r,REG) SRLNDALLESHK(r,"cotton")    = POLIpfbSRLND(r);
+ (all,r,REG) SRLNDALLESHK(r,"crsgrns")   = POLIgroSRLND(r);
+ (all,r,REG) SRLNDALLESHK(r,"fruitveg")  = POLIv_fSRLND(r);
+ (all,r,REG) SRLNDALLESHK(r,"oilsds")    = POLIosdSRLND(r);
+ (all,r,REG) SRLNDALLESHK(r,"othercrps") = POLIocrSRLND(r);
+Write
+  SRLNDALLESHK to file OutFile header "SRLD";
+
+Coefficient
+ (all,r,REG)(all,v,ECSEC) SRLNDNETESHK(r,v) # Net shock for SRLND relative to BAU #;
+Formula
+ (all,r,REG)(all,v,ECSEC) SRLNDNETESHK(r,v) = SRLNDALLESHK(r,v) - BAUESSHK(r,v);
+Write
+ SRLNDNETESHK to file OutFile header "NSRL";
+ SRLNDLDTXSHK to file OutFile header "SRLT";
+
+Coefficient
+ (all,r,REG)(all,v,ECSEC) SRRnDALLESHK(r,v) # SRRnD20p all Ecosystem services shocks #;
+ (all,r,REG) MARFishSRRnD(r) # 2030 SRRnD20p: marine_fisheries_shoc #;
+ (all,r,REG) CARBforSRRnD(r) # 2030 SRRnD20p: carbon_forestry_shock #;
+ (all,r,REG) POLIpfbSRRnD(r) # 2030 SRRnD20p: pollination_shock_pfb #;
+ (all,r,REG) POLIgroSRRnD(r) # 2030 SRRnD20p: pollination_shock_gro #;
+ (all,r,REG) POLIv_fSRRnD(r) # 2030 SRRnD20p: pollination_shock_v_f #;
+ (all,r,REG) POLIosdSRRnD(r) # 2030 SRRnD20p: pollination_shock_osd #;
+ (all,r,REG) POLIocrSRRnD(r) # 2030 SRRnD20p: pollination_shock_ocr #;
+ (all,r,REG) SRRnD20PSHK(r)  # 2021_2030_RnD_20pct.har #;
+Read
+ MARFishSRRnD from file InVFile31 header "N001";
+ CARBforSRRnD from file InVFile32 header "N001";
+ POLIpfbSRRnD from file InVFile33 header "N001";
+ POLIgroSRRnD from file InVFile34 header "N001";
+ POLIv_fSRRnD from file InVFile35 header "N001";
+ POLIosdSRRnD from file InVFile36 header "N001";
+ POLIocrSRRnD from file InVFile37 header "N001";
+ SRRnD20PSHK  from file InVFile38 header "N001";
+Formula
+ (all,r,REG) SRRnDALLESHK(r,"fishery")   = MARFishSRRnD(r);
+ (all,r,REG) SRRnDALLESHK(r,"forestsec") = CARBforSRRnD(r);
+ (all,r,REG) SRRnDALLESHK(r,"cotton")    = POLIpfbSRRnD(r);
+ (all,r,REG) SRRnDALLESHK(r,"crsgrns")   = POLIgroSRRnD(r);
+ (all,r,REG) SRRnDALLESHK(r,"fruitveg")  = POLIv_fSRRnD(r);
+ (all,r,REG) SRRnDALLESHK(r,"oilsds")    = POLIosdSRRnD(r);
+ (all,r,REG) SRRnDALLESHK(r,"othercrps") = POLIocrSRRnD(r);
+Write
+  SRRnDALLESHK to file OutFile header "SRnD";
+
+Coefficient
+ (all,r,REG)(all,v,ECSEC) SRRnDNETESHK(r,v) # Net shock for SRRnD relative to BAU #;
+Formula
+ (all,r,REG)(all,v,ECSEC) SRRnDNETESHK(r,v) = SRRnDALLESHK(r,v) - BAUESSHK(r,v);
+Write
+ SRRnDNETESHK to file OutFile header "NSRD";
+ SRRnD20PSHK  to file OutFile header "RnD";
+
+Coefficient
+ (all,r,REG)(all,v,ECSEC) PESGRnDAESHK(r,v) # PESGC all Ecosystem services shocks #;
+ (all,r,REG) MARFishPESGR(r) # 2030 SR_RnD_20p_PESGC: marine_fisheries_shock #;
+ (all,r,REG) CARBforPESGR(r) # 2030 SR_RnD_20p_PESGC: carbon_forestry_shock #;
+ (all,r,REG) POLIpfbPESGR(r) # 2030 SR_RnD_20p_PESGC: pollination_shock_pfb #;
+ (all,r,REG) POLIgroPESGR(r) # 2030 SR_RnD_20p_PESGC: pollination_shock_gro #;
+ (all,r,REG) POLIv_fPESGR(r) # 2030 SR_RnD_20p_PESGC: pollination_shock_v_f #;
+ (all,r,REG) POLIosdPESGR(r) # 2030 SR_RnD_20p_PESGC: pollination_shock_osd #;
+ (all,r,REG) POLIocrPESGR(r) # 2030 SR_RnD_20p_PESGC: pollination_shock_ocr #;
+Read
+ MARFishPESGR from file InVFile39 header "N001";
+ CARBforPESGR from file InVFile40 header "N001";
+ POLIpfbPESGR from file InVFile41 header "N001";
+ POLIgroPESGR from file InVFile42 header "N001";
+ POLIv_fPESGR from file InVFile43 header "N001";
+ POLIosdPESGR from file InVFile44 header "N001";
+ POLIocrPESGR from file InVFile45 header "N001";
+Formula
+ (all,r,REG) PESGRnDAESHK(r,"fishery")   = MARFishPESGR(r);
+ (all,r,REG) PESGRnDAESHK(r,"forestsec") = CARBforPESGR(r);
+ (all,r,REG) PESGRnDAESHK(r,"cotton")    = POLIpfbPESGR(r);
+ (all,r,REG) PESGRnDAESHK(r,"crsgrns")   = POLIgroPESGR(r);
+ (all,r,REG) PESGRnDAESHK(r,"fruitveg")  = POLIv_fPESGR(r);
+ (all,r,REG) PESGRnDAESHK(r,"oilsds")    = POLIosdPESGR(r);
+ (all,r,REG) PESGRnDAESHK(r,"othercrps") = POLIocrPESGR(r);
+Write
+  PESGRnDAESHK to file OutFile header "PEGR";
+
+Coefficient
+ (all,r,REG)(all,v,ECSEC) PESGRNETESHK(r,v) # Net shock for PESGRnD relative to BAU #;
+Formula
+ (all,r,REG)(all,v,ECSEC) PESGRNETESHK(r,v) = PESGRnDAESHK(r,v) - BAUESSHK(r,v);
+Write
+  PESGRNETESHK to file OutFile header "NPGR";
+
+Coefficient
+ (all,r,REG)(all,v,ECSEC) PESGB2RD3AES(r,v) # 2030 SR_RnD_20p_PESGB_30 all Ecosystem services shocks #;
+ (all,r,REG) FisPESGB2R3E(r) # 2030 SR_RnD_20p_PESGB_30: marine_fisheries_shock #;
+ (all,r,REG) ForPESGB2R3E(r) # 2030 SR_RnD_20p_PESGB_30: carbon_forestry_shock #;
+ (all,r,REG) PfbPESGB2R3E(r) # 2030 SR_RnD_20p_PESGB_30: pollination_shock_pfb #;
+ (all,r,REG) GroPESGB2R3E(r) # 2030 SR_RnD_20p_PESGB_30: pollination_shock_gro #;
+ (all,r,REG) V_fPESGB2R3E(r) # 2030 SR_RnD_20p_PESGB_30: pollination_shock_v_f #;
+ (all,r,REG) OsdPESGB2R3E(r) # 2030 SR_RnD_20p_PESGB_30: pollination_shock_osd #;
+ (all,r,REG) OcrPESGB2R3E(r) # 2030 SR_RnD_20p_PESGB_30: pollination_shock_ocr #;
+Read
+ FisPESGB2R3E from file InVFile46 header "N001";
+ ForPESGB2R3E from file InVFile47 header "N001";
+ PfbPESGB2R3E from file InVFile48 header "N001";
+ GroPESGB2R3E from file InVFile49 header "N001";
+ V_fPESGB2R3E from file InVFile50 header "N001";
+ OsdPESGB2R3E from file InVFile51 header "N001";
+ OcrPESGB2R3E from file InVFile52 header "N001";
+Formula
+ (all,r,REG) PESGB2RD3AES(r,"fishery")   = FisPESGB2R3E(r);
+ (all,r,REG) PESGB2RD3AES(r,"forestsec") = ForPESGB2R3E(r);
+ (all,r,REG) PESGB2RD3AES(r,"cotton")    = PfbPESGB2R3E(r);
+ (all,r,REG) PESGB2RD3AES(r,"crsgrns")   = GroPESGB2R3E(r);
+ (all,r,REG) PESGB2RD3AES(r,"fruitveg")  = V_fPESGB2R3E(r);
+ (all,r,REG) PESGB2RD3AES(r,"oilsds")    = OsdPESGB2R3E(r);
+ (all,r,REG) PESGB2RD3AES(r,"othercrps") = OcrPESGB2R3E(r);
+Write
+  PESGB2RD3AES to file OutFile header "PEGB";
+
+Coefficient
+ (all,r,REG)(all,v,ECSEC) PESGBNETESHK(r,v) # Net shock for SR_RnD_20p_PESGB_30 relative to BAU #;
+Formula
+ (all,r,REG)(all,v,ECSEC) PESGBNETESHK(r,v) = PESGB2RD3AES(r,v) - BAUESSHK(r,v);
+Write
+  PESGBNETESHK to file OutFile header "NPGB";
+
+Coefficient
+ (all,r,REG)(all,v,ECSEC) PESGCRndSRAE(r,v) # 2030 SR_RnD_PESGC all Ecosystem services shocks #;
+ (all,r,REG) FisPESGCRnd(r)# 2030 SR_RnD_PESGC: marine_fisheries_shock #;
+ (all,r,REG) ForPESGCRnd(r) # 2030 SR_RnD_PESGC: carbon_forestry_shock #;
+ (all,r,REG) PfbPESGCRnd(r) # 2030 SR_RnD_PESGC: pollination_shock_pfb #;
+ (all,r,REG) GroPESGCRnd(r) # 2030 SR_RnD_PESGC: pollination_shock_gro #;
+ (all,r,REG) V_fPESGCRnd(r) # 2030 SR_RnD_PESGC: pollination_shock_v_f #;
+ (all,r,REG) OsdPESGCRnd(r) # 2030 SR_RnD_PESGC: pollination_shock_osd #;
+ (all,r,REG) OcrPESGCRnd(r) # 2030 SR_RnD_PESGC: pollination_shock_ocr #;
+Read
+ FisPESGCRnd from file InVFile53 header "N001";
+ ForPESGCRnd from file InVFile54 header "N001";
+ PfbPESGCRnd from file InVFile55 header "N001";
+ GroPESGCRnd from file InVFile56 header "N001";
+ V_fPESGCRnd from file InVFile57 header "N001";
+ OsdPESGCRnd from file InVFile58 header "N001";
+ OcrPESGCRnd from file InVFile59 header "N001";
+Formula
+ (all,r,REG) PESGCRndSRAE(r,"fishery")   = FisPESGCRnd(r);
+ (all,r,REG) PESGCRndSRAE(r,"forestsec") = ForPESGCRnd(r);
+ (all,r,REG) PESGCRndSRAE(r,"cotton")    = PfbPESGCRnd(r);
+ (all,r,REG) PESGCRndSRAE(r,"crsgrns")   = GroPESGCRnd(r);
+ (all,r,REG) PESGCRndSRAE(r,"fruitveg")  = V_fPESGCRnd(r);
+ (all,r,REG) PESGCRndSRAE(r,"oilsds")    = OsdPESGCRnd(r);
+ (all,r,REG) PESGCRndSRAE(r,"othercrps") = OcrPESGCRnd(r);
+Write
+  PESGCRndSRAE to file OutFile header "PEGC";
+ 
+Coefficient
+ (all,r,REG)(all,v,ECSEC) PESGCNETESK2(r,v) # Net shock for SR_RnD_20p_PESGB_30 relative to BAU #;
+Formula
+ (all,r,REG)(all,v,ECSEC) PESGCNETESK2(r,v) = PESGCRndSRAE(r,v) - BAUESSHK(r,v);
+Write
+  PESGCNETESK2 to file OutFile header "NPGC";
+
+Coefficient
+ (all,r,REG)(all,v,ECSEC) RnDALLESHK(r,v) # SRRnD20p all Ecosystem services shocks #;
+ (all,r,REG) MARFishRnD(r) # 2030 SRRnD20p: marine_fisheries_shoc #;
+ (all,r,REG) CARBforRnD(r) # 2030 SRRnD20p: carbon_forestry_shock #;
+ (all,r,REG) POLIpfbRnD(r) # 2030 SRRnD20p: pollination_shock_pfb #;
+ (all,r,REG) POLIgroRnD(r) # 2030 SRRnD20p: pollination_shock_gro #;
+ (all,r,REG) POLIv_fRnD(r) # 2030 SRRnD20p: pollination_shock_v_f #;
+ (all,r,REG) POLIosdRnD(r) # 2030 SRRnD20p: pollination_shock_osd #;
+ (all,r,REG) POLIocrRnD(r) # 2030 SRRnD20p: pollination_shock_ocr #;
+Read
+  MARFishRnD from file InVFile60 header "N001";
+  CARBforRnD from file InVFile61 header "N001";
+  POLIpfbRnD from file InVFile62 header "N001";
+  POLIgroRnD from file InVFile63 header "N001";
+  POLIv_fRnD from file InVFile64 header "N001";
+  POLIosdRnD from file InVFile65 header "N001";
+  POLIocrRnD from file InVFile66 header "N001";
+Formula
+ (all,r,REG) RnDALLESHK(r,"fishery")   = MARFishRnD(r);
+ (all,r,REG) RnDALLESHK(r,"forestsec") = CARBforRnD(r);
+ (all,r,REG) RnDALLESHK(r,"cotton")    = POLIpfbRnD(r);
+ (all,r,REG) RnDALLESHK(r,"crsgrns")   = POLIgroRnD(r);
+ (all,r,REG) RnDALLESHK(r,"fruitveg")  = POLIv_fRnD(r);
+ (all,r,REG) RnDALLESHK(r,"oilsds")    = POLIosdRnD(r);
+ (all,r,REG) RnDALLESHK(r,"othercrps") = POLIocrRnD(r);
+Write
+  RnDALLESHK to file OutFile header "RnDE";
+
+Coefficient
+ (all,r,REG)(all,v,ECSEC) RnDNETESHK(r,v) # Net shock for SRRnD relative to BAU #;
+Formula
+ (all,r,REG)(all,v,ECSEC) RnDNETESHK(r,v) = RnDALLESHK(r,v) - BAUESSHK(r,v);
+Write
+ RnDNETESHK  to file OutFile header "NRnD";
+
+Coefficient
+ (all,r,REG)(all,v,ECSEC) SRnDALLESHK(r,v) # SRRnD20p all Ecosystem services shocks #;
+ (all,r,REG) MARFishSRnD(r) # 2030 SR_RnD: marine_fisheries_shoc #;
+ (all,r,REG) CARBforSRnD(r) # 2030 SR_RnD: carbon_forestry_shock #;
+ (all,r,REG) POLIpfbSRnD(r) # 2030 SR_RnD: pollination_shock_pfb #;
+ (all,r,REG) POLIgroSRnD(r) # 2030 SR_RnD: pollination_shock_gro #;
+ (all,r,REG) POLIv_fSRnD(r) # 2030 SR_RnD: pollination_shock_v_f #;
+ (all,r,REG) POLIosdSRnD(r) # 2030 SR_RnD: pollination_shock_osd #;
+ (all,r,REG) POLIocrSRnD(r) # 2030 SR_RnD: pollination_shock_ocr #;
+Read
+  MARFishSRnD from file InVFile67 header "N001";
+  CARBforSRnD from file InVFile68 header "N001";
+  POLIpfbSRnD from file InVFile69 header "N001";
+  POLIgroSRnD from file InVFile70 header "N001";
+  POLIv_fSRnD from file InVFile71 header "N001";
+  POLIosdSRnD from file InVFile72 header "N001";
+  POLIocrSRnD from file InVFile73 header "N001";
+Formula
+ (all,r,REG) SRnDALLESHK(r,"fishery")   = MARFishSRnD(r);
+ (all,r,REG) SRnDALLESHK(r,"forestsec") = CARBforSRnD(r);
+ (all,r,REG) SRnDALLESHK(r,"cotton")    = POLIpfbSRnD(r);
+ (all,r,REG) SRnDALLESHK(r,"crsgrns")   = POLIgroSRnD(r);
+ (all,r,REG) SRnDALLESHK(r,"fruitveg")  = POLIv_fSRnD(r);
+ (all,r,REG) SRnDALLESHK(r,"oilsds")    = POLIosdSRnD(r);
+ (all,r,REG) SRnDALLESHK(r,"othercrps") = POLIocrSRnD(r);
+Write
+  SRRnDALLESHK to file OutFile header "RDSR";
+
+Coefficient
+ (all,r,REG)(all,v,ECSEC) SRnDNETESHK(r,v) # Net shock for SRRnD relative to BAU #;
+Formula
+ (all,r,REG)(all,v,ECSEC) SRnDNETESHK(r,v) = SRnDALLESHK(r,v) - BAUESSHK(r,v);
+Write
+ SRnDNETESHK  to file OutFile header "NRDR";
+
+Coefficient
+ (all,r,REG)(all,v,ECSEC) SRnDPESLCAES(r,v) # SRRnD20p all Ecosystem services shocks #;
+ (all,r,REG) MARFishSRPLC(r) # 2030 SR_RnD_PESLC: marine_fisheries_shoc #;
+ (all,r,REG) CARBforSRPLC(r) # 2030 SR_RnD_PESLC: carbon_forestry_shock #;
+ (all,r,REG) POLIpfbSRPLC(r) # 2030 SR_RnD_PESLC: pollination_shock_pfb #;
+ (all,r,REG) POLIgroSRPLC(r) # 2030 SR_RnD_PESLC: pollination_shock_gro #;
+ (all,r,REG) POLIv_fSRPLC(r) # 2030 SR_RnD_PESLC: pollination_shock_v_f #;
+ (all,r,REG) POLIosdSRPLC(r) # 2030 SR_RnD_PESLC: pollination_shock_osd #;
+ (all,r,REG) POLIocrSRPLC(r) # 2030 SR_RnD_PESLC: pollination_shock_ocr #;
+ (all,r,REG) PESLSRDTXSHK(r) # 2021_30_SR_RnD_PESLC_allES tax shock #;
+ (all,r,REG) RnDHALFSHK(r) # 2021_2030_RnD_Half.har #;
+Read
+ MARFishSRPLC from file InVFile74 header "N001";
+ CARBforSRPLC from file InVFile75 header "N001";
+ POLIpfbSRPLC from file InVFile76 header "N001";
+ POLIgroSRPLC from file InVFile77 header "N001";
+ POLIv_fSRPLC from file InVFile78 header "N001";
+ POLIosdSRPLC from file InVFile79 header "N001";
+ POLIocrSRPLC from file InVFile80 header "N001";
+ PESLSRDTXSHK from file InVFile81 header "N001";
+ RnDHALFSHK   from file InVFile82 header "N001";
+Formula
+ (all,r,REG) SRnDPESLCAES(r,"fishery")   = MARFishSRPLC(r);
+ (all,r,REG) SRnDPESLCAES(r,"forestsec") = CARBforSRPLC(r);
+ (all,r,REG) SRnDPESLCAES(r,"cotton")    = POLIpfbSRPLC(r);
+ (all,r,REG) SRnDPESLCAES(r,"crsgrns")   = POLIgroSRPLC(r);
+ (all,r,REG) SRnDPESLCAES(r,"fruitveg")  = POLIv_fSRPLC(r);
+ (all,r,REG) SRnDPESLCAES(r,"oilsds")    = POLIosdSRPLC(r);
+ (all,r,REG) SRnDPESLCAES(r,"othercrps") = POLIocrSRPLC(r);
+Write
+  SRnDPESLCAES to file OutFile header "SRLC";
+
+Coefficient
+ (all,r,REG)(all,v,ECSEC) SRDPLCNETSHK(r,v) # Net shock for SRRnDPESLC relative to BAU #;
+Formula
+ (all,r,REG)(all,v,ECSEC) SRDPLCNETSHK(r,v) = SRnDPESLCAES(r,v) - BAUESSHK(r,v);
+Write
+ SRDPLCNETSHK to file OutFile header "NSDL";
+ PESLSRDTXSHK to file OutFile header "TSRL";
+ RnDHALFSHK   to file OutFile header "RnDH";
+
+Coefficient
+ (all,r,REG)(all,v,ECSEC) SRPESLCAES(r,v) # SRRnD20p all Ecosystem services shocks #;
+ (all,r,REG) MARFishSPELC(r) # 2030 SR_PESLC: marine_fisheries_shoc #;
+ (all,r,REG) CARBforSPELC(r) # 2030 SR_PESLC: carbon_forestry_shock #;
+ (all,r,REG) POLIpfbSPELC(r) # 2030 SR_PESLC: pollination_shock_pfb #;
+ (all,r,REG) POLIgroSPELC(r) # 2030 SR_PESLC: pollination_shock_gro #;
+ (all,r,REG) POLIv_fSPELC(r) # 2030 SR_PESLC: pollination_shock_v_f #;
+ (all,r,REG) POLIosdSPELC(r) # 2030 SR_PESLC: pollination_shock_osd #;
+ (all,r,REG) POLIocrSPELC(r) # 2030 SR_PESLC: pollination_shock_ocr #;
+ (all,r,REG) SRPESLCTXSHK(r) # 2021_30_SR_PESLC tax shock #;
+Read
+ MARFishSPELC from file InVFile83 header "N001";
+ CARBforSPELC from file InVFile84 header "N001";
+ POLIpfbSPELC from file InVFile85 header "N001";
+ POLIgroSPELC from file InVFile86 header "N001";
+ POLIv_fSPELC from file InVFile87 header "N001";
+ POLIosdSPELC from file InVFile88 header "N001";
+ POLIocrSPELC from file InVFile89 header "N001";
+ SRPESLCTXSHK from file InVFile90 header "N001";
+
+Formula
+ (all,r,REG) SRPESLCAES(r,"fishery")   = MARFishSPELC(r);
+ (all,r,REG) SRPESLCAES(r,"forestsec") = CARBforSPELC(r);
+ (all,r,REG) SRPESLCAES(r,"cotton")    = POLIpfbSPELC(r);
+ (all,r,REG) SRPESLCAES(r,"crsgrns")   = POLIgroSPELC(r);
+ (all,r,REG) SRPESLCAES(r,"fruitveg")  = POLIv_fSPELC(r);
+ (all,r,REG) SRPESLCAES(r,"oilsds")    = POLIosdSPELC(r);
+ (all,r,REG) SRPESLCAES(r,"othercrps") = POLIocrSPELC(r);
+Write
+  SRnDPESLCAES to file OutFile header "SPLC";
+
+Coefficient
+ (all,r,REG)(all,v,ECSEC) SRPLCNETSHK(r,v) # Net shock for SRRnDPESLC relative to BAU #;
+Formula
+ (all,r,REG)(all,v,ECSEC) SRPLCNETSHK(r,v) = SRPESLCAES(r,v) - BAUESSHK(r,v);
+Write
+ SRPLCNETSHK  to file OutFile header "NSPL";
+ SRPESLCTXSHK to file OutFile header "TSLC";
+
+Coefficient
+ (all,r,REG)(all,v,ECSEC) SRLPEGCAES(r,v) # SRRnD20p all Ecosystem services shocks #;
+ (all,r,REG) MARFishSRPGC(r) # 2030 SR_LandPESGC: marine_fisheries_shoc #;
+ (all,r,REG) CARBforSRPGC(r) # 2030 SR_PESLC: carbon_forestry_shock #;
+ (all,r,REG) POLIpfbSRPGC(r) # 2030 SR_PESLC: pollination_shock_pfb #;
+ (all,r,REG) POLIgroSRPGC(r) # 2030 SR_PESLC: pollination_shock_gro #;
+ (all,r,REG) POLIv_fSRPGC(r) # 2030 SR_PESLC: pollination_shock_v_f #;
+ (all,r,REG) POLIosdSRPGC(r) # 2030 SR_PESLC: pollination_shock_osd #;
+ (all,r,REG) POLIocrSRPGC(r) # 2030 SR_PESLC: pollination_shock_ocr #;
+ (all,r,REG) SRLNDPGTXSHK(r) # 2021_30_SR_PESLC tax shock #;
+
+Read
+ MARFishSRPGC from file InVFile91 header "N001";
+ CARBforSRPGC from file InVFile92 header "N001";
+ POLIpfbSRPGC from file InVFile93 header "N001";
+ POLIgroSRPGC from file InVFile94 header "N001";
+ POLIv_fSRPGC from file InVFile95 header "N001";
+ POLIosdSRPGC from file InVFile96 header "N001";
+ POLIocrSRPGC from file InVFile97 header "N001";
+ SRLNDPGTXSHK from file InVFile98 header "N001";
+Formula
+ (all,r,REG) SRLPEGCAES(r,"fishery")   = MARFishSRPGC(r);
+ (all,r,REG) SRLPEGCAES(r,"forestsec") = CARBforSRPGC(r);
+ (all,r,REG) SRLPEGCAES(r,"cotton")    = POLIpfbSRPGC(r);
+ (all,r,REG) SRLPEGCAES(r,"crsgrns")   = POLIgroSRPGC(r);
+ (all,r,REG) SRLPEGCAES(r,"fruitveg")  = POLIv_fSRPGC(r);
+ (all,r,REG) SRLPEGCAES(r,"oilsds")    = POLIosdSRPGC(r);
+ (all,r,REG) SRLPEGCAES(r,"othercrps") = POLIocrSRPGC(r);
+Write
+  SRLPEGCAES to file OutFile header "SLGC";
+
+Coefficient
+ (all,r,REG)(all,v,ECSEC) SRLGCNETSHK(r,v) # Net shock for SRLGCNETSHK relative to BAU #;
+Formula
+ (all,r,REG)(all,v,ECSEC) SRLGCNETSHK(r,v) = SRLPEGCAES(r,v) - BAUESSHK(r,v);
+Write
+ SRLGCNETSHK  to file OutFile header "NSGL";
+ SRLNDPGTXSHK to file OutFile header "TSGC"; 

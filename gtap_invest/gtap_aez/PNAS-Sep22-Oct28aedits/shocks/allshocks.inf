@@ -1,0 +1,2167 @@
+
+    TTTTTTTTTT  AAAAAAAAAA   BBBBBBB      LLLL        OOOOOOOOOO
+    TTTTTTTTTT  AAA    AAA   BBBBBBBBB    LLLL        OOOOOOOOOO
+       TTT      AAA    AAA   BBB    BBB   LLLL        OOO    OOO
+       TTT      AAA    AAA   BBB  BBB     LLLL        OOO    OOO
+       TTT      AAAAAAAAAA   BBBBBBB      LLLL        OOO    OOO
+       TTT      AAAAAAAAAA   BBB  BBB     LLLL        OOO    OOO
+       TTT      AAA    AAA   BBB    BBB   LLLL        OOO    OOO
+       TTT      AAA    AAA   BBBBBBBBB    LLLLLLLLL   OOOOOOOOOO
+       TTT      AAA    AAA   BBBBBBB      LLLLLLLLL   OOOOOOOOOO
+
+ <TABLO  Version 7.0   August 2018>                                    
+
+
+
+
+
+                     GEMPACK SOFTWARE
+     << COPYRIGHT 1987-2018:  The Impact Project and KPSOFT >>
+   
+   
+
+    +++  INFORMATION ABOUT THIS PRINT FILE  +++
+   
+
+ ! This file was created at 12:21:40 on 18-OCT-2022 by the program
+ !  <TABLO  Version 7.0   August 2018>
+ ! which accesses some of the routines in the GEMPACK software release
+ !  <GEMPACK Release 12.1.004   January 2020>
+ 
+ !     -------------------------------------------------------                
+ !    !            GEMPACK Software System Licence            !               
+ !    !  Source Code Licence for the GEMPACK Software System  !               
+ !    !                 Licence No.  GFM-0048                 !               
+ !    !          Licence for Release 12.1 of GEMPACK          !               
+ !    !           Center for Global Trade Analysis            !               
+ !    !         Department of Agricultural Economics          !               
+ !    !                   Krannert Building                   !               
+ !    !                   Purdue University                   !               
+ !     -------------------------------------------------------                
+    
+
+    +++  END OF INFORMATION ABOUT THIS PRINT FILE  +++
+
+ ======================================================
+           TABLO PORTABLE   
+ ++> TABLO OPTIONS   ( --> indicates those in effect )
+ ======================================================
+
+
+
+      -----------                   ----------
+  --> F1 CHECK                      L1 CHECK
+      F2 CONDENSATION               L2 CONDENSATION
+      F3 CODE GENERATION        --> L3 CODE GENERATION
+      Mode
+      ----
+      INTERACTIVE
+      BATCH
+  --> UNSPECIFIED
+
+
+ ==================================================
+ ++> TABLO Input file is 'allshocks.tab'
+ ++> This Information file is 'allshocks'
+ ==================================================
+
+
+
+ ******************************************************************************
+ -1-
+ -->                     Starting CHECK stage
+
+ ******************************************************************************
+
+
+      1   File
+      2    MacFile01 # macro file #;
+      3    MacFile02 # macro file #;
+      4    MacFile03 # macro file #;
+      5    MacFile04 # macro file #;
+      6    MacFile05 # macro file #;
+      7    MacFile06 # macro file #;
+      8    MacFile07 # macro file #;
+      9    MacFile08 # macro file #;
+     10    MacFile09 # macro file #;
+     11    MacFile10 # macro file #;
+     12    
+     13    SecFile01 # crop productivity file 2014-21 #;
+     14    SecFile02 # ruminant productivity file 2014-21 #;
+     15    SecFile03 # non ruminant productivity file 2014-21 #;
+     16    SecFile04 # crop productivity file 2021-30 #;
+     17    SecFile05 # ruminant productivity file 2021-30 #;
+     18    SecFile06 # non ruminant productivity file 2021-30 #;
+     19    
+     20    InVFile01 # marine_fisheries_bau_shock #;
+     21    InVFile02 # carbon_forestry_bau_shock #;
+     22    InVFile03 # pollination_bau_shock_pfb #;
+     23    InVFile04 # pollination_bau_shock_gro #;
+     24    InVFile05 # pollination_bau_shock_v_f #;
+     25    InVFile06 # pollination_bau_shock_osd #;
+     26    InVFile07 # pollination_bau_shock_ocr #;
+     27    
+     28    InVFile08 # X2030_PESGC_marine_fisheries_shock #;
+     29    InVFile09 # X2030_PESGC_carbon_forestry_shock  #;
+     30    InVFile10 # X2030_PESGC_pollination_shock_pfb  #;
+     31    InVFile11 # X2030_PESGC_pollination_shock_gro  #;
+     32    InVFile12 # X2030_PESGC_pollination_shock_v_f  #;
+     33    InVFile13 # X2030_PESGC_pollination_shock_osd  #;
+     34    InVFile14 # X2030_PESGC_pollination_shock_ocr  #;
+     35    
+     36    InVFile15 # X2030_PESLC_marine_fisheries_shock #;
+     37    InVFile16 # X2030_PESLC_carbon_forestry_shock  #;
+     38    InVFile17 # X2030_PESLC_pollination_shock_pfb  #;
+     39    InVFile18 # X2030_PESLC_pollination_shock_gro  #;
+     40    InVFile19 # X2030_PESLC_pollination_shock_v_f  #;
+     41    InVFile20 # X2030_PESLC_pollination_shock_osd  #;
+     42    InVFile21 # X2030_PESLC_pollination_shock_ocr  #;
+     43    InVFile22 # 2021_30_PESLC_shock  #;
+     44    
+     45    InVFile23 # X2030_SR_Land_marine_fisheries_shock.txt #;
+     46    InVFile24 # X2030_SR_Land_carbon_forestry_shock.txt  #;
+     47    InVFile25 # X2030_SR_Land_pollination_shock_pfb.txt  #;
+     48    InVFile26 # X2030_SR_Land_pollination_shock_gro.txt  #;
+     49    InVFile27 # X2030_SR_Land_pollination_shock_v_f.txt  #;
+     50    InVFile28 # X2030_SR_Land_pollination_shock_osd.txt  #;
+     51    InVFile29 # X2030_SR_Land_pollination_shock_ocr.txt  #;
+     52    InVFile30 # 2021_30_SR_Land_allES_shocks  #;
+     53    
+     54    InVFile31 # X2030_SR_RnD_20p_marine_fisheries_shock #;
+     55    InVFile32 # X2030_SR_RnD_20p_carbon_forestry_shock  #;
+     56    InVFile33 # X2030_SR_RnD_20p_pollination_shock_pfb  #;
+     57    InVFile34 # X2030_SR_RnD_20p_pollination_shock_gro  #;
+     58    InVFile35 # X2030_SR_RnD_20p_pollination_shock_v_f  #;
+     59    InVFile36 # X2030_SR_RnD_20p_pollination_shock_osd  #;
+     60    InVFile37 # X2030_SR_RnD_20p_pollination_shock_ocr  #;
+     61    InVFile38 # 2021_2030_RnD_20pct                     #;
+     62    
+     63    InVFile39 # X2030_SR_RnD_20p_PESGC_marine_fisheries_shock #;
+     64    InVFile40 # X2030_SR_RnD_20p_PESGC_carbon_forestry_shock  #;
+     65    InVFile41 # X2030_SR_RnD_20p_PESGC_pollination_shock_pfb  #;
+     66    InVFile42 # X2030_SR_RnD_20p_PESGC_pollination_shock_gro  #;
+     67    InVFile43 # X2030_SR_RnD_20p_PESGC_pollination_shock_v_f  #;
+     68    InVFile44 # X2030_SR_RnD_20p_PESGC_pollination_shock_osd  #;
+     69    InVFile45 # X2030_SR_RnD_20p_PESGC_pollination_shock_ocr  #;
+     70    
+     71    InVFile46 # X2030_SR_RnD_20p_PESGC_30_marine_fisheries_shock  #;
+     72    InVFile47 # X2030_SR_RnD_20p_PESGC_30_carbon_forestry_shock  #;
+     73    InVFile48 # X2030_SR_RnD_20p_PESGC_30_pollination_shock_pfb  #;
+     74    InVFile49 # X2030_SR_RnD_20p_PESGC_30_pollination_shock_gro  #;
+     75    InVFile50 # X2030_SR_RnD_20p_PESGC_30_pollination_shock_v_f  #;
+     76    InVFile51 # X2030_SR_RnD_20p_PESGC_30_pollination_shock_osd  #;
+     77    InVFile52 # X2030_SR_RnD_20p_PESGC_30_pollination_shock_ocr  #;
+     78    
+     79    InVFile53 # X2030_SR_RnD_PESGC_marine_fisheries_shock  #;
+     80    InVFile54 # X2030_SR_RnD_PESGC_carbon_forestry_shock  #;
+     81    InVFile55 # X2030_SR_RnD_PESGC_pollination_shock_pfb  #;
+     82    InVFile56 # X2030_SR_RnD_PESGC_pollination_shock_gro  #;
+     83    InVFile57 # X2030_SR_RnD_PESGC_pollination_shock_v_f  #;
+     84    InVFile58 # X2030_SR_RnD_PESGC_pollination_shock_osd  #;
+     85    InVFile59 # X2030_SR_RnD_PESGC_pollination_shock_ocr  #;
+     86    
+     87    InVFile60 # X2030_RnD_marine_fisheries_shock.har #;
+     88    InVFile61 # X2030_RnD_carbon_forestry_shock.har  #;
+     89    InVFile62 # X2030_RnD_pollination_shock_pfb.har  #;
+     90    InVFile63 # X2030_RnD_pollination_shock_gro.har  #;
+     91    InVFile64 # X2030_RnD_pollination_shock_v_f.har  #;
+     92    InVFile65 # X2030_RnD_pollination_shock_osd.har  #;
+     93    InVFile66 # X2030_RnD_pollination_shock_ocr.har  #;
+     94    
+     95    InVFile67 # X2030_SR_RnD_marine_fisheries_shock.har #;
+     96    InVFile68 # X2030_SR_RnD_carbon_forestry_shock.har  #;
+     97    InVFile69 # X2030_SR_RnD_pollination_shock_pfb.har  #;
+     98    InVFile70 # X2030_SR_RnD_pollination_shock_gro.har  #;
+     99    InVFile71 # X2030_SR_RnD_pollination_shock_v_f.har  #;
+    100    InVFile72 # X2030_SR_RnD_pollination_shock_osd.har  #;
+    101    InVFile73 # X2030_SR_RnD_pollination_shock_ocr.har  #;
+    102    
+    103    InVFile74 # X2030_SR_RnD_PESLC_marine_fisheries_shock.har #;
+    104    InVFile75 # X2030_SR_RnD_PESLC_carbon_forestry_shock .har  #;
+    105    InVFile76 # X2030_SR_RnD_PESLC__pollination_shock_pfb.har  #;
+    106    InVFile77 # X2030_SR_RnD_PESLC__pollination_shock_gro.har  #;
+    107    InVFile78 # X2030_SR_RnD_PESLC__pollination_shock_v_f.har  #;
+    108    InVFile79 # X2030_SR_RnD_PESLC__pollination_shock_osd.har  #;
+    109    InVFile80 # X2030_SR_RnD_PESLC__pollination_shock_ocr.har  #;
+    110    InVFile81 # 2021_30_SR_RnD_PESLC_allES.har  #;
+    111    InVFile82 # 2021_2030_RnD_Half              #;
+    112    
+    113    InVFile83 # X2030_SR_PESLC_marine_fisheries_shock.har #;
+    114    InVFile84 # X2030_SR_PESLC_carbon_forestry_shock .har  #;
+    115    InVFile85 # X2030_SR_PESLC_pollination_shock_pfb.har  #;
+    116    InVFile86 # X2030_SR_PESLC_pollination_shock_gro.har  #;
+    117    InVFile87 # X2030_SR_PESLC_pollination_shock_v_f.har  #;
+    118    InVFile88 # X2030_SR_PESLC_pollination_shock_osd.har  #;
+    119    InVFile89 # X2030_SR_PESLC_pollination_shock_ocr.har  #;
+    120    InVFile90 # X2030_SR_PESLC tax  #;
+    121    
+    122    InVFile91 # X2030_SR_Land_PESGC_marine_fisheries_shock  #;
+    123    InVFile92 # X2030_SR_Land_PESGC_carbon_forestry_shock   #;
+    124    InVFile93 # X2030_SR_Land_PESGC_pollination_shock_pfb   #;
+    125    InVFile94 # X2030_SR_Land_PESGC_pollination_shock_gro   #;
+    126    InVFile95 # X2030_SR_Land_PESGC_pollination_shock_v_f   #;
+    127    InVFile96 # X2030_SR_Land_PESGC_pollination_shock_osd   #;
+    128    InVFile97 # X2030_SR_Land_PESGC_pollination_shock_ocr   #;
+    129    InVFile98 # 2021_30_SR_Land_PESGC_allES_shocks          #;
+    130    
+    131    InVFile99  # BAU ES collapse: marine_fisheries_bau_shoc #;
+    132    InVFile100 # BAU ES collapse: carbon_forestry_bau_shock #;
+    133    InVFile101 # BAU ES collapse: pollination_bau_shock_pfb #;
+    134    InVFile102 # BAU ES collapse: pollination_bau_shock_gro #;
+    135    InVFile103 # BAU ES collapse: pollination_bau_shock_v_f #;
+    136    InVFile104 # BAU ES collapse: pollination_bau_shock_osd #;
+    137    InVFile105 # BAU ES collapse: pollination_bau_shock_ocr #;
+    138    
+    139    InVFile106 # BAU ES Amazon collapse: pollination_bau_shock_pfb #;
+    140    InVFile107 # BAU ES Amazon collapse: pollination_bau_shock_gro #;
+    141    InVFile108 # BAU ES Amazon collapse: pollination_bau_shock_v_f #;
+    142    InVFile109 # BAU ES Amazon collapse: pollination_bau_shock_osd #;
+    143    InVFile110 # BAU ES Amazon collapse: pollination_bau_shock_ocr #;
+    144    
+    145    (new) OutFile # output file #;
+    146    GTAPSETS  # sets file #;
+    147   Set
+    148    REG    # regions # read elements from file GTAPSETS header "H1";
+    149    MACVAR # macro variables #
+    150           (qgdp, aoreg, usklab, sklab, cap, pop);
+    151    
+    152   Coefficient
+    153    (all,r,REG) qgdp14_21(r)   # gdp #;
+    154    (all,r,REG) usklab14_21(r) # unskilled lab #;
+    155    (all,r,REG) sklab14_21(r)  # skilled lab  #;
+    156    (all,r,REG) cap14_21(r)    # capital #;
+    157    (all,r,REG) pop14_21(r)    # population #;
+    158   Read
+    159    qgdp14_21   from file MacFile01 header "N001";
+    160    usklab14_21 from file MacFile02 header "N001";
+    161    sklab14_21  from file MacFile03 header "N001";
+    162    cap14_21    from file MacFile04 header "N001";
+    163    pop14_21    from file MacFile05 header "N001";
+    164    
+    165   Coefficient
+    166    (all,r,REG)(all,v,MACVAR) MACSHK14_21(r,v) # Macro shocks 2014-2021 #;
+    167   Formula
+    168    (all,r,REG)(all,v,MACVAR) MACSHK14_21(r,v) = 0.0;
+    169    (all,r,REG) MACSHK14_21(r,"qgdp")  = qgdp14_21(r);
+    170   ! (all,r,REG) MACSHK14_21("aoreg") = ;!
+    171    (all,r,REG) MACSHK14_21(r,"usklab")= usklab14_21(r);
+    172    (all,r,REG) MACSHK14_21(r,"sklab") = sklab14_21(r);
+    173    (all,r,REG) MACSHK14_21(r,"cap")   = cap14_21(r);
+    174    (all,r,REG) MACSHK14_21(r,"pop")   = pop14_21(r);
+    175    
+    176   Coefficient
+    177    (all,r,REG)(all,v,MACVAR) MACSHK21_30(r,v) # Macro shocks 2021-2030 #;
+    178    (all,r,REG) aoreg21_30(r)  # aoreg #;
+    179    (all,r,REG) usklab21_30(r) # unskilled lab #;
+    180    (all,r,REG) sklab21_30(r)  # skilled lab #;
+    181    (all,r,REG) cap21_30(r)    # capital #;
+    182    (all,r,REG) pop21_30(r)    # population #;
+    183   Read
+    184    aoreg21_30  from file MacFile06 header "N001";
+    185    usklab21_30 from file MacFile07 header "N001";
+    186    sklab21_30  from file MacFile08 header "N001";
+    187    cap21_30    from file MacFile09 header "N001";
+    188    pop21_30    from file MacFile10 header "N001";
+    189   Formula
+    190    (all,r,REG)(all,v,MACVAR) MACSHK21_30(r,v) = 0.0;
+    191    (all,r,REG) MACSHK21_30(r,"aoreg") = aoreg21_30(r);
+    192    (all,r,REG) MACSHK21_30(r,"usklab")= usklab21_30(r);
+    193    (all,r,REG) MACSHK21_30(r,"sklab") = sklab21_30(r);
+    194    (all,r,REG) MACSHK21_30(r,"cap")   = cap21_30(r);
+    195    (all,r,REG) MACSHK21_30(r,"pop")   = pop21_30(r);
+    196    
+    197   Set
+    198    CROPLVSTK # Crops and livestock # (crops, rum, nrum);
+    199   Coefficient
+    200    (all,r,REG)(all,v,CROPLVSTK) CRLVSHK14_21(r,v) # Productivity shocks 2014-2021 #;
+    201    (all,r,REG) aocrop14_21(r)  # ao for crops #;
+    202    (all,r,REG) aorum14_21(r)   # ao for ruminant #;
+    203    (all,r,REG) aonrum14_21(r)  # ao for non ruminant #;
+    204   Read
+    205    aocrop14_21  from file SecFile01 header "N001";
+    206    aorum14_21   from file SecFile02 header "N001";
+    207    aonrum14_21  from file SecFile03 header "N001";
+    208   Formula
+    209    (all,r,REG) CRLVSHK14_21(r,"crops") = aocrop14_21(r);
+    210    (all,r,REG) CRLVSHK14_21(r,"rum")   = aorum14_21(r);
+    211    (all,r,REG) CRLVSHK14_21(r,"nrum")  = aonrum14_21(r);
+    212    
+    213   Coefficient
+    214    (all,r,REG)(all,v,CROPLVSTK) CRLVSHK21_30(r,v) # Productivity shocks 2021-2030 #;
+    215    (all,r,REG) aocrop21_30(r)  # ao for crops #;
+    216    (all,r,REG) aorum21_30(r)   # ao for ruminant #;
+    217    (all,r,REG) aonrum21_30(r)  # ao for non ruminant #;
+    218   Read
+    219    aocrop21_30  from file SecFile04 header "N001";
+    220    aorum21_30   from file SecFile05 header "N001";
+    221    aonrum21_30  from file SecFile06 header "N001";
+    222   Formula
+    223    (all,r,REG) CRLVSHK21_30(r,"crops") = aocrop21_30(r);
+    224    (all,r,REG) CRLVSHK21_30(r,"rum")   = aorum21_30(r);
+    225    (all,r,REG) CRLVSHK21_30(r,"nrum")  = aonrum21_30(r);
+    226    
+    227   Write
+    228    MACSHK14_21  to file OutFile header "M142";
+    229    CRLVSHK14_21 to file OutFile header "S142";
+    230    MACSHK21_30  to file OutFile header "M213";
+    231    CRLVSHK21_30 to file OutFile header "S213";
+    232    
+    233   Set
+    234    ECSEC # Ecosystemt service activities #
+    235    (fishery, forestsec, cotton, crsgrns, fruitveg, oilsds, othercrps);
+    236    
+    237   Coefficient
+    238    (all,r,REG)(all,v,ECSEC) BAUESSHK(r,v) # BAU Ecosystem services shocks #;
+    239    (all,r,REG) MARFishBAUES(r) # BAU ES: marine_fisheries_bau_shoc #;
+    240    (all,r,REG) CARBforBAUES(r) # BAU ES: carbon_forestry_bau_shock #;
+    241    (all,r,REG) POLIpfbBAUES(r) # BAU ES: pollination_bau_shock_pfb #;
+    242    (all,r,REG) POLIgroBAUES(r) # BAU ES: pollination_bau_shock_gro #;
+    243    (all,r,REG) POLIv_fBAUES(r) # BAU ES: pollination_bau_shock_v_f #;
+    244    (all,r,REG) POLIosdBAUES(r) # BAU ES: pollination_bau_shock_osd #;
+    245    (all,r,REG) POLIocrBAUES(r) # BAU ES: pollination_bau_shock_ocr #;
+    246   Read
+    247    MARFishBAUES from file InVFile01 header "N001";
+    248    CARBforBAUES from file InVFile02 header "N001";
+    249    POLIpfbBAUES from file InVFile03 header "N001";
+    250    POLIgroBAUES from file InVFile04 header "N001";
+    251    POLIv_fBAUES from file InVFile05 header "N001";
+    252    POLIosdBAUES from file InVFile06 header "N001";
+    253    POLIocrBAUES from file InVFile07 header "N001";
+    254   Formula
+    255    (all,r,REG) BAUESSHK(r,"fishery")   = MARFishBAUES(r);
+    256    (all,r,REG) BAUESSHK(r,"forestsec") = CARBForBAUES(r);
+    257    (all,r,REG) BAUESSHK(r,"cotton")    = POLIpfbBAUES(r);
+    258    (all,r,REG) BAUESSHK(r,"crsgrns")   = POLIgroBAUES(r);
+    259    (all,r,REG) BAUESSHK(r,"fruitveg")  = POLIv_fBAUES(r);
+    260    (all,r,REG) BAUESSHK(r,"oilsds")    = POLIosdBAUES(r);
+    261    (all,r,REG) BAUESSHK(r,"othercrps") = POLIocrBAUES(r);
+    262   Write
+    263     BAUESSHK to file OutFile header "BAES";
+    264    
+    265   Coefficient
+    266    (all,r,REG)(all,v,ECSEC) PESGCALLESHK(r,v) # PESGC all Ecosystem services shocks #;
+    267    (all,r,REG) MARFishPESGC(r) # 2030 PESGC: marine_fisheries_shoc #;
+    268    (all,r,REG) CARBforPESGC(r) # 2030 PESGC: carbon_forestry_shock #;
+    269    (all,r,REG) POLIpfbPESGC(r) # 2030 PESGC: pollination_shock_pfb #;
+    270    (all,r,REG) POLIgroPESGC(r) # 2030 PESGC: pollination_shock_gro #;
+    271    (all,r,REG) POLIv_fPESGC(r) # 2030 PESGC: pollination_shock_v_f #;
+    272    (all,r,REG) POLIosdPESGC(r) # 2030 PESGC: pollination_shock_osd #;
+    273    (all,r,REG) POLIocrPESGC(r) # 2030 PESGC: pollination_shock_ocr #;
+    274   Read
+    275    MARFishPESGC from file InVFile08 header "N001";
+    276    CARBforPESGC from file InVFile09 header "N001";
+    277    POLIpfbPESGC from file InVFile10 header "N001";
+    278    POLIgroPESGC from file InVFile11 header "N001";
+    279    POLIv_fPESGC from file InVFile12 header "N001";
+    280    POLIosdPESGC from file InVFile13 header "N001";
+    281    POLIocrPESGC from file InVFile14 header "N001";
+    282   Formula
+    283    (all,r,REG) PESGCALLESHK(r,"fishery")   = MARFishPESGC(r);
+    284    (all,r,REG) PESGCALLESHK(r,"forestsec") = CARBForPESGC(r);
+    285    (all,r,REG) PESGCALLESHK(r,"cotton")    = POLIpfbPESGC(r);
+    286    (all,r,REG) PESGCALLESHK(r,"crsgrns")   = POLIgroPESGC(r);
+    287    (all,r,REG) PESGCALLESHK(r,"fruitveg")  = POLIv_fPESGC(r);
+    288    (all,r,REG) PESGCALLESHK(r,"oilsds")    = POLIosdPESGC(r);
+    289    (all,r,REG) PESGCALLESHK(r,"othercrps") = POLIocrPESGC(r);
+    290   Write
+    291     PESGCALLESHK to file OutFile header "PESG";
+    292    
+    293   Coefficient
+    294    (all,r,REG)(all,v,ECSEC) PESGCNETESHK(r,v) # Net shock for PESGC relative to BAU #;
+    295   Formula
+    296    (all,r,REG)(all,v,ECSEC) PESGCNETESHK(r,v) = PESGCALLESHK(r,v) - BAUESSHK(r,v);
+    297   Write
+    298     PESGCNETESHK to file OutFile header "NPEG";
+    299    
+    300   Coefficient
+    301    (all,r,REG)(all,v,ECSEC) PESLCALLESHK(r,v) # PESLC all Ecosystem services shocks #;
+    302    (all,r,REG) MARFishPESLC(r) # 2030 PESLC: marine_fisheries_shoc #;
+    303    (all,r,REG) CARBforPESLC(r) # 2030 PESLC: carbon_forestry_shock #;
+    304    (all,r,REG) POLIpfbPESLC(r) # 2030 PESLC: pollination_shock_pfb #;
+    305    (all,r,REG) POLIgroPESLC(r) # 2030 PESLC: pollination_shock_gro #;
+    306    (all,r,REG) POLIv_fPESLC(r) # 2030 PESLC: pollination_shock_v_f #;
+    307    (all,r,REG) POLIosdPESLC(r) # 2030 PESLC: pollination_shock_osd #;
+    308    (all,r,REG) POLIocrPESLC(r) # 2030 PESLC: pollination_shock_ocr #;
+    309    (all,r,REG) PESLCLDTXSHK(r) # PESLC land tax shock #;
+    310   Read
+    311    MARFishPESLC from file InVFile15 header "N001";
+    312    CARBforPESLC from file InVFile16 header "N001";
+    313    POLIpfbPESLC from file InVFile17 header "N001";
+    314    POLIgroPESLC from file InVFile18 header "N001";
+    315    POLIv_fPESLC from file InVFile19 header "N001";
+    316    POLIosdPESLC from file InVFile20 header "N001";
+    317    POLIocrPESLC from file InVFile21 header "N001";
+    318    PESLCLDTXSHK from file InVFile22 header "N001";
+    319   Formula
+    320    (all,r,REG) PESLCALLESHK(r,"fishery")   = MARFishPESLC(r);
+    321    (all,r,REG) PESLCALLESHK(r,"forestsec") = CARBForPESLC(r);
+    322    (all,r,REG) PESLCALLESHK(r,"cotton")    = POLIpfbPESLC(r);
+    323    (all,r,REG) PESLCALLESHK(r,"crsgrns")   = POLIgroPESLC(r);
+    324    (all,r,REG) PESLCALLESHK(r,"fruitveg")  = POLIv_fPESLC(r);
+    325    (all,r,REG) PESLCALLESHK(r,"oilsds")    = POLIosdPESLC(r);
+    326    (all,r,REG) PESLCALLESHK(r,"othercrps") = POLIocrPESLC(r);
+    327   Write
+    328     PESLCALLESHK to file OutFile header "PESL";
+    329    
+    330   Coefficient
+    331    (all,r,REG)(all,v,ECSEC) PESLCNETESHK(r,v) # Net shock for PESLC relative to BAU #;
+    332   Formula
+    333    (all,r,REG)(all,v,ECSEC) PESLCNETESHK(r,v) = PESLCALLESHK(r,v) - BAUESSHK(r,v);
+    334   Write
+    335    PESLCNETESHK to file OutFile header "NPEL";
+    336    PESLCLDTXSHK to file OutFile header "PELT";
+    337    
+    338   Coefficient
+    339    (all,r,REG)(all,v,ECSEC) SRLNDALLESHK(r,v) # SRLND all Ecosystem services shocks #;
+    340    (all,r,REG) MARFishSRLND(r) # 2030 SRLNDALLES: marine_fisheries_shock #;
+    341    (all,r,REG) CARBforSRLND(r) # 2030 SRLNDALLES: carbon_forestry_shock  #;
+    342    (all,r,REG) POLIpfbSRLND(r) # 2030 SRLNDALLES: pollination_shock_pfb  #;
+    343    (all,r,REG) POLIgroSRLND(r) # 2030 SRLNDALLES: pollination_shock_gro  #;
+    344    (all,r,REG) POLIv_fSRLND(r) # 2030 SRLNDALLES: pollination_shock_v_f  #;
+    345    (all,r,REG) POLIosdSRLND(r) # 2030 SRLNDALLES: pollination_shock_osd  #;
+    346    (all,r,REG) POLIocrSRLND(r) # 2030 SRLNDALLES: pollination_shock_ocr  #;
+    347    (all,r,REG) SRLNDLDTXSHK(r) # PESLC land tax shock #;
+    348   Read
+    349    MARFishSRLND from file InVFile23 header "N001";
+    350    CARBforSRLND from file InVFile24 header "N001";
+    351    POLIpfbSRLND from file InVFile25 header "N001";
+    352    POLIgroSRLND from file InVFile26 header "N001";
+    353    POLIv_fSRLND from file InVFile27 header "N001";
+    354    POLIosdSRLND from file InVFile28 header "N001";
+    355    POLIocrSRLND from file InVFile29 header "N001";
+    356    SRLNDLDTXSHK from file InVFile30 header "N001";
+    357   Formula
+    358    (all,r,REG) SRLNDALLESHK(r,"fishery")   = MARFishSRLND(r);
+    359    (all,r,REG) SRLNDALLESHK(r,"forestsec") = CARBForSRLND(r);
+    360    (all,r,REG) SRLNDALLESHK(r,"cotton")    = POLIpfbSRLND(r);
+    361    (all,r,REG) SRLNDALLESHK(r,"crsgrns")   = POLIgroSRLND(r);
+    362    (all,r,REG) SRLNDALLESHK(r,"fruitveg")  = POLIv_fSRLND(r);
+    363    (all,r,REG) SRLNDALLESHK(r,"oilsds")    = POLIosdSRLND(r);
+    364    (all,r,REG) SRLNDALLESHK(r,"othercrps") = POLIocrSRLND(r);
+    365   Write
+    366     SRLNDALLESHK to file OutFile header "SRLD";
+    367    
+    368   Coefficient
+    369    (all,r,REG)(all,v,ECSEC) SRLNDNETESHK(r,v) # Net shock for SRLND relative to BAU #;
+    370   Formula
+    371    (all,r,REG)(all,v,ECSEC) SRLNDNETESHK(r,v) = SRLNDALLESHK(r,v) - BAUESSHK(r,v);
+    372   Write
+    373    SRLNDNETESHK to file OutFile header "NSRL";
+    374    SRLNDLDTXSHK to file OutFile header "SRLT";
+    375    
+    376   Coefficient
+    377    (all,r,REG)(all,v,ECSEC) SRRnDALLESHK(r,v) # SRRnD20p all Ecosystem services shocks #;
+    378    (all,r,REG) MARFishSRRnD(r) # 2030 SRRnD20p: marine_fisheries_shoc #;
+    379    (all,r,REG) CARBforSRRnD(r) # 2030 SRRnD20p: carbon_forestry_shock #;
+    380    (all,r,REG) POLIpfbSRRnD(r) # 2030 SRRnD20p: pollination_shock_pfb #;
+    381    (all,r,REG) POLIgroSRRnD(r) # 2030 SRRnD20p: pollination_shock_gro #;
+    382    (all,r,REG) POLIv_fSRRnD(r) # 2030 SRRnD20p: pollination_shock_v_f #;
+    383    (all,r,REG) POLIosdSRRnD(r) # 2030 SRRnD20p: pollination_shock_osd #;
+    384    (all,r,REG) POLIocrSRRnD(r) # 2030 SRRnD20p: pollination_shock_ocr #;
+    385    (all,r,REG) SRRnD20PSHK(r)  # 2021_2030_RnD_20pct.har #;
+    386   Read
+    387    MARFishSRRnD from file InVFile31 header "N001";
+    388    CARBforSRRnD from file InVFile32 header "N001";
+    389    POLIpfbSRRnD from file InVFile33 header "N001";
+    390    POLIgroSRRnD from file InVFile34 header "N001";
+    391    POLIv_fSRRnD from file InVFile35 header "N001";
+    392    POLIosdSRRnD from file InVFile36 header "N001";
+    393    POLIocrSRRnD from file InVFile37 header "N001";
+    394    SRRnD20PSHK  from file InVFile38 header "N001";
+    395   Formula
+    396    (all,r,REG) SRRnDALLESHK(r,"fishery")   = MARFishSRRnD(r);
+    397    (all,r,REG) SRRnDALLESHK(r,"forestsec") = CARBforSRRnD(r);
+    398    (all,r,REG) SRRnDALLESHK(r,"cotton")    = POLIpfbSRRnD(r);
+    399    (all,r,REG) SRRnDALLESHK(r,"crsgrns")   = POLIgroSRRnD(r);
+    400    (all,r,REG) SRRnDALLESHK(r,"fruitveg")  = POLIv_fSRRnD(r);
+    401    (all,r,REG) SRRnDALLESHK(r,"oilsds")    = POLIosdSRRnD(r);
+    402    (all,r,REG) SRRnDALLESHK(r,"othercrps") = POLIocrSRRnD(r);
+    403   Write
+    404     SRRnDALLESHK to file OutFile header "SRnD";
+    405    
+    406   Coefficient
+    407    (all,r,REG)(all,v,ECSEC) SRRnDNETESHK(r,v) # Net shock for SRRnD relative to BAU #;
+    408   Formula
+    409    (all,r,REG)(all,v,ECSEC) SRRnDNETESHK(r,v) = SRRnDALLESHK(r,v) - BAUESSHK(r,v);
+    410   Write
+    411    SRRnDNETESHK to file OutFile header "NSRD";
+    412    SRRnD20PSHK  to file OutFile header "RnD";
+    413    
+    414   Coefficient
+    415    (all,r,REG)(all,v,ECSEC) PESGRnDAESHK(r,v) # PESGC all Ecosystem services shocks #;
+    416    (all,r,REG) MARFishPESGR(r) # 2030 SR_RnD_20p_PESGC: marine_fisheries_shock #;
+    417    (all,r,REG) CARBforPESGR(r) # 2030 SR_RnD_20p_PESGC: carbon_forestry_shock #;
+    418    (all,r,REG) POLIpfbPESGR(r) # 2030 SR_RnD_20p_PESGC: pollination_shock_pfb #;
+    419    (all,r,REG) POLIgroPESGR(r) # 2030 SR_RnD_20p_PESGC: pollination_shock_gro #;
+    420    (all,r,REG) POLIv_fPESGR(r) # 2030 SR_RnD_20p_PESGC: pollination_shock_v_f #;
+    421    (all,r,REG) POLIosdPESGR(r) # 2030 SR_RnD_20p_PESGC: pollination_shock_osd #;
+    422    (all,r,REG) POLIocrPESGR(r) # 2030 SR_RnD_20p_PESGC: pollination_shock_ocr #;
+    423   Read
+    424    MARFishPESGR from file InVFile39 header "N001";
+    425    CARBforPESGR from file InVFile40 header "N001";
+    426    POLIpfbPESGR from file InVFile41 header "N001";
+    427    POLIgroPESGR from file InVFile42 header "N001";
+    428    POLIv_fPESGR from file InVFile43 header "N001";
+    429    POLIosdPESGR from file InVFile44 header "N001";
+    430    POLIocrPESGR from file InVFile45 header "N001";
+    431   Formula
+    432    (all,r,REG) PESGRnDAESHK(r,"fishery")   = MARFishPESGR(r);
+    433    (all,r,REG) PESGRnDAESHK(r,"forestsec") = CARBforPESGR(r);
+    434    (all,r,REG) PESGRnDAESHK(r,"cotton")    = POLIpfbPESGR(r);
+    435    (all,r,REG) PESGRnDAESHK(r,"crsgrns")   = POLIgroPESGR(r);
+    436    (all,r,REG) PESGRnDAESHK(r,"fruitveg")  = POLIv_fPESGR(r);
+    437    (all,r,REG) PESGRnDAESHK(r,"oilsds")    = POLIosdPESGR(r);
+    438    (all,r,REG) PESGRnDAESHK(r,"othercrps") = POLIocrPESGR(r);
+    439   Write
+    440     PESGRnDAESHK to file OutFile header "PEGR";
+    441    
+    442   Coefficient
+    443    (all,r,REG)(all,v,ECSEC) PESGRNETESHK(r,v) # Net shock for PESGRnD relative to BAU #;
+    444   Formula
+    445    (all,r,REG)(all,v,ECSEC) PESGRNETESHK(r,v) = PESGRnDAESHK(r,v) - BAUESSHK(r,v);
+    446   Write
+    447     PESGRNETESHK to file OutFile header "NPGR";
+    448    
+    449   Coefficient
+    450    (all,r,REG)(all,v,ECSEC) PESGB2RD3AES(r,v) # 2030 SR_RnD_20p_PESGB_30 all Ecosystem services shocks #;
+    451    (all,r,REG) FisPESGB2R3E(r) # 2030 SR_RnD_20p_PESGB_30: marine_fisheries_shock #;
+    452    (all,r,REG) ForPESGB2R3E(r) # 2030 SR_RnD_20p_PESGB_30: carbon_forestry_shock #;
+    453    (all,r,REG) PfbPESGB2R3E(r) # 2030 SR_RnD_20p_PESGB_30: pollination_shock_pfb #;
+    454    (all,r,REG) GroPESGB2R3E(r) # 2030 SR_RnD_20p_PESGB_30: pollination_shock_gro #;
+    455    (all,r,REG) V_fPESGB2R3E(r) # 2030 SR_RnD_20p_PESGB_30: pollination_shock_v_f #;
+    456    (all,r,REG) OsdPESGB2R3E(r) # 2030 SR_RnD_20p_PESGB_30: pollination_shock_osd #;
+    457    (all,r,REG) OcrPESGB2R3E(r) # 2030 SR_RnD_20p_PESGB_30: pollination_shock_ocr #;
+    458   Read
+    459    FisPESGB2R3E from file InVFile46 header "N001";
+    460    ForPESGB2R3E from file InVFile47 header "N001";
+    461    PfbPESGB2R3E from file InVFile48 header "N001";
+    462    GroPESGB2R3E from file InVFile49 header "N001";
+    463    V_fPESGB2R3E from file InVFile50 header "N001";
+    464    OsdPESGB2R3E from file InVFile51 header "N001";
+    465    OcrPESGB2R3E from file InVFile52 header "N001";
+    466   Formula
+    467    (all,r,REG) PESGB2RD3AES(r,"fishery")   = FisPESGB2R3E(r);
+    468    (all,r,REG) PESGB2RD3AES(r,"forestsec") = ForPESGB2R3E(r);
+    469    (all,r,REG) PESGB2RD3AES(r,"cotton")    = PfbPESGB2R3E(r);
+    470    (all,r,REG) PESGB2RD3AES(r,"crsgrns")   = GroPESGB2R3E(r);
+    471    (all,r,REG) PESGB2RD3AES(r,"fruitveg")  = V_fPESGB2R3E(r);
+    472    (all,r,REG) PESGB2RD3AES(r,"oilsds")    = OsdPESGB2R3E(r);
+    473    (all,r,REG) PESGB2RD3AES(r,"othercrps") = OcrPESGB2R3E(r);
+    474   Write
+    475     PESGB2RD3AES to file OutFile header "PEGB";
+    476    
+    477   Coefficient
+    478    (all,r,REG)(all,v,ECSEC) PESGBNETESHK(r,v) # Net shock for SR_RnD_20p_PESGB_30 relative to BAU #;
+    479   Formula
+    480    (all,r,REG)(all,v,ECSEC) PESGBNETESHK(r,v) = PESGB2RD3AES(r,v) - BAUESSHK(r,v);
+    481   Write
+    482     PESGBNETESHK to file OutFile header "NPGB";
+    483    
+    484   Coefficient
+    485    (all,r,REG)(all,v,ECSEC) PESGCRndSRAE(r,v) # 2030 SR_RnD_PESGC all Ecosystem services shocks #;
+    486    (all,r,REG) FisPESGCRnd(r)# 2030 SR_RnD_PESGC: marine_fisheries_shock #;
+    487    (all,r,REG) ForPESGCRnd(r) # 2030 SR_RnD_PESGC: carbon_forestry_shock #;
+    488    (all,r,REG) PfbPESGCRnd(r) # 2030 SR_RnD_PESGC: pollination_shock_pfb #;
+    489    (all,r,REG) GroPESGCRnd(r) # 2030 SR_RnD_PESGC: pollination_shock_gro #;
+    490    (all,r,REG) V_fPESGCRnd(r) # 2030 SR_RnD_PESGC: pollination_shock_v_f #;
+    491    (all,r,REG) OsdPESGCRnd(r) # 2030 SR_RnD_PESGC: pollination_shock_osd #;
+    492    (all,r,REG) OcrPESGCRnd(r) # 2030 SR_RnD_PESGC: pollination_shock_ocr #;
+    493   Read
+    494    FisPESGCRnd from file InVFile53 header "N001";
+    495    ForPESGCRnd from file InVFile54 header "N001";
+    496    PfbPESGCRnd from file InVFile55 header "N001";
+    497    GroPESGCRnd from file InVFile56 header "N001";
+    498    V_fPESGCRnd from file InVFile57 header "N001";
+    499    OsdPESGCRnd from file InVFile58 header "N001";
+    500    OcrPESGCRnd from file InVFile59 header "N001";
+    501   Formula
+    502    (all,r,REG) PESGCRndSRAE(r,"fishery")   = FisPESGCRnd(r);
+    503    (all,r,REG) PESGCRndSRAE(r,"forestsec") = ForPESGCRnd(r);
+    504    (all,r,REG) PESGCRndSRAE(r,"cotton")    = PfbPESGCRnd(r);
+    505    (all,r,REG) PESGCRndSRAE(r,"crsgrns")   = GroPESGCRnd(r);
+    506    (all,r,REG) PESGCRndSRAE(r,"fruitveg")  = V_fPESGCRnd(r);
+    507    (all,r,REG) PESGCRndSRAE(r,"oilsds")    = OsdPESGCRnd(r);
+    508    (all,r,REG) PESGCRndSRAE(r,"othercrps") = OcrPESGCRnd(r);
+    509   Write
+    510     PESGCRndSRAE to file OutFile header "PEGC";
+    511    
+    512   Coefficient
+    513    (all,r,REG)(all,v,ECSEC) PESGCNETESK2(r,v) # Net shock for SR_RnD_20p_PESGB_30 relative to BAU #;
+    514   Formula
+    515    (all,r,REG)(all,v,ECSEC) PESGCNETESK2(r,v) = PESGCRndSRAE(r,v) - BAUESSHK(r,v);
+    516   Write
+    517     PESGCNETESK2 to file OutFile header "NPGC";
+    518    
+    519   Coefficient
+    520    (all,r,REG)(all,v,ECSEC) RnDALLESHK(r,v) # SRRnD20p all Ecosystem services shocks #;
+    521    (all,r,REG) MARFishRnD(r) # 2030 SRRnD20p: marine_fisheries_shoc #;
+    522    (all,r,REG) CARBforRnD(r) # 2030 SRRnD20p: carbon_forestry_shock #;
+    523    (all,r,REG) POLIpfbRnD(r) # 2030 SRRnD20p: pollination_shock_pfb #;
+    524    (all,r,REG) POLIgroRnD(r) # 2030 SRRnD20p: pollination_shock_gro #;
+    525    (all,r,REG) POLIv_fRnD(r) # 2030 SRRnD20p: pollination_shock_v_f #;
+    526    (all,r,REG) POLIosdRnD(r) # 2030 SRRnD20p: pollination_shock_osd #;
+    527    (all,r,REG) POLIocrRnD(r) # 2030 SRRnD20p: pollination_shock_ocr #;
+    528   Read
+    529     MARFishRnD from file InVFile60 header "N001";
+    530     CARBforRnD from file InVFile61 header "N001";
+    531     POLIpfbRnD from file InVFile62 header "N001";
+    532     POLIgroRnD from file InVFile63 header "N001";
+    533     POLIv_fRnD from file InVFile64 header "N001";
+    534     POLIosdRnD from file InVFile65 header "N001";
+    535     POLIocrRnD from file InVFile66 header "N001";
+    536   Formula
+    537    (all,r,REG) RnDALLESHK(r,"fishery")   = MARFishRnD(r);
+    538    (all,r,REG) RnDALLESHK(r,"forestsec") = CARBforRnD(r);
+    539    (all,r,REG) RnDALLESHK(r,"cotton")    = POLIpfbRnD(r);
+    540    (all,r,REG) RnDALLESHK(r,"crsgrns")   = POLIgroRnD(r);
+    541    (all,r,REG) RnDALLESHK(r,"fruitveg")  = POLIv_fRnD(r);
+    542    (all,r,REG) RnDALLESHK(r,"oilsds")    = POLIosdRnD(r);
+    543    (all,r,REG) RnDALLESHK(r,"othercrps") = POLIocrRnD(r);
+    544   Write
+    545     RnDALLESHK to file OutFile header "RnDE";
+    546    
+    547   Coefficient
+    548    (all,r,REG)(all,v,ECSEC) RnDNETESHK(r,v) # Net shock for SRRnD relative to BAU #;
+    549   Formula
+    550    (all,r,REG)(all,v,ECSEC) RnDNETESHK(r,v) = RnDALLESHK(r,v) - BAUESSHK(r,v);
+    551   Write
+    552    RnDNETESHK  to file OutFile header "NRnD";
+    553    
+    554   Coefficient
+    555    (all,r,REG)(all,v,ECSEC) SRnDALLESHK(r,v) # SRRnD20p all Ecosystem services shocks #;
+    556    (all,r,REG) MARFishSRnD(r) # 2030 SR_RnD: marine_fisheries_shoc #;
+    557    (all,r,REG) CARBforSRnD(r) # 2030 SR_RnD: carbon_forestry_shock #;
+    558    (all,r,REG) POLIpfbSRnD(r) # 2030 SR_RnD: pollination_shock_pfb #;
+    559    (all,r,REG) POLIgroSRnD(r) # 2030 SR_RnD: pollination_shock_gro #;
+    560    (all,r,REG) POLIv_fSRnD(r) # 2030 SR_RnD: pollination_shock_v_f #;
+    561    (all,r,REG) POLIosdSRnD(r) # 2030 SR_RnD: pollination_shock_osd #;
+    562    (all,r,REG) POLIocrSRnD(r) # 2030 SR_RnD: pollination_shock_ocr #;
+    563   Read
+    564     MARFishSRnD from file InVFile67 header "N001";
+    565     CARBforSRnD from file InVFile68 header "N001";
+    566     POLIpfbSRnD from file InVFile69 header "N001";
+    567     POLIgroSRnD from file InVFile70 header "N001";
+    568     POLIv_fSRnD from file InVFile71 header "N001";
+    569     POLIosdSRnD from file InVFile72 header "N001";
+    570     POLIocrSRnD from file InVFile73 header "N001";
+    571   Formula
+    572    (all,r,REG) SRnDALLESHK(r,"fishery")   = MARFishSRnD(r);
+    573    (all,r,REG) SRnDALLESHK(r,"forestsec") = CARBforSRnD(r);
+    574    (all,r,REG) SRnDALLESHK(r,"cotton")    = POLIpfbSRnD(r);
+    575    (all,r,REG) SRnDALLESHK(r,"crsgrns")   = POLIgroSRnD(r);
+    576    (all,r,REG) SRnDALLESHK(r,"fruitveg")  = POLIv_fSRnD(r);
+    577    (all,r,REG) SRnDALLESHK(r,"oilsds")    = POLIosdSRnD(r);
+    578    (all,r,REG) SRnDALLESHK(r,"othercrps") = POLIocrSRnD(r);
+    579   Write
+    580     SRRnDALLESHK to file OutFile header "RDSR";
+    581    
+    582   Coefficient
+    583    (all,r,REG)(all,v,ECSEC) SRnDNETESHK(r,v) # Net shock for SRRnD relative to BAU #;
+    584   Formula
+    585    (all,r,REG)(all,v,ECSEC) SRnDNETESHK(r,v) = SRnDALLESHK(r,v) - BAUESSHK(r,v);
+    586   Write
+    587    SRnDNETESHK  to file OutFile header "NRDR";
+    588    
+    589   Coefficient
+    590    (all,r,REG)(all,v,ECSEC) SRnDPESLCAES(r,v) # SRRnD20p all Ecosystem services shocks #;
+    591    (all,r,REG) MARFishSRPLC(r) # 2030 SR_RnD_PESLC: marine_fisheries_shoc #;
+    592    (all,r,REG) CARBforSRPLC(r) # 2030 SR_RnD_PESLC: carbon_forestry_shock #;
+    593    (all,r,REG) POLIpfbSRPLC(r) # 2030 SR_RnD_PESLC: pollination_shock_pfb #;
+    594    (all,r,REG) POLIgroSRPLC(r) # 2030 SR_RnD_PESLC: pollination_shock_gro #;
+    595    (all,r,REG) POLIv_fSRPLC(r) # 2030 SR_RnD_PESLC: pollination_shock_v_f #;
+    596    (all,r,REG) POLIosdSRPLC(r) # 2030 SR_RnD_PESLC: pollination_shock_osd #;
+    597    (all,r,REG) POLIocrSRPLC(r) # 2030 SR_RnD_PESLC: pollination_shock_ocr #;
+    598    (all,r,REG) PESLSRDTXSHK(r) # 2021_30_SR_RnD_PESLC_allES tax shock #;
+    599    (all,r,REG) RnDHALFSHK(r) # 2021_2030_RnD_Half.har #;
+    600   Read
+    601    MARFishSRPLC from file InVFile74 header "N001";
+    602    CARBforSRPLC from file InVFile75 header "N001";
+    603    POLIpfbSRPLC from file InVFile76 header "N001";
+    604    POLIgroSRPLC from file InVFile77 header "N001";
+    605    POLIv_fSRPLC from file InVFile78 header "N001";
+    606    POLIosdSRPLC from file InVFile79 header "N001";
+    607    POLIocrSRPLC from file InVFile80 header "N001";
+    608    PESLSRDTXSHK from file InVFile81 header "N001";
+    609    RnDHALFSHK   from file InVFile82 header "N001";
+    610   Formula
+    611    (all,r,REG) SRnDPESLCAES(r,"fishery")   = MARFishSRPLC(r);
+    612    (all,r,REG) SRnDPESLCAES(r,"forestsec") = CARBforSRPLC(r);
+    613    (all,r,REG) SRnDPESLCAES(r,"cotton")    = POLIpfbSRPLC(r);
+    614    (all,r,REG) SRnDPESLCAES(r,"crsgrns")   = POLIgroSRPLC(r);
+    615    (all,r,REG) SRnDPESLCAES(r,"fruitveg")  = POLIv_fSRPLC(r);
+    616    (all,r,REG) SRnDPESLCAES(r,"oilsds")    = POLIosdSRPLC(r);
+    617    (all,r,REG) SRnDPESLCAES(r,"othercrps") = POLIocrSRPLC(r);
+    618   Write
+    619     SRnDPESLCAES to file OutFile header "SRLC";
+    620    
+    621   Coefficient
+    622    (all,r,REG)(all,v,ECSEC) SRDPLCNETSHK(r,v) # Net shock for SRRnDPESLC relative to BAU #;
+    623   Formula
+    624    (all,r,REG)(all,v,ECSEC) SRDPLCNETSHK(r,v) = SRnDPESLCAES(r,v) - BAUESSHK(r,v);
+    625   Write
+    626    SRDPLCNETSHK to file OutFile header "NSDL";
+    627    PESLSRDTXSHK to file OutFile header "TSRL";
+    628    RnDHALFSHK   to file OutFile header "RnDH";
+    629    
+    630   Coefficient
+    631    (all,r,REG)(all,v,ECSEC) SRPESLCAES(r,v) # SRRnD20p all Ecosystem services shocks #;
+    632    (all,r,REG) MARFishSPELC(r) # 2030 SR_PESLC: marine_fisheries_shoc #;
+    633    (all,r,REG) CARBforSPELC(r) # 2030 SR_PESLC: carbon_forestry_shock #;
+    634    (all,r,REG) POLIpfbSPELC(r) # 2030 SR_PESLC: pollination_shock_pfb #;
+    635    (all,r,REG) POLIgroSPELC(r) # 2030 SR_PESLC: pollination_shock_gro #;
+    636    (all,r,REG) POLIv_fSPELC(r) # 2030 SR_PESLC: pollination_shock_v_f #;
+    637    (all,r,REG) POLIosdSPELC(r) # 2030 SR_PESLC: pollination_shock_osd #;
+    638    (all,r,REG) POLIocrSPELC(r) # 2030 SR_PESLC: pollination_shock_ocr #;
+    639    (all,r,REG) SRPESLCTXSHK(r) # 2021_30_SR_PESLC tax shock #;
+    640   Read
+    641    MARFishSPELC from file InVFile83 header "N001";
+    642    CARBforSPELC from file InVFile84 header "N001";
+    643    POLIpfbSPELC from file InVFile85 header "N001";
+    644    POLIgroSPELC from file InVFile86 header "N001";
+    645    POLIv_fSPELC from file InVFile87 header "N001";
+    646    POLIosdSPELC from file InVFile88 header "N001";
+    647    POLIocrSPELC from file InVFile89 header "N001";
+    648    SRPESLCTXSHK from file InVFile90 header "N001";
+    649    
+    650   Formula
+    651    (all,r,REG) SRPESLCAES(r,"fishery")   = MARFishSPELC(r);
+    652    (all,r,REG) SRPESLCAES(r,"forestsec") = CARBforSPELC(r);
+    653    (all,r,REG) SRPESLCAES(r,"cotton")    = POLIpfbSPELC(r);
+    654    (all,r,REG) SRPESLCAES(r,"crsgrns")   = POLIgroSPELC(r);
+    655    (all,r,REG) SRPESLCAES(r,"fruitveg")  = POLIv_fSPELC(r);
+    656    (all,r,REG) SRPESLCAES(r,"oilsds")    = POLIosdSPELC(r);
+    657    (all,r,REG) SRPESLCAES(r,"othercrps") = POLIocrSPELC(r);
+    658   Write
+    659     SRnDPESLCAES to file OutFile header "SPLC";
+    660    
+    661   Coefficient
+    662    (all,r,REG)(all,v,ECSEC) SRPLCNETSHK(r,v) # Net shock for SRRnDPESLC relative to BAU #;
+    663   Formula
+    664    (all,r,REG)(all,v,ECSEC) SRPLCNETSHK(r,v) = SRPESLCAES(r,v) - BAUESSHK(r,v);
+    665   Write
+    666    SRPLCNETSHK  to file OutFile header "NSPL";
+    667    SRPESLCTXSHK to file OutFile header "TSLC";
+    668    
+    669   Coefficient
+    670    (all,r,REG)(all,v,ECSEC) SRLPEGCAES(r,v) # SRRnD20p all Ecosystem services shocks #;
+    671    (all,r,REG) MARFishSRPGC(r) # 2030 SR_LandPESGC: marine_fisheries_shoc #;
+    672    (all,r,REG) CARBforSRPGC(r) # 2030 SR_PESLC: carbon_forestry_shock #;
+    673    (all,r,REG) POLIpfbSRPGC(r) # 2030 SR_PESLC: pollination_shock_pfb #;
+    674    (all,r,REG) POLIgroSRPGC(r) # 2030 SR_PESLC: pollination_shock_gro #;
+    675    (all,r,REG) POLIv_fSRPGC(r) # 2030 SR_PESLC: pollination_shock_v_f #;
+    676    (all,r,REG) POLIosdSRPGC(r) # 2030 SR_PESLC: pollination_shock_osd #;
+    677    (all,r,REG) POLIocrSRPGC(r) # 2030 SR_PESLC: pollination_shock_ocr #;
+    678    (all,r,REG) SRLNDPGTXSHK(r) # 2021_30_SR_PESLC tax shock #;
+    679    
+    680   Read
+    681    MARFishSRPGC from file InVFile91 header "N001";
+    682    CARBforSRPGC from file InVFile92 header "N001";
+    683    POLIpfbSRPGC from file InVFile93 header "N001";
+    684    POLIgroSRPGC from file InVFile94 header "N001";
+    685    POLIv_fSRPGC from file InVFile95 header "N001";
+    686    POLIosdSRPGC from file InVFile96 header "N001";
+    687    POLIocrSRPGC from file InVFile97 header "N001";
+    688    SRLNDPGTXSHK from file InVFile98 header "N001";
+    689   Formula
+    690    (all,r,REG) SRLPEGCAES(r,"fishery")   = MARFishSRPGC(r);
+    691    (all,r,REG) SRLPEGCAES(r,"forestsec") = CARBforSRPGC(r);
+    692    (all,r,REG) SRLPEGCAES(r,"cotton")    = POLIpfbSRPGC(r);
+    693    (all,r,REG) SRLPEGCAES(r,"crsgrns")   = POLIgroSRPGC(r);
+    694    (all,r,REG) SRLPEGCAES(r,"fruitveg")  = POLIv_fSRPGC(r);
+    695    (all,r,REG) SRLPEGCAES(r,"oilsds")    = POLIosdSRPGC(r);
+    696    (all,r,REG) SRLPEGCAES(r,"othercrps") = POLIocrSRPGC(r);
+    697   Write
+    698     SRLPEGCAES to file OutFile header "SLGC";
+    699    
+    700   Coefficient
+    701    (all,r,REG)(all,v,ECSEC) SRLGCNETSHK(r,v) # Net shock for SRLGCNETSHK relative to BAU #;
+    702   Formula
+    703    (all,r,REG)(all,v,ECSEC) SRLGCNETSHK(r,v) = SRLPEGCAES(r,v) - BAUESSHK(r,v);
+    704   Write
+    705    SRLGCNETSHK  to file OutFile header "NSGL";
+    706    SRLNDPGTXSHK to file OutFile header "TSGC";
+    707    
+    708    
+    709   Coefficient
+    710    (all,r,REG)(all,v,ECSEC) BAUESCOLSHK(r,v) # BAU Ecosystem services shocks #;
+    711    (all,r,REG) MARFishBACES(r) # BAU ES collapse: marine_fisheries_bau_shoc #;
+    712    (all,r,REG) CARBforBACES(r) # BAU ES collapse: carbon_forestry_bau_shock #;
+    713    (all,r,REG) POLIpfbBACES(r) # BAU ES collapse: pollination_bau_shock_pfb #;
+    714    (all,r,REG) POLIgroBACES(r) # BAU ES collapse: pollination_bau_shock_gro #;
+    715    (all,r,REG) POLIv_fBACES(r) # BAU ES collapse: pollination_bau_shock_v_f #;
+    716    (all,r,REG) POLIosdBACES(r) # BAU ES collapse: pollination_bau_shock_osd #;
+    717    (all,r,REG) POLIocrBACES(r) # BAU ES collapse: pollination_bau_shock_ocr #;
+    718   Read
+    719    MARFishBACES from file InVFile99 header "N001";
+    720    CARBforBACES from file InVFile100 header "N001";
+    721    POLIpfbBACES from file InVFile101 header "N001";
+    722    POLIgroBACES from file InVFile102 header "N001";
+    723    POLIv_fBACES from file InVFile103 header "N001";
+    724    POLIosdBACES from file InVFile104 header "N001";
+    725    POLIocrBACES from file InVFile105 header "N001";
+    726   Formula
+    727    (all,r,REG) BAUESCOLSHK(r,"fishery")   = MARFishBACES(r);
+    728    (all,r,REG) BAUESCOLSHK(r,"forestsec") = CARBForBACES(r);
+    729    (all,r,REG) BAUESCOLSHK(r,"cotton")    = POLIpfbBACES(r);
+    730    (all,r,REG) BAUESCOLSHK(r,"crsgrns")   = POLIgroBACES(r);
+    731    (all,r,REG) BAUESCOLSHK(r,"fruitveg")  = POLIv_fBACES(r);
+    732    (all,r,REG) BAUESCOLSHK(r,"oilsds")    = POLIosdBACES(r);
+    733    (all,r,REG) BAUESCOLSHK(r,"othercrps") = POLIocrBACES(r);
+    734   Write
+    735     BAUESCOLSHK to file OutFile header "BAEC";
+    736    
+    737   Coefficient
+    738    (all,r,REG)(all,v,ECSEC) COLNETSHK(r,v) # Net shock for all collapse relative to BAU #;
+    739   Formula
+    740    (all,r,REG)(all,v,ECSEC) COLNETSHK(r,v) = BAUESCOLSHK(r,v) - BAUESSHK(r,v);
+    741   Write
+    742    COLNETSHK  to file OutFile header "CLPS";
+    743    
+    744   Coefficient
+    745    (all,r,REG)(all,v,ECSEC) BAUEAMCOLSHK(r,v) # BAU Ecosystem services shocks #;
+    746    (all,r,REG) POLIpfbBACAM(r) # BAU ES Amazon collapse: pollination_bau_shock_pfb #;
+    747    (all,r,REG) POLIgroBACAM(r) # BAU ES Amazon collapse: pollination_bau_shock_gro #;
+    748    (all,r,REG) POLIv_fBACAM(r) # BAU ES Amazon collapse: pollination_bau_shock_v_f #;
+    749    (all,r,REG) POLIosdBACAM(r) # BAU ES Amazon collapse: pollination_bau_shock_osd #;
+    750    (all,r,REG) POLIocrBACAM(r) # BAU ES Amazon collapse: pollination_bau_shock_ocr #;
+    751   Read
+    752    POLIpfbBACAM from file InVFile106 header "N001";
+    753    POLIgroBACAM from file InVFile107 header "N001";
+    754    POLIv_fBACAM from file InVFile108 header "N001";
+    755    POLIosdBACAM from file InVFile109 header "N001";
+    756    POLIocrBACAM from file InVFile110 header "N001";
+    757   Formula
+    758    (all,r,REG) BAUEAMCOLSHK(r,"fishery")   = 0;
+    759    (all,r,REG) BAUEAMCOLSHK(r,"forestsec") = 0;
+    760    (all,r,REG) BAUEAMCOLSHK(r,"cotton")    = POLIpfbBACAM(r);
+    761    (all,r,REG) BAUEAMCOLSHK(r,"crsgrns")   = POLIgroBACAM(r);
+    762    (all,r,REG) BAUEAMCOLSHK(r,"fruitveg")  = POLIv_fBACAM(r);
+    763    (all,r,REG) BAUEAMCOLSHK(r,"oilsds")    = POLIosdBACAM(r);
+    764    (all,r,REG) BAUEAMCOLSHK(r,"othercrps") = POLIocrBACAM(r);
+    765   Write
+    766     BAUEAMCOLSHK to file OutFile header "AMZN";
+
+
+
+
+ ========================
+ ++ INPUT STATEMENT TABLE
+ ========================
+
+          Starts   Syntax  Semantic
+  Number  at line  Error?   Error?            Description
+  ------------------------------------------------------------
+     1         1     no       no      FILE 'MacFile01'                        
+     2         3     no       no      FILE 'MacFile02'                        
+     3         4     no       no      FILE 'MacFile03'                        
+     4         5     no       no      FILE 'MacFile04'                        
+     5         6     no       no      FILE 'MacFile05'                        
+     6         7     no       no      FILE 'MacFile06'                        
+     7         8     no       no      FILE 'MacFile07'                        
+     8         9     no       no      FILE 'MacFile08'                        
+     9        10     no       no      FILE 'MacFile09'                        
+    10        11     no       no      FILE 'MacFile10'                        
+    11        13     no       no      FILE 'SecFile01'                        
+    12        14     no       no      FILE 'SecFile02'                        
+    13        15     no       no      FILE 'SecFile03'                        
+    14        16     no       no      FILE 'SecFile04'                        
+    15        17     no       no      FILE 'SecFile05'                        
+    16        18     no       no      FILE 'SecFile06'                        
+    17        20     no       no      FILE 'InVFile01'                        
+    18        21     no       no      FILE 'InVFile02'                        
+    19        22     no       no      FILE 'InVFile03'                        
+    20        23     no       no      FILE 'InVFile04'                        
+    21        24     no       no      FILE 'InVFile05'                        
+    22        25     no       no      FILE 'InVFile06'                        
+    23        26     no       no      FILE 'InVFile07'                        
+    24        28     no       no      FILE 'InVFile08'                        
+    25        29     no       no      FILE 'InVFile09'                        
+    26        30     no       no      FILE 'InVFile10'                        
+    27        31     no       no      FILE 'InVFile11'                        
+    28        32     no       no      FILE 'InVFile12'                        
+    29        33     no       no      FILE 'InVFile13'                        
+    30        34     no       no      FILE 'InVFile14'                        
+    31        36     no       no      FILE 'InVFile15'                        
+    32        37     no       no      FILE 'InVFile16'                        
+    33        38     no       no      FILE 'InVFile17'                        
+    34        39     no       no      FILE 'InVFile18'                        
+    35        40     no       no      FILE 'InVFile19'                        
+    36        41     no       no      FILE 'InVFile20'                        
+    37        42     no       no      FILE 'InVFile21'                        
+    38        43     no       no      FILE 'InVFile22'                        
+    39        45     no       no      FILE 'InVFile23'                        
+    40        46     no       no      FILE 'InVFile24'                        
+    41        47     no       no      FILE 'InVFile25'                        
+    42        48     no       no      FILE 'InVFile26'                        
+    43        49     no       no      FILE 'InVFile27'                        
+    44        50     no       no      FILE 'InVFile28'                        
+    45        51     no       no      FILE 'InVFile29'                        
+    46        52     no       no      FILE 'InVFile30'                        
+    47        54     no       no      FILE 'InVFile31'                        
+    48        55     no       no      FILE 'InVFile32'                        
+    49        56     no       no      FILE 'InVFile33'                        
+    50        57     no       no      FILE 'InVFile34'                        
+    51        58     no       no      FILE 'InVFile35'                        
+    52        59     no       no      FILE 'InVFile36'                        
+    53        60     no       no      FILE 'InVFile37'                        
+    54        61     no       no      FILE 'InVFile38'                        
+    55        63     no       no      FILE 'InVFile39'                        
+    56        64     no       no      FILE 'InVFile40'                        
+    57        65     no       no      FILE 'InVFile41'                        
+    58        66     no       no      FILE 'InVFile42'                        
+    59        67     no       no      FILE 'InVFile43'                        
+    60        68     no       no      FILE 'InVFile44'                        
+    61        69     no       no      FILE 'InVFile45'                        
+    62        71     no       no      FILE 'InVFile46'                        
+    63        72     no       no      FILE 'InVFile47'                        
+    64        73     no       no      FILE 'InVFile48'                        
+    65        74     no       no      FILE 'InVFile49'                        
+    66        75     no       no      FILE 'InVFile50'                        
+    67        76     no       no      FILE 'InVFile51'                        
+    68        77     no       no      FILE 'InVFile52'                        
+    69        79     no       no      FILE 'InVFile53'                        
+    70        80     no       no      FILE 'InVFile54'                        
+    71        81     no       no      FILE 'InVFile55'                        
+    72        82     no       no      FILE 'InVFile56'                        
+    73        83     no       no      FILE 'InVFile57'                        
+    74        84     no       no      FILE 'InVFile58'                        
+    75        85     no       no      FILE 'InVFile59'                        
+    76        87     no       no      FILE 'InVFile60'                        
+    77        88     no       no      FILE 'InVFile61'                        
+    78        89     no       no      FILE 'InVFile62'                        
+    79        90     no       no      FILE 'InVFile63'                        
+    80        91     no       no      FILE 'InVFile64'                        
+    81        92     no       no      FILE 'InVFile65'                        
+    82        93     no       no      FILE 'InVFile66'                        
+    83        95     no       no      FILE 'InVFile67'                        
+    84        96     no       no      FILE 'InVFile68'                        
+    85        97     no       no      FILE 'InVFile69'                        
+    86        98     no       no      FILE 'InVFile70'                        
+    87        99     no       no      FILE 'InVFile71'                        
+    88       100     no       no      FILE 'InVFile72'                        
+    89       101     no       no      FILE 'InVFile73'                        
+    90       103     no       no      FILE 'InVFile74'                        
+    91       104     no       no      FILE 'InVFile75'                        
+    92       105     no       no      FILE 'InVFile76'                        
+    93       106     no       no      FILE 'InVFile77'                        
+    94       107     no       no      FILE 'InVFile78'                        
+    95       108     no       no      FILE 'InVFile79'                        
+    96       109     no       no      FILE 'InVFile80'                        
+    97       110     no       no      FILE 'InVFile81'                        
+    98       111     no       no      FILE 'InVFile82'                        
+    99       113     no       no      FILE 'InVFile83'                        
+   100       114     no       no      FILE 'InVFile84'                        
+   101       115     no       no      FILE 'InVFile85'                        
+   102       116     no       no      FILE 'InVFile86'                        
+   103       117     no       no      FILE 'InVFile87'                        
+   104       118     no       no      FILE 'InVFile88'                        
+   105       119     no       no      FILE 'InVFile89'                        
+   106       120     no       no      FILE 'InVFile90'                        
+   107       122     no       no      FILE 'InVFile91'                        
+   108       123     no       no      FILE 'InVFile92'                        
+   109       124     no       no      FILE 'InVFile93'                        
+   110       125     no       no      FILE 'InVFile94'                        
+   111       126     no       no      FILE 'InVFile95'                        
+   112       127     no       no      FILE 'InVFile96'                        
+   113       128     no       no      FILE 'InVFile97'                        
+   114       129     no       no      FILE 'InVFile98'                        
+   115       131     no       no      FILE 'InVFile99'                        
+   116       132     no       no      FILE 'InVFile100'                       
+   117       133     no       no      FILE 'InVFile101'                       
+   118       134     no       no      FILE 'InVFile102'                       
+   119       135     no       no      FILE 'InVFile103'                       
+   120       136     no       no      FILE 'InVFile104'                       
+   121       137     no       no      FILE 'InVFile105'                       
+   122       139     no       no      FILE 'InVFile106'                       
+   123       140     no       no      FILE 'InVFile107'                       
+   124       141     no       no      FILE 'InVFile108'                       
+   125       142     no       no      FILE 'InVFile109'                       
+   126       143     no       no      FILE 'InVFile110'                       
+   127       145     no       no      FILE 'OutFile'                          
+   128       146     no       no      FILE 'GTAPSETS'                         
+   129       147     no       no      SET 'REG'                               
+   130       149     no       no      SET 'MACVAR'                            
+   131       152     no       no      COEFFICIENT 'qgdp14_21'                 
+   132       154     no       no      COEFFICIENT 'usklab14_21'               
+   133       155     no       no      COEFFICIENT 'sklab14_21'                
+   134       156     no       no      COEFFICIENT 'cap14_21'                  
+   135       157     no       no      COEFFICIENT 'pop14_21'                  
+   136       158     no       no      READ into 'qgdp14_21'                   
+   137       160     no       no      READ into 'usklab14_21'                 
+   138       161     no       no      READ into 'sklab14_21'                  
+   139       162     no       no      READ into 'cap14_21'                    
+   140       163     no       no      READ into 'pop14_21'                    
+   141       165     no       no      COEFFICIENT 'MACSHK14_21'               
+   142       167     no       no      Formula for 'MACSHK14_21'               
+   143       169     no       no      Formula for 'MACSHK14_21'               
+   144       171     no       no      Formula for 'MACSHK14_21'               
+   145       172     no       no      Formula for 'MACSHK14_21'               
+   146       173     no       no      Formula for 'MACSHK14_21'               
+   147       174     no       no      Formula for 'MACSHK14_21'               
+   148       176     no       no      COEFFICIENT 'MACSHK21_30'               
+   149       178     no       no      COEFFICIENT 'aoreg21_30'                
+   150       179     no       no      COEFFICIENT 'usklab21_30'               
+   151       180     no       no      COEFFICIENT 'sklab21_30'                
+   152       181     no       no      COEFFICIENT 'cap21_30'                  
+   153       182     no       no      COEFFICIENT 'pop21_30'                  
+   154       183     no       no      READ into 'aoreg21_30'                  
+   155       185     no       no      READ into 'usklab21_30'                 
+   156       186     no       no      READ into 'sklab21_30'                  
+   157       187     no       no      READ into 'cap21_30'                    
+   158       188     no       no      READ into 'pop21_30'                    
+   159       189     no       no      Formula for 'MACSHK21_30'               
+   160       191     no       no      Formula for 'MACSHK21_30'               
+   161       192     no       no      Formula for 'MACSHK21_30'               
+   162       193     no       no      Formula for 'MACSHK21_30'               
+   163       194     no       no      Formula for 'MACSHK21_30'               
+   164       195     no       no      Formula for 'MACSHK21_30'               
+   165       197     no       no      SET 'CROPLVSTK'                         
+   166       199     no       no      COEFFICIENT 'CRLVSHK14_21'              
+   167       201     no       no      COEFFICIENT 'aocrop14_21'               
+   168       202     no       no      COEFFICIENT 'aorum14_21'                
+   169       203     no       no      COEFFICIENT 'aonrum14_21'               
+   170       204     no       no      READ into 'aocrop14_21'                 
+   171       206     no       no      READ into 'aorum14_21'                  
+   172       207     no       no      READ into 'aonrum14_21'                 
+   173       208     no       no      Formula for 'CRLVSHK14_21'              
+   174       210     no       no      Formula for 'CRLVSHK14_21'              
+   175       211     no       no      Formula for 'CRLVSHK14_21'              
+   176       213     no       no      COEFFICIENT 'CRLVSHK21_30'              
+   177       215     no       no      COEFFICIENT 'aocrop21_30'               
+   178       216     no       no      COEFFICIENT 'aorum21_30'                
+   179       217     no       no      COEFFICIENT 'aonrum21_30'               
+   180       218     no       no      READ into 'aocrop21_30'                 
+   181       220     no       no      READ into 'aorum21_30'                  
+   182       221     no       no      READ into 'aonrum21_30'                 
+   183       222     no       no      Formula for 'CRLVSHK21_30'              
+   184       224     no       no      Formula for 'CRLVSHK21_30'              
+   185       225     no       no      Formula for 'CRLVSHK21_30'              
+   186       227     no       no      WRITE from 'MACSHK14_21'                
+   187       229     no       no      WRITE from 'CRLVSHK14_21'               
+   188       230     no       no      WRITE from 'MACSHK21_30'                
+   189       231     no       no      WRITE from 'CRLVSHK21_30'               
+   190       233     no       no      SET 'ECSEC'                             
+   191       237     no       no      COEFFICIENT 'BAUESSHK'                  
+   192       239     no       no      COEFFICIENT 'MARFishBAUES'              
+   193       240     no       no      COEFFICIENT 'CARBforBAUES'              
+   194       241     no       no      COEFFICIENT 'POLIpfbBAUES'              
+   195       242     no       no      COEFFICIENT 'POLIgroBAUES'              
+   196       243     no       no      COEFFICIENT 'POLIv_fBAUES'              
+   197       244     no       no      COEFFICIENT 'POLIosdBAUES'              
+   198       245     no       no      COEFFICIENT 'POLIocrBAUES'              
+   199       246     no       no      READ into 'MARFishBAUES'                
+   200       248     no       no      READ into 'CARBforBAUES'                
+   201       249     no       no      READ into 'POLIpfbBAUES'                
+   202       250     no       no      READ into 'POLIgroBAUES'                
+   203       251     no       no      READ into 'POLIv_fBAUES'                
+   204       252     no       no      READ into 'POLIosdBAUES'                
+   205       253     no       no      READ into 'POLIocrBAUES'                
+   206       254     no       no      Formula for 'BAUESSHK'                  
+   207       256     no       no      Formula for 'BAUESSHK'                  
+   208       257     no       no      Formula for 'BAUESSHK'                  
+   209       258     no       no      Formula for 'BAUESSHK'                  
+   210       259     no       no      Formula for 'BAUESSHK'                  
+   211       260     no       no      Formula for 'BAUESSHK'                  
+   212       261     no       no      Formula for 'BAUESSHK'                  
+   213       262     no       no      WRITE from 'BAUESSHK'                   
+   214       265     no       no      COEFFICIENT 'PESGCALLESHK'              
+   215       267     no       no      COEFFICIENT 'MARFishPESGC'              
+   216       268     no       no      COEFFICIENT 'CARBforPESGC'              
+   217       269     no       no      COEFFICIENT 'POLIpfbPESGC'              
+   218       270     no       no      COEFFICIENT 'POLIgroPESGC'              
+   219       271     no       no      COEFFICIENT 'POLIv_fPESGC'              
+   220       272     no       no      COEFFICIENT 'POLIosdPESGC'              
+   221       273     no       no      COEFFICIENT 'POLIocrPESGC'              
+   222       274     no       no      READ into 'MARFishPESGC'                
+   223       276     no       no      READ into 'CARBforPESGC'                
+   224       277     no       no      READ into 'POLIpfbPESGC'                
+   225       278     no       no      READ into 'POLIgroPESGC'                
+   226       279     no       no      READ into 'POLIv_fPESGC'                
+   227       280     no       no      READ into 'POLIosdPESGC'                
+   228       281     no       no      READ into 'POLIocrPESGC'                
+   229       282     no       no      Formula for 'PESGCALLESHK'              
+   230       284     no       no      Formula for 'PESGCALLESHK'              
+   231       285     no       no      Formula for 'PESGCALLESHK'              
+   232       286     no       no      Formula for 'PESGCALLESHK'              
+   233       287     no       no      Formula for 'PESGCALLESHK'              
+   234       288     no       no      Formula for 'PESGCALLESHK'              
+   235       289     no       no      Formula for 'PESGCALLESHK'              
+   236       290     no       no      WRITE from 'PESGCALLESHK'               
+   237       293     no       no      COEFFICIENT 'PESGCNETESHK'              
+   238       295     no       no      Formula for 'PESGCNETESHK'              
+   239       297     no       no      WRITE from 'PESGCNETESHK'               
+   240       300     no       no      COEFFICIENT 'PESLCALLESHK'              
+   241       302     no       no      COEFFICIENT 'MARFishPESLC'              
+   242       303     no       no      COEFFICIENT 'CARBforPESLC'              
+   243       304     no       no      COEFFICIENT 'POLIpfbPESLC'              
+   244       305     no       no      COEFFICIENT 'POLIgroPESLC'              
+   245       306     no       no      COEFFICIENT 'POLIv_fPESLC'              
+   246       307     no       no      COEFFICIENT 'POLIosdPESLC'              
+   247       308     no       no      COEFFICIENT 'POLIocrPESLC'              
+   248       309     no       no      COEFFICIENT 'PESLCLDTXSHK'              
+   249       310     no       no      READ into 'MARFishPESLC'                
+   250       312     no       no      READ into 'CARBforPESLC'                
+   251       313     no       no      READ into 'POLIpfbPESLC'                
+   252       314     no       no      READ into 'POLIgroPESLC'                
+   253       315     no       no      READ into 'POLIv_fPESLC'                
+   254       316     no       no      READ into 'POLIosdPESLC'                
+   255       317     no       no      READ into 'POLIocrPESLC'                
+   256       318     no       no      READ into 'PESLCLDTXSHK'                
+   257       319     no       no      Formula for 'PESLCALLESHK'              
+   258       321     no       no      Formula for 'PESLCALLESHK'              
+   259       322     no       no      Formula for 'PESLCALLESHK'              
+   260       323     no       no      Formula for 'PESLCALLESHK'              
+   261       324     no       no      Formula for 'PESLCALLESHK'              
+   262       325     no       no      Formula for 'PESLCALLESHK'              
+   263       326     no       no      Formula for 'PESLCALLESHK'              
+   264       327     no       no      WRITE from 'PESLCALLESHK'               
+   265       330     no       no      COEFFICIENT 'PESLCNETESHK'              
+   266       332     no       no      Formula for 'PESLCNETESHK'              
+   267       334     no       no      WRITE from 'PESLCNETESHK'               
+   268       336     no       no      WRITE from 'PESLCLDTXSHK'               
+   269       338     no       no      COEFFICIENT 'SRLNDALLESHK'              
+   270       340     no       no      COEFFICIENT 'MARFishSRLND'              
+   271       341     no       no      COEFFICIENT 'CARBforSRLND'              
+   272       342     no       no      COEFFICIENT 'POLIpfbSRLND'              
+   273       343     no       no      COEFFICIENT 'POLIgroSRLND'              
+   274       344     no       no      COEFFICIENT 'POLIv_fSRLND'              
+   275       345     no       no      COEFFICIENT 'POLIosdSRLND'              
+   276       346     no       no      COEFFICIENT 'POLIocrSRLND'              
+   277       347     no       no      COEFFICIENT 'SRLNDLDTXSHK'              
+   278       348     no       no      READ into 'MARFishSRLND'                
+   279       350     no       no      READ into 'CARBforSRLND'                
+   280       351     no       no      READ into 'POLIpfbSRLND'                
+   281       352     no       no      READ into 'POLIgroSRLND'                
+   282       353     no       no      READ into 'POLIv_fSRLND'                
+   283       354     no       no      READ into 'POLIosdSRLND'                
+   284       355     no       no      READ into 'POLIocrSRLND'                
+   285       356     no       no      READ into 'SRLNDLDTXSHK'                
+   286       357     no       no      Formula for 'SRLNDALLESHK'              
+   287       359     no       no      Formula for 'SRLNDALLESHK'              
+   288       360     no       no      Formula for 'SRLNDALLESHK'              
+   289       361     no       no      Formula for 'SRLNDALLESHK'              
+   290       362     no       no      Formula for 'SRLNDALLESHK'              
+   291       363     no       no      Formula for 'SRLNDALLESHK'              
+   292       364     no       no      Formula for 'SRLNDALLESHK'              
+   293       365     no       no      WRITE from 'SRLNDALLESHK'               
+   294       368     no       no      COEFFICIENT 'SRLNDNETESHK'              
+   295       370     no       no      Formula for 'SRLNDNETESHK'              
+   296       372     no       no      WRITE from 'SRLNDNETESHK'               
+   297       374     no       no      WRITE from 'SRLNDLDTXSHK'               
+   298       376     no       no      COEFFICIENT 'SRRnDALLESHK'              
+   299       378     no       no      COEFFICIENT 'MARFishSRRnD'              
+   300       379     no       no      COEFFICIENT 'CARBforSRRnD'              
+   301       380     no       no      COEFFICIENT 'POLIpfbSRRnD'              
+   302       381     no       no      COEFFICIENT 'POLIgroSRRnD'              
+   303       382     no       no      COEFFICIENT 'POLIv_fSRRnD'              
+   304       383     no       no      COEFFICIENT 'POLIosdSRRnD'              
+   305       384     no       no      COEFFICIENT 'POLIocrSRRnD'              
+   306       385     no       no      COEFFICIENT 'SRRnD20PSHK'               
+   307       386     no       no      READ into 'MARFishSRRnD'                
+   308       388     no       no      READ into 'CARBforSRRnD'                
+   309       389     no       no      READ into 'POLIpfbSRRnD'                
+   310       390     no       no      READ into 'POLIgroSRRnD'                
+   311       391     no       no      READ into 'POLIv_fSRRnD'                
+   312       392     no       no      READ into 'POLIosdSRRnD'                
+   313       393     no       no      READ into 'POLIocrSRRnD'                
+   314       394     no       no      READ into 'SRRnD20PSHK'                 
+   315       395     no       no      Formula for 'SRRnDALLESHK'              
+   316       397     no       no      Formula for 'SRRnDALLESHK'              
+   317       398     no       no      Formula for 'SRRnDALLESHK'              
+   318       399     no       no      Formula for 'SRRnDALLESHK'              
+   319       400     no       no      Formula for 'SRRnDALLESHK'              
+   320       401     no       no      Formula for 'SRRnDALLESHK'              
+   321       402     no       no      Formula for 'SRRnDALLESHK'              
+   322       403     no       no      WRITE from 'SRRnDALLESHK'               
+   323       406     no       no      COEFFICIENT 'SRRnDNETESHK'              
+   324       408     no       no      Formula for 'SRRnDNETESHK'              
+   325       410     no       no      WRITE from 'SRRnDNETESHK'               
+   326       412     no       no      WRITE from 'SRRnD20PSHK'                
+   327       414     no       no      COEFFICIENT 'PESGRnDAESHK'              
+   328       416     no       no      COEFFICIENT 'MARFishPESGR'              
+   329       417     no       no      COEFFICIENT 'CARBforPESGR'              
+   330       418     no       no      COEFFICIENT 'POLIpfbPESGR'              
+   331       419     no       no      COEFFICIENT 'POLIgroPESGR'              
+   332       420     no       no      COEFFICIENT 'POLIv_fPESGR'              
+   333       421     no       no      COEFFICIENT 'POLIosdPESGR'              
+   334       422     no       no      COEFFICIENT 'POLIocrPESGR'              
+   335       423     no       no      READ into 'MARFishPESGR'                
+   336       425     no       no      READ into 'CARBforPESGR'                
+   337       426     no       no      READ into 'POLIpfbPESGR'                
+   338       427     no       no      READ into 'POLIgroPESGR'                
+   339       428     no       no      READ into 'POLIv_fPESGR'                
+   340       429     no       no      READ into 'POLIosdPESGR'                
+   341       430     no       no      READ into 'POLIocrPESGR'                
+   342       431     no       no      Formula for 'PESGRnDAESHK'              
+   343       433     no       no      Formula for 'PESGRnDAESHK'              
+   344       434     no       no      Formula for 'PESGRnDAESHK'              
+   345       435     no       no      Formula for 'PESGRnDAESHK'              
+   346       436     no       no      Formula for 'PESGRnDAESHK'              
+   347       437     no       no      Formula for 'PESGRnDAESHK'              
+   348       438     no       no      Formula for 'PESGRnDAESHK'              
+   349       439     no       no      WRITE from 'PESGRnDAESHK'               
+   350       442     no       no      COEFFICIENT 'PESGRNETESHK'              
+   351       444     no       no      Formula for 'PESGRNETESHK'              
+   352       446     no       no      WRITE from 'PESGRNETESHK'               
+   353       449     no       no      COEFFICIENT 'PESGB2RD3AES'              
+   354       451     no       no      COEFFICIENT 'FisPESGB2R3E'              
+   355       452     no       no      COEFFICIENT 'ForPESGB2R3E'              
+   356       453     no       no      COEFFICIENT 'PfbPESGB2R3E'              
+   357       454     no       no      COEFFICIENT 'GroPESGB2R3E'              
+   358       455     no       no      COEFFICIENT 'V_fPESGB2R3E'              
+   359       456     no       no      COEFFICIENT 'OsdPESGB2R3E'              
+   360       457     no       no      COEFFICIENT 'OcrPESGB2R3E'              
+   361       458     no       no      READ into 'FisPESGB2R3E'                
+   362       460     no       no      READ into 'ForPESGB2R3E'                
+   363       461     no       no      READ into 'PfbPESGB2R3E'                
+   364       462     no       no      READ into 'GroPESGB2R3E'                
+   365       463     no       no      READ into 'V_fPESGB2R3E'                
+   366       464     no       no      READ into 'OsdPESGB2R3E'                
+   367       465     no       no      READ into 'OcrPESGB2R3E'                
+   368       466     no       no      Formula for 'PESGB2RD3AES'              
+   369       468     no       no      Formula for 'PESGB2RD3AES'              
+   370       469     no       no      Formula for 'PESGB2RD3AES'              
+   371       470     no       no      Formula for 'PESGB2RD3AES'              
+   372       471     no       no      Formula for 'PESGB2RD3AES'              
+   373       472     no       no      Formula for 'PESGB2RD3AES'              
+   374       473     no       no      Formula for 'PESGB2RD3AES'              
+   375       474     no       no      WRITE from 'PESGB2RD3AES'               
+   376       477     no       no      COEFFICIENT 'PESGBNETESHK'              
+   377       479     no       no      Formula for 'PESGBNETESHK'              
+   378       481     no       no      WRITE from 'PESGBNETESHK'               
+   379       484     no       no      COEFFICIENT 'PESGCRndSRAE'              
+   380       486     no       no      COEFFICIENT 'FisPESGCRnd'               
+   381       487     no       no      COEFFICIENT 'ForPESGCRnd'               
+   382       488     no       no      COEFFICIENT 'PfbPESGCRnd'               
+   383       489     no       no      COEFFICIENT 'GroPESGCRnd'               
+   384       490     no       no      COEFFICIENT 'V_fPESGCRnd'               
+   385       491     no       no      COEFFICIENT 'OsdPESGCRnd'               
+   386       492     no       no      COEFFICIENT 'OcrPESGCRnd'               
+   387       493     no       no      READ into 'FisPESGCRnd'                 
+   388       495     no       no      READ into 'ForPESGCRnd'                 
+   389       496     no       no      READ into 'PfbPESGCRnd'                 
+   390       497     no       no      READ into 'GroPESGCRnd'                 
+   391       498     no       no      READ into 'V_fPESGCRnd'                 
+   392       499     no       no      READ into 'OsdPESGCRnd'                 
+   393       500     no       no      READ into 'OcrPESGCRnd'                 
+   394       501     no       no      Formula for 'PESGCRndSRAE'              
+   395       503     no       no      Formula for 'PESGCRndSRAE'              
+   396       504     no       no      Formula for 'PESGCRndSRAE'              
+   397       505     no       no      Formula for 'PESGCRndSRAE'              
+   398       506     no       no      Formula for 'PESGCRndSRAE'              
+   399       507     no       no      Formula for 'PESGCRndSRAE'              
+   400       508     no       no      Formula for 'PESGCRndSRAE'              
+   401       509     no       no      WRITE from 'PESGCRndSRAE'               
+   402       512     no       no      COEFFICIENT 'PESGCNETESK2'              
+   403       514     no       no      Formula for 'PESGCNETESK2'              
+   404       516     no       no      WRITE from 'PESGCNETESK2'               
+   405       519     no       no      COEFFICIENT 'RnDALLESHK'                
+   406       521     no       no      COEFFICIENT 'MARFishRnD'                
+   407       522     no       no      COEFFICIENT 'CARBforRnD'                
+   408       523     no       no      COEFFICIENT 'POLIpfbRnD'                
+   409       524     no       no      COEFFICIENT 'POLIgroRnD'                
+   410       525     no       no      COEFFICIENT 'POLIv_fRnD'                
+   411       526     no       no      COEFFICIENT 'POLIosdRnD'                
+   412       527     no       no      COEFFICIENT 'POLIocrRnD'                
+   413       528     no       no      READ into 'MARFishRnD'                  
+   414       530     no       no      READ into 'CARBforRnD'                  
+   415       531     no       no      READ into 'POLIpfbRnD'                  
+   416       532     no       no      READ into 'POLIgroRnD'                  
+   417       533     no       no      READ into 'POLIv_fRnD'                  
+   418       534     no       no      READ into 'POLIosdRnD'                  
+   419       535     no       no      READ into 'POLIocrRnD'                  
+   420       536     no       no      Formula for 'RnDALLESHK'                
+   421       538     no       no      Formula for 'RnDALLESHK'                
+   422       539     no       no      Formula for 'RnDALLESHK'                
+   423       540     no       no      Formula for 'RnDALLESHK'                
+   424       541     no       no      Formula for 'RnDALLESHK'                
+   425       542     no       no      Formula for 'RnDALLESHK'                
+   426       543     no       no      Formula for 'RnDALLESHK'                
+   427       544     no       no      WRITE from 'RnDALLESHK'                 
+   428       547     no       no      COEFFICIENT 'RnDNETESHK'                
+   429       549     no       no      Formula for 'RnDNETESHK'                
+   430       551     no       no      WRITE from 'RnDNETESHK'                 
+   431       554     no       no      COEFFICIENT 'SRnDALLESHK'               
+   432       556     no       no      COEFFICIENT 'MARFishSRnD'               
+   433       557     no       no      COEFFICIENT 'CARBforSRnD'               
+   434       558     no       no      COEFFICIENT 'POLIpfbSRnD'               
+   435       559     no       no      COEFFICIENT 'POLIgroSRnD'               
+   436       560     no       no      COEFFICIENT 'POLIv_fSRnD'               
+   437       561     no       no      COEFFICIENT 'POLIosdSRnD'               
+   438       562     no       no      COEFFICIENT 'POLIocrSRnD'               
+   439       563     no       no      READ into 'MARFishSRnD'                 
+   440       565     no       no      READ into 'CARBforSRnD'                 
+   441       566     no       no      READ into 'POLIpfbSRnD'                 
+   442       567     no       no      READ into 'POLIgroSRnD'                 
+   443       568     no       no      READ into 'POLIv_fSRnD'                 
+   444       569     no       no      READ into 'POLIosdSRnD'                 
+   445       570     no       no      READ into 'POLIocrSRnD'                 
+   446       571     no       no      Formula for 'SRnDALLESHK'               
+   447       573     no       no      Formula for 'SRnDALLESHK'               
+   448       574     no       no      Formula for 'SRnDALLESHK'               
+   449       575     no       no      Formula for 'SRnDALLESHK'               
+   450       576     no       no      Formula for 'SRnDALLESHK'               
+   451       577     no       no      Formula for 'SRnDALLESHK'               
+   452       578     no       no      Formula for 'SRnDALLESHK'               
+   453       579     no       no      WRITE from 'SRRnDALLESHK'               
+   454       582     no       no      COEFFICIENT 'SRnDNETESHK'               
+   455       584     no       no      Formula for 'SRnDNETESHK'               
+   456       586     no       no      WRITE from 'SRnDNETESHK'                
+   457       589     no       no      COEFFICIENT 'SRnDPESLCAES'              
+   458       591     no       no      COEFFICIENT 'MARFishSRPLC'              
+   459       592     no       no      COEFFICIENT 'CARBforSRPLC'              
+   460       593     no       no      COEFFICIENT 'POLIpfbSRPLC'              
+   461       594     no       no      COEFFICIENT 'POLIgroSRPLC'              
+   462       595     no       no      COEFFICIENT 'POLIv_fSRPLC'              
+   463       596     no       no      COEFFICIENT 'POLIosdSRPLC'              
+   464       597     no       no      COEFFICIENT 'POLIocrSRPLC'              
+   465       598     no       no      COEFFICIENT 'PESLSRDTXSHK'              
+   466       599     no       no      COEFFICIENT 'RnDHALFSHK'                
+   467       600     no       no      READ into 'MARFishSRPLC'                
+   468       602     no       no      READ into 'CARBforSRPLC'                
+   469       603     no       no      READ into 'POLIpfbSRPLC'                
+   470       604     no       no      READ into 'POLIgroSRPLC'                
+   471       605     no       no      READ into 'POLIv_fSRPLC'                
+   472       606     no       no      READ into 'POLIosdSRPLC'                
+   473       607     no       no      READ into 'POLIocrSRPLC'                
+   474       608     no       no      READ into 'PESLSRDTXSHK'                
+   475       609     no       no      READ into 'RnDHALFSHK'                  
+   476       610     no       no      Formula for 'SRnDPESLCAES'              
+   477       612     no       no      Formula for 'SRnDPESLCAES'              
+   478       613     no       no      Formula for 'SRnDPESLCAES'              
+   479       614     no       no      Formula for 'SRnDPESLCAES'              
+   480       615     no       no      Formula for 'SRnDPESLCAES'              
+   481       616     no       no      Formula for 'SRnDPESLCAES'              
+   482       617     no       no      Formula for 'SRnDPESLCAES'              
+   483       618     no       no      WRITE from 'SRnDPESLCAES'               
+   484       621     no       no      COEFFICIENT 'SRDPLCNETSHK'              
+   485       623     no       no      Formula for 'SRDPLCNETSHK'              
+   486       625     no       no      WRITE from 'SRDPLCNETSHK'               
+   487       627     no       no      WRITE from 'PESLSRDTXSHK'               
+   488       628     no       no      WRITE from 'RnDHALFSHK'                 
+   489       630     no       no      COEFFICIENT 'SRPESLCAES'                
+   490       632     no       no      COEFFICIENT 'MARFishSPELC'              
+   491       633     no       no      COEFFICIENT 'CARBforSPELC'              
+   492       634     no       no      COEFFICIENT 'POLIpfbSPELC'              
+   493       635     no       no      COEFFICIENT 'POLIgroSPELC'              
+   494       636     no       no      COEFFICIENT 'POLIv_fSPELC'              
+   495       637     no       no      COEFFICIENT 'POLIosdSPELC'              
+   496       638     no       no      COEFFICIENT 'POLIocrSPELC'              
+   497       639     no       no      COEFFICIENT 'SRPESLCTXSHK'              
+   498       640     no       no      READ into 'MARFishSPELC'                
+   499       642     no       no      READ into 'CARBforSPELC'                
+   500       643     no       no      READ into 'POLIpfbSPELC'                
+   501       644     no       no      READ into 'POLIgroSPELC'                
+   502       645     no       no      READ into 'POLIv_fSPELC'                
+   503       646     no       no      READ into 'POLIosdSPELC'                
+   504       647     no       no      READ into 'POLIocrSPELC'                
+   505       648     no       no      READ into 'SRPESLCTXSHK'                
+   506       650     no       no      Formula for 'SRPESLCAES'                
+   507       652     no       no      Formula for 'SRPESLCAES'                
+   508       653     no       no      Formula for 'SRPESLCAES'                
+   509       654     no       no      Formula for 'SRPESLCAES'                
+   510       655     no       no      Formula for 'SRPESLCAES'                
+   511       656     no       no      Formula for 'SRPESLCAES'                
+   512       657     no       no      Formula for 'SRPESLCAES'                
+   513       658     no       no      WRITE from 'SRnDPESLCAES'               
+   514       661     no       no      COEFFICIENT 'SRPLCNETSHK'               
+   515       663     no       no      Formula for 'SRPLCNETSHK'               
+   516       665     no       no      WRITE from 'SRPLCNETSHK'                
+   517       667     no       no      WRITE from 'SRPESLCTXSHK'               
+   518       669     no       no      COEFFICIENT 'SRLPEGCAES'                
+   519       671     no       no      COEFFICIENT 'MARFishSRPGC'              
+   520       672     no       no      COEFFICIENT 'CARBforSRPGC'              
+   521       673     no       no      COEFFICIENT 'POLIpfbSRPGC'              
+   522       674     no       no      COEFFICIENT 'POLIgroSRPGC'              
+   523       675     no       no      COEFFICIENT 'POLIv_fSRPGC'              
+   524       676     no       no      COEFFICIENT 'POLIosdSRPGC'              
+   525       677     no       no      COEFFICIENT 'POLIocrSRPGC'              
+   526       678     no       no      COEFFICIENT 'SRLNDPGTXSHK'              
+   527       680     no       no      READ into 'MARFishSRPGC'                
+   528       682     no       no      READ into 'CARBforSRPGC'                
+   529       683     no       no      READ into 'POLIpfbSRPGC'                
+   530       684     no       no      READ into 'POLIgroSRPGC'                
+   531       685     no       no      READ into 'POLIv_fSRPGC'                
+   532       686     no       no      READ into 'POLIosdSRPGC'                
+   533       687     no       no      READ into 'POLIocrSRPGC'                
+   534       688     no       no      READ into 'SRLNDPGTXSHK'                
+   535       689     no       no      Formula for 'SRLPEGCAES'                
+   536       691     no       no      Formula for 'SRLPEGCAES'                
+   537       692     no       no      Formula for 'SRLPEGCAES'                
+   538       693     no       no      Formula for 'SRLPEGCAES'                
+   539       694     no       no      Formula for 'SRLPEGCAES'                
+   540       695     no       no      Formula for 'SRLPEGCAES'                
+   541       696     no       no      Formula for 'SRLPEGCAES'                
+   542       697     no       no      WRITE from 'SRLPEGCAES'                 
+   543       700     no       no      COEFFICIENT 'SRLGCNETSHK'               
+   544       702     no       no      Formula for 'SRLGCNETSHK'               
+   545       704     no       no      WRITE from 'SRLGCNETSHK'                
+   546       706     no       no      WRITE from 'SRLNDPGTXSHK'               
+   547       709     no       no      COEFFICIENT 'BAUESCOLSHK'               
+   548       711     no       no      COEFFICIENT 'MARFishBACES'              
+   549       712     no       no      COEFFICIENT 'CARBforBACES'              
+   550       713     no       no      COEFFICIENT 'POLIpfbBACES'              
+   551       714     no       no      COEFFICIENT 'POLIgroBACES'              
+   552       715     no       no      COEFFICIENT 'POLIv_fBACES'              
+   553       716     no       no      COEFFICIENT 'POLIosdBACES'              
+   554       717     no       no      COEFFICIENT 'POLIocrBACES'              
+   555       718     no       no      READ into 'MARFishBACES'                
+   556       720     no       no      READ into 'CARBforBACES'                
+   557       721     no       no      READ into 'POLIpfbBACES'                
+   558       722     no       no      READ into 'POLIgroBACES'                
+   559       723     no       no      READ into 'POLIv_fBACES'                
+   560       724     no       no      READ into 'POLIosdBACES'                
+   561       725     no       no      READ into 'POLIocrBACES'                
+   562       726     no       no      Formula for 'BAUESCOLSHK'               
+   563       728     no       no      Formula for 'BAUESCOLSHK'               
+   564       729     no       no      Formula for 'BAUESCOLSHK'               
+   565       730     no       no      Formula for 'BAUESCOLSHK'               
+   566       731     no       no      Formula for 'BAUESCOLSHK'               
+   567       732     no       no      Formula for 'BAUESCOLSHK'               
+   568       733     no       no      Formula for 'BAUESCOLSHK'               
+   569       734     no       no      WRITE from 'BAUESCOLSHK'                
+   570       737     no       no      COEFFICIENT 'COLNETSHK'                 
+   571       739     no       no      Formula for 'COLNETSHK'                 
+   572       741     no       no      WRITE from 'COLNETSHK'                  
+   573       744     no       no      COEFFICIENT 'BAUEAMCOLSHK'              
+   574       746     no       no      COEFFICIENT 'POLIpfbBACAM'              
+   575       747     no       no      COEFFICIENT 'POLIgroBACAM'              
+   576       748     no       no      COEFFICIENT 'POLIv_fBACAM'              
+   577       749     no       no      COEFFICIENT 'POLIosdBACAM'              
+   578       750     no       no      COEFFICIENT 'POLIocrBACAM'              
+   579       751     no       no      READ into 'POLIpfbBACAM'                
+   580       753     no       no      READ into 'POLIgroBACAM'                
+   581       754     no       no      READ into 'POLIv_fBACAM'                
+   582       755     no       no      READ into 'POLIosdBACAM'                
+   583       756     no       no      READ into 'POLIocrBACAM'                
+   584       757     no       no      Formula for 'BAUEAMCOLSHK'              
+   585       759     no       no      Formula for 'BAUEAMCOLSHK'              
+   586       760     no       no      Formula for 'BAUEAMCOLSHK'              
+   587       761     no       no      Formula for 'BAUEAMCOLSHK'              
+   588       762     no       no      Formula for 'BAUEAMCOLSHK'              
+   589       763     no       no      Formula for 'BAUEAMCOLSHK'              
+   590       764     no       no      Formula for 'BAUEAMCOLSHK'              
+   591       765     no       no      WRITE from 'BAUEAMCOLSHK'               
+
+
+
+
+ ============
+ ++ SET TABLE
+ ============
+
+                    Defined   [Max] Inter             Set numbers this
+  Number    Name    at line    Size temp? Elements    is subset of
+  ---------------------------------------------------------------------
+     1  REG           147 [       0]  no   read 
+     2  MACVAR        149         6   no   fixed
+     3  CROPLVSTK     197         3   no   fixed
+     4  ECSEC         233         7   no   fixed
+
+
+
+
+ =============
+ ++ FILE TABLE
+ =============
+
+         Logical            Defined  File  File
+  Number  Name              at line  Type  Form  Actual name (if given)
+  --------------------------------------------------------------------
+     1  MacFile01                1    old  head
+     2  MacFile02                3    old  head
+     3  MacFile03                4    old  head
+     4  MacFile04                5    old  head
+     5  MacFile05                6    old  head
+     6  MacFile06                7    old  head
+     7  MacFile07                8    old  head
+     8  MacFile08                9    old  head
+     9  MacFile09               10    old  head
+    10  MacFile10               11    old  head
+    11  SecFile01               13    old  head
+    12  SecFile02               14    old  head
+    13  SecFile03               15    old  head
+    14  SecFile04               16    old  head
+    15  SecFile05               17    old  head
+    16  SecFile06               18    old  head
+    17  InVFile01               20    old  head
+    18  InVFile02               21    old  head
+    19  InVFile03               22    old  head
+    20  InVFile04               23    old  head
+    21  InVFile05               24    old  head
+    22  InVFile06               25    old  head
+    23  InVFile07               26    old  head
+    24  InVFile08               28    old  head
+    25  InVFile09               29    old  head
+    26  InVFile10               30    old  head
+    27  InVFile11               31    old  head
+    28  InVFile12               32    old  head
+    29  InVFile13               33    old  head
+    30  InVFile14               34    old  head
+    31  InVFile15               36    old  head
+    32  InVFile16               37    old  head
+    33  InVFile17               38    old  head
+    34  InVFile18               39    old  head
+    35  InVFile19               40    old  head
+    36  InVFile20               41    old  head
+    37  InVFile21               42    old  head
+    38  InVFile22               43    old  head
+    39  InVFile23               45    old  head
+    40  InVFile24               46    old  head
+    41  InVFile25               47    old  head
+    42  InVFile26               48    old  head
+    43  InVFile27               49    old  head
+    44  InVFile28               50    old  head
+    45  InVFile29               51    old  head
+    46  InVFile30               52    old  head
+    47  InVFile31               54    old  head
+    48  InVFile32               55    old  head
+    49  InVFile33               56    old  head
+    50  InVFile34               57    old  head
+    51  InVFile35               58    old  head
+    52  InVFile36               59    old  head
+    53  InVFile37               60    old  head
+    54  InVFile38               61    old  head
+    55  InVFile39               63    old  head
+    56  InVFile40               64    old  head
+    57  InVFile41               65    old  head
+    58  InVFile42               66    old  head
+    59  InVFile43               67    old  head
+    60  InVFile44               68    old  head
+    61  InVFile45               69    old  head
+    62  InVFile46               71    old  head
+    63  InVFile47               72    old  head
+    64  InVFile48               73    old  head
+    65  InVFile49               74    old  head
+    66  InVFile50               75    old  head
+    67  InVFile51               76    old  head
+    68  InVFile52               77    old  head
+    69  InVFile53               79    old  head
+    70  InVFile54               80    old  head
+    71  InVFile55               81    old  head
+    72  InVFile56               82    old  head
+    73  InVFile57               83    old  head
+    74  InVFile58               84    old  head
+    75  InVFile59               85    old  head
+    76  InVFile60               87    old  head
+    77  InVFile61               88    old  head
+    78  InVFile62               89    old  head
+    79  InVFile63               90    old  head
+    80  InVFile64               91    old  head
+    81  InVFile65               92    old  head
+    82  InVFile66               93    old  head
+    83  InVFile67               95    old  head
+    84  InVFile68               96    old  head
+    85  InVFile69               97    old  head
+    86  InVFile70               98    old  head
+    87  InVFile71               99    old  head
+    88  InVFile72              100    old  head
+    89  InVFile73              101    old  head
+    90  InVFile74              103    old  head
+    91  InVFile75              104    old  head
+    92  InVFile76              105    old  head
+    93  InVFile77              106    old  head
+    94  InVFile78              107    old  head
+    95  InVFile79              108    old  head
+    96  InVFile80              109    old  head
+    97  InVFile81              110    old  head
+    98  InVFile82              111    old  head
+    99  InVFile83              113    old  head
+   100  InVFile84              114    old  head
+   101  InVFile85              115    old  head
+   102  InVFile86              116    old  head
+   103  InVFile87              117    old  head
+   104  InVFile88              118    old  head
+   105  InVFile89              119    old  head
+   106  InVFile90              120    old  head
+   107  InVFile91              122    old  head
+   108  InVFile92              123    old  head
+   109  InVFile93              124    old  head
+   110  InVFile94              125    old  head
+   111  InVFile95              126    old  head
+   112  InVFile96              127    old  head
+   113  InVFile97              128    old  head
+   114  InVFile98              129    old  head
+   115  InVFile99              131    old  head
+   116  InVFile100             132    old  head
+   117  InVFile101             133    old  head
+   118  InVFile102             134    old  head
+   119  InVFile103             135    old  head
+   120  InVFile104             136    old  head
+   121  InVFile105             137    old  head
+   122  InVFile106             139    old  head
+   123  InVFile107             140    old  head
+   124  InVFile108             141    old  head
+   125  InVFile109             142    old  head
+   126  InVFile110             143    old  head
+   127  OutFile                145    new  head
+   128  GTAPSETS               146    old  head
+
+
+
+
+ ====================
+ ++ COEFFICIENT TABLE
+ ====================
+
+                        Defined  No            Arguments range
+  Number    Name        at line  Args Type     over sets numbered
+  ------------------------------------------------------------
+     1    qgdp14_21        152     1  real       1
+     2    usklab14_21      154     1  real       1
+     3    sklab14_21       155     1  real       1
+     4    cap14_21         156     1  real       1
+     5    pop14_21         157     1  real       1
+     6    MACSHK14_21      165     2  real       1     2
+     7    MACSHK21_30      176     2  real       1     2
+     8    aoreg21_30       178     1  real       1
+     9    usklab21_30      179     1  real       1
+    10    sklab21_30       180     1  real       1
+    11    cap21_30         181     1  real       1
+    12    pop21_30         182     1  real       1
+    13    CRLVSHK14_21     199     2  real       1     3
+    14    aocrop14_21      201     1  real       1
+    15    aorum14_21       202     1  real       1
+    16    aonrum14_21      203     1  real       1
+    17    CRLVSHK21_30     213     2  real       1     3
+    18    aocrop21_30      215     1  real       1
+    19    aorum21_30       216     1  real       1
+    20    aonrum21_30      217     1  real       1
+    21    BAUESSHK         237     2  real       1     4
+    22    MARFishBAUES     239     1  real       1
+    23    CARBforBAUES     240     1  real       1
+    24    POLIpfbBAUES     241     1  real       1
+    25    POLIgroBAUES     242     1  real       1
+    26    POLIv_fBAUES     243     1  real       1
+    27    POLIosdBAUES     244     1  real       1
+    28    POLIocrBAUES     245     1  real       1
+    29    PESGCALLESHK     265     2  real       1     4
+    30    MARFishPESGC     267     1  real       1
+    31    CARBforPESGC     268     1  real       1
+    32    POLIpfbPESGC     269     1  real       1
+    33    POLIgroPESGC     270     1  real       1
+    34    POLIv_fPESGC     271     1  real       1
+    35    POLIosdPESGC     272     1  real       1
+    36    POLIocrPESGC     273     1  real       1
+    37    PESGCNETESHK     293     2  real       1     4
+    38    PESLCALLESHK     300     2  real       1     4
+    39    MARFishPESLC     302     1  real       1
+    40    CARBforPESLC     303     1  real       1
+    41    POLIpfbPESLC     304     1  real       1
+    42    POLIgroPESLC     305     1  real       1
+    43    POLIv_fPESLC     306     1  real       1
+    44    POLIosdPESLC     307     1  real       1
+    45    POLIocrPESLC     308     1  real       1
+    46    PESLCLDTXSHK     309     1  real       1
+    47    PESLCNETESHK     330     2  real       1     4
+    48    SRLNDALLESHK     338     2  real       1     4
+    49    MARFishSRLND     340     1  real       1
+    50    CARBforSRLND     341     1  real       1
+    51    POLIpfbSRLND     342     1  real       1
+    52    POLIgroSRLND     343     1  real       1
+    53    POLIv_fSRLND     344     1  real       1
+    54    POLIosdSRLND     345     1  real       1
+    55    POLIocrSRLND     346     1  real       1
+    56    SRLNDLDTXSHK     347     1  real       1
+    57    SRLNDNETESHK     368     2  real       1     4
+    58    SRRnDALLESHK     376     2  real       1     4
+    59    MARFishSRRnD     378     1  real       1
+    60    CARBforSRRnD     379     1  real       1
+    61    POLIpfbSRRnD     380     1  real       1
+    62    POLIgroSRRnD     381     1  real       1
+    63    POLIv_fSRRnD     382     1  real       1
+    64    POLIosdSRRnD     383     1  real       1
+    65    POLIocrSRRnD     384     1  real       1
+    66    SRRnD20PSHK      385     1  real       1
+    67    SRRnDNETESHK     406     2  real       1     4
+    68    PESGRnDAESHK     414     2  real       1     4
+    69    MARFishPESGR     416     1  real       1
+    70    CARBforPESGR     417     1  real       1
+    71    POLIpfbPESGR     418     1  real       1
+    72    POLIgroPESGR     419     1  real       1
+    73    POLIv_fPESGR     420     1  real       1
+    74    POLIosdPESGR     421     1  real       1
+    75    POLIocrPESGR     422     1  real       1
+    76    PESGRNETESHK     442     2  real       1     4
+    77    PESGB2RD3AES     449     2  real       1     4
+    78    FisPESGB2R3E     451     1  real       1
+    79    ForPESGB2R3E     452     1  real       1
+    80    PfbPESGB2R3E     453     1  real       1
+    81    GroPESGB2R3E     454     1  real       1
+    82    V_fPESGB2R3E     455     1  real       1
+    83    OsdPESGB2R3E     456     1  real       1
+    84    OcrPESGB2R3E     457     1  real       1
+    85    PESGBNETESHK     477     2  real       1     4
+    86    PESGCRndSRAE     484     2  real       1     4
+    87    FisPESGCRnd      486     1  real       1
+    88    ForPESGCRnd      487     1  real       1
+    89    PfbPESGCRnd      488     1  real       1
+    90    GroPESGCRnd      489     1  real       1
+    91    V_fPESGCRnd      490     1  real       1
+    92    OsdPESGCRnd      491     1  real       1
+    93    OcrPESGCRnd      492     1  real       1
+    94    PESGCNETESK2     512     2  real       1     4
+    95    RnDALLESHK       519     2  real       1     4
+    96    MARFishRnD       521     1  real       1
+    97    CARBforRnD       522     1  real       1
+    98    POLIpfbRnD       523     1  real       1
+    99    POLIgroRnD       524     1  real       1
+   100    POLIv_fRnD       525     1  real       1
+   101    POLIosdRnD       526     1  real       1
+   102    POLIocrRnD       527     1  real       1
+   103    RnDNETESHK       547     2  real       1     4
+   104    SRnDALLESHK      554     2  real       1     4
+   105    MARFishSRnD      556     1  real       1
+   106    CARBforSRnD      557     1  real       1
+   107    POLIpfbSRnD      558     1  real       1
+   108    POLIgroSRnD      559     1  real       1
+   109    POLIv_fSRnD      560     1  real       1
+   110    POLIosdSRnD      561     1  real       1
+   111    POLIocrSRnD      562     1  real       1
+   112    SRnDNETESHK      582     2  real       1     4
+   113    SRnDPESLCAES     589     2  real       1     4
+   114    MARFishSRPLC     591     1  real       1
+   115    CARBforSRPLC     592     1  real       1
+   116    POLIpfbSRPLC     593     1  real       1
+   117    POLIgroSRPLC     594     1  real       1
+   118    POLIv_fSRPLC     595     1  real       1
+   119    POLIosdSRPLC     596     1  real       1
+   120    POLIocrSRPLC     597     1  real       1
+   121    PESLSRDTXSHK     598     1  real       1
+   122    RnDHALFSHK       599     1  real       1
+   123    SRDPLCNETSHK     621     2  real       1     4
+   124    SRPESLCAES       630     2  real       1     4
+   125    MARFishSPELC     632     1  real       1
+   126    CARBforSPELC     633     1  real       1
+   127    POLIpfbSPELC     634     1  real       1
+   128    POLIgroSPELC     635     1  real       1
+   129    POLIv_fSPELC     636     1  real       1
+   130    POLIosdSPELC     637     1  real       1
+   131    POLIocrSPELC     638     1  real       1
+   132    SRPESLCTXSHK     639     1  real       1
+   133    SRPLCNETSHK      661     2  real       1     4
+   134    SRLPEGCAES       669     2  real       1     4
+   135    MARFishSRPGC     671     1  real       1
+   136    CARBforSRPGC     672     1  real       1
+   137    POLIpfbSRPGC     673     1  real       1
+   138    POLIgroSRPGC     674     1  real       1
+   139    POLIv_fSRPGC     675     1  real       1
+   140    POLIosdSRPGC     676     1  real       1
+   141    POLIocrSRPGC     677     1  real       1
+   142    SRLNDPGTXSHK     678     1  real       1
+   143    SRLGCNETSHK      700     2  real       1     4
+   144    BAUESCOLSHK      709     2  real       1     4
+   145    MARFishBACES     711     1  real       1
+   146    CARBforBACES     712     1  real       1
+   147    POLIpfbBACES     713     1  real       1
+   148    POLIgroBACES     714     1  real       1
+   149    POLIv_fBACES     715     1  real       1
+   150    POLIosdBACES     716     1  real       1
+   151    POLIocrBACES     717     1  real       1
+   152    COLNETSHK        737     2  real       1     4
+   153    BAUEAMCOLSHK     744     2  real       1     4
+   154    POLIpfbBACAM     746     1  real       1
+   155    POLIgroBACAM     747     1  real       1
+   156    POLIv_fBACAM     748     1  real       1
+   157    POLIosdBACAM     749     1  real       1
+   158    POLIocrBACAM     750     1  real       1
+
+
+
+
+ ================
+ ++ FORMULA TABLE
+ ================
+
+           Defined   Semantic      LHS                RHS
+  Number   at line    Error?    coefficient       coefficient numbers
+  -------------------------------------------------------------------
+     1         167     no      MACSHK14_21 
+     2         169     no      MACSHK14_21        1
+     3         171     no      MACSHK14_21        2
+     4         172     no      MACSHK14_21        3
+     5         173     no      MACSHK14_21        4
+     6         174     no      MACSHK14_21        5
+     7         189     no      MACSHK21_30 
+     8         191     no      MACSHK21_30        8
+     9         192     no      MACSHK21_30        9
+    10         193     no      MACSHK21_30       10
+    11         194     no      MACSHK21_30       11
+    12         195     no      MACSHK21_30       12
+    13         208     no      CRLVSHK14_21      14
+    14         210     no      CRLVSHK14_21      15
+    15         211     no      CRLVSHK14_21      16
+    16         222     no      CRLVSHK21_30      18
+    17         224     no      CRLVSHK21_30      19
+    18         225     no      CRLVSHK21_30      20
+    19         254     no      BAUESSHK          22
+    20         256     no      BAUESSHK          23
+    21         257     no      BAUESSHK          24
+    22         258     no      BAUESSHK          25
+    23         259     no      BAUESSHK          26
+    24         260     no      BAUESSHK          27
+    25         261     no      BAUESSHK          28
+    26         282     no      PESGCALLESHK      30
+    27         284     no      PESGCALLESHK      31
+    28         285     no      PESGCALLESHK      32
+    29         286     no      PESGCALLESHK      33
+    30         287     no      PESGCALLESHK      34
+    31         288     no      PESGCALLESHK      35
+    32         289     no      PESGCALLESHK      36
+    33         295     no      PESGCNETESHK      29    21
+    34         319     no      PESLCALLESHK      39
+    35         321     no      PESLCALLESHK      40
+    36         322     no      PESLCALLESHK      41
+    37         323     no      PESLCALLESHK      42
+    38         324     no      PESLCALLESHK      43
+    39         325     no      PESLCALLESHK      44
+    40         326     no      PESLCALLESHK      45
+    41         332     no      PESLCNETESHK      38    21
+    42         357     no      SRLNDALLESHK      49
+    43         359     no      SRLNDALLESHK      50
+    44         360     no      SRLNDALLESHK      51
+    45         361     no      SRLNDALLESHK      52
+    46         362     no      SRLNDALLESHK      53
+    47         363     no      SRLNDALLESHK      54
+    48         364     no      SRLNDALLESHK      55
+    49         370     no      SRLNDNETESHK      48    21
+    50         395     no      SRRnDALLESHK      59
+    51         397     no      SRRnDALLESHK      60
+    52         398     no      SRRnDALLESHK      61
+    53         399     no      SRRnDALLESHK      62
+    54         400     no      SRRnDALLESHK      63
+    55         401     no      SRRnDALLESHK      64
+    56         402     no      SRRnDALLESHK      65
+    57         408     no      SRRnDNETESHK      58    21
+    58         431     no      PESGRnDAESHK      69
+    59         433     no      PESGRnDAESHK      70
+    60         434     no      PESGRnDAESHK      71
+    61         435     no      PESGRnDAESHK      72
+    62         436     no      PESGRnDAESHK      73
+    63         437     no      PESGRnDAESHK      74
+    64         438     no      PESGRnDAESHK      75
+    65         444     no      PESGRNETESHK      68    21
+    66         466     no      PESGB2RD3AES      78
+    67         468     no      PESGB2RD3AES      79
+    68         469     no      PESGB2RD3AES      80
+    69         470     no      PESGB2RD3AES      81
+    70         471     no      PESGB2RD3AES      82
+    71         472     no      PESGB2RD3AES      83
+    72         473     no      PESGB2RD3AES      84
+    73         479     no      PESGBNETESHK      77    21
+    74         501     no      PESGCRndSRAE      87
+    75         503     no      PESGCRndSRAE      88
+    76         504     no      PESGCRndSRAE      89
+    77         505     no      PESGCRndSRAE      90
+    78         506     no      PESGCRndSRAE      91
+    79         507     no      PESGCRndSRAE      92
+    80         508     no      PESGCRndSRAE      93
+    81         514     no      PESGCNETESK2      86    21
+    82         536     no      RnDALLESHK        96
+    83         538     no      RnDALLESHK        97
+    84         539     no      RnDALLESHK        98
+    85         540     no      RnDALLESHK        99
+    86         541     no      RnDALLESHK       100
+    87         542     no      RnDALLESHK       101
+    88         543     no      RnDALLESHK       102
+    89         549     no      RnDNETESHK        95    21
+    90         571     no      SRnDALLESHK      105
+    91         573     no      SRnDALLESHK      106
+    92         574     no      SRnDALLESHK      107
+    93         575     no      SRnDALLESHK      108
+    94         576     no      SRnDALLESHK      109
+    95         577     no      SRnDALLESHK      110
+    96         578     no      SRnDALLESHK      111
+    97         584     no      SRnDNETESHK      104    21
+    98         610     no      SRnDPESLCAES     114
+    99         612     no      SRnDPESLCAES     115
+   100         613     no      SRnDPESLCAES     116
+   101         614     no      SRnDPESLCAES     117
+   102         615     no      SRnDPESLCAES     118
+   103         616     no      SRnDPESLCAES     119
+   104         617     no      SRnDPESLCAES     120
+   105         623     no      SRDPLCNETSHK     113    21
+   106         650     no      SRPESLCAES       125
+   107         652     no      SRPESLCAES       126
+   108         653     no      SRPESLCAES       127
+   109         654     no      SRPESLCAES       128
+   110         655     no      SRPESLCAES       129
+   111         656     no      SRPESLCAES       130
+   112         657     no      SRPESLCAES       131
+   113         663     no      SRPLCNETSHK      124    21
+   114         689     no      SRLPEGCAES       135
+   115         691     no      SRLPEGCAES       136
+   116         692     no      SRLPEGCAES       137
+   117         693     no      SRLPEGCAES       138
+   118         694     no      SRLPEGCAES       139
+   119         695     no      SRLPEGCAES       140
+   120         696     no      SRLPEGCAES       141
+   121         702     no      SRLGCNETSHK      134    21
+   122         726     no      BAUESCOLSHK      145
+   123         728     no      BAUESCOLSHK      146
+   124         729     no      BAUESCOLSHK      147
+   125         730     no      BAUESCOLSHK      148
+   126         731     no      BAUESCOLSHK      149
+   127         732     no      BAUESCOLSHK      150
+   128         733     no      BAUESCOLSHK      151
+   129         739     no      COLNETSHK        144    21
+   130         757     no      BAUEAMCOLSHK
+   131         759     no      BAUEAMCOLSHK
+   132         760     no      BAUEAMCOLSHK     154
+   133         761     no      BAUEAMCOLSHK     155
+   134         762     no      BAUEAMCOLSHK     156
+   135         763     no      BAUEAMCOLSHK     157
+   136         764     no      BAUEAMCOLSHK     158
+
+
+
+
+ =============
+ ++ READ TABLE
+ =============
+
+           Defined    Semantic  Coefficient   File number
+  Number   at line     Error?    read into     read from   Header
+  ---------------------------------------------------------------
+     1        158       no      qgdp14_21           1       N001
+     2        160       no      usklab14_21         2       N001
+     3        161       no      sklab14_21          3       N001
+     4        162       no      cap14_21            4       N001
+     5        163       no      pop14_21            5       N001
+     6        183       no      aoreg21_30          6       N001
+     7        185       no      usklab21_30         7       N001
+     8        186       no      sklab21_30          8       N001
+     9        187       no      cap21_30            9       N001
+    10        188       no      pop21_30           10       N001
+    11        204       no      aocrop14_21        11       N001
+    12        206       no      aorum14_21         12       N001
+    13        207       no      aonrum14_21        13       N001
+    14        218       no      aocrop21_30        14       N001
+    15        220       no      aorum21_30         15       N001
+    16        221       no      aonrum21_30        16       N001
+    17        246       no      MARFishBAUES       17       N001
+    18        248       no      CARBforBAUES       18       N001
+    19        249       no      POLIpfbBAUES       19       N001
+    20        250       no      POLIgroBAUES       20       N001
+    21        251       no      POLIv_fBAUES       21       N001
+    22        252       no      POLIosdBAUES       22       N001
+    23        253       no      POLIocrBAUES       23       N001
+    24        274       no      MARFishPESGC       24       N001
+    25        276       no      CARBforPESGC       25       N001
+    26        277       no      POLIpfbPESGC       26       N001
+    27        278       no      POLIgroPESGC       27       N001
+    28        279       no      POLIv_fPESGC       28       N001
+    29        280       no      POLIosdPESGC       29       N001
+    30        281       no      POLIocrPESGC       30       N001
+    31        310       no      MARFishPESLC       31       N001
+    32        312       no      CARBforPESLC       32       N001
+    33        313       no      POLIpfbPESLC       33       N001
+    34        314       no      POLIgroPESLC       34       N001
+    35        315       no      POLIv_fPESLC       35       N001
+    36        316       no      POLIosdPESLC       36       N001
+    37        317       no      POLIocrPESLC       37       N001
+    38        318       no      PESLCLDTXSHK       38       N001
+    39        348       no      MARFishSRLND       39       N001
+    40        350       no      CARBforSRLND       40       N001
+    41        351       no      POLIpfbSRLND       41       N001
+    42        352       no      POLIgroSRLND       42       N001
+    43        353       no      POLIv_fSRLND       43       N001
+    44        354       no      POLIosdSRLND       44       N001
+    45        355       no      POLIocrSRLND       45       N001
+    46        356       no      SRLNDLDTXSHK       46       N001
+    47        386       no      MARFishSRRnD       47       N001
+    48        388       no      CARBforSRRnD       48       N001
+    49        389       no      POLIpfbSRRnD       49       N001
+    50        390       no      POLIgroSRRnD       50       N001
+    51        391       no      POLIv_fSRRnD       51       N001
+    52        392       no      POLIosdSRRnD       52       N001
+    53        393       no      POLIocrSRRnD       53       N001
+    54        394       no      SRRnD20PSHK        54       N001
+    55        423       no      MARFishPESGR       55       N001
+    56        425       no      CARBforPESGR       56       N001
+    57        426       no      POLIpfbPESGR       57       N001
+    58        427       no      POLIgroPESGR       58       N001
+    59        428       no      POLIv_fPESGR       59       N001
+    60        429       no      POLIosdPESGR       60       N001
+    61        430       no      POLIocrPESGR       61       N001
+    62        458       no      FisPESGB2R3E       62       N001
+    63        460       no      ForPESGB2R3E       63       N001
+    64        461       no      PfbPESGB2R3E       64       N001
+    65        462       no      GroPESGB2R3E       65       N001
+    66        463       no      V_fPESGB2R3E       66       N001
+    67        464       no      OsdPESGB2R3E       67       N001
+    68        465       no      OcrPESGB2R3E       68       N001
+    69        493       no      FisPESGCRnd        69       N001
+    70        495       no      ForPESGCRnd        70       N001
+    71        496       no      PfbPESGCRnd        71       N001
+    72        497       no      GroPESGCRnd        72       N001
+    73        498       no      V_fPESGCRnd        73       N001
+    74        499       no      OsdPESGCRnd        74       N001
+    75        500       no      OcrPESGCRnd        75       N001
+    76        528       no      MARFishRnD         76       N001
+    77        530       no      CARBforRnD         77       N001
+    78        531       no      POLIpfbRnD         78       N001
+    79        532       no      POLIgroRnD         79       N001
+    80        533       no      POLIv_fRnD         80       N001
+    81        534       no      POLIosdRnD         81       N001
+    82        535       no      POLIocrRnD         82       N001
+    83        563       no      MARFishSRnD        83       N001
+    84        565       no      CARBforSRnD        84       N001
+    85        566       no      POLIpfbSRnD        85       N001
+    86        567       no      POLIgroSRnD        86       N001
+    87        568       no      POLIv_fSRnD        87       N001
+    88        569       no      POLIosdSRnD        88       N001
+    89        570       no      POLIocrSRnD        89       N001
+    90        600       no      MARFishSRPLC       90       N001
+    91        602       no      CARBforSRPLC       91       N001
+    92        603       no      POLIpfbSRPLC       92       N001
+    93        604       no      POLIgroSRPLC       93       N001
+    94        605       no      POLIv_fSRPLC       94       N001
+    95        606       no      POLIosdSRPLC       95       N001
+    96        607       no      POLIocrSRPLC       96       N001
+    97        608       no      PESLSRDTXSHK       97       N001
+    98        609       no      RnDHALFSHK         98       N001
+    99        640       no      MARFishSPELC       99       N001
+   100        642       no      CARBforSPELC      100       N001
+   101        643       no      POLIpfbSPELC      101       N001
+   102        644       no      POLIgroSPELC      102       N001
+   103        645       no      POLIv_fSPELC      103       N001
+   104        646       no      POLIosdSPELC      104       N001
+   105        647       no      POLIocrSPELC      105       N001
+   106        648       no      SRPESLCTXSHK      106       N001
+   107        680       no      MARFishSRPGC      107       N001
+   108        682       no      CARBforSRPGC      108       N001
+   109        683       no      POLIpfbSRPGC      109       N001
+   110        684       no      POLIgroSRPGC      110       N001
+   111        685       no      POLIv_fSRPGC      111       N001
+   112        686       no      POLIosdSRPGC      112       N001
+   113        687       no      POLIocrSRPGC      113       N001
+   114        688       no      SRLNDPGTXSHK      114       N001
+   115        718       no      MARFishBACES      115       N001
+   116        720       no      CARBforBACES      116       N001
+   117        721       no      POLIpfbBACES      117       N001
+   118        722       no      POLIgroBACES      118       N001
+   119        723       no      POLIv_fBACES      119       N001
+   120        724       no      POLIosdBACES      120       N001
+   121        725       no      POLIocrBACES      121       N001
+   122        751       no      POLIpfbBACAM      122       N001
+   123        753       no      POLIgroBACAM      123       N001
+   124        754       no      POLIv_fBACAM      124       N001
+   125        755       no      POLIosdBACAM      125       N001
+   126        756       no      POLIocrBACAM      126       N001
+
+
+
+
+ ==============
+ ++ WRITE TABLE
+ ==============
+
+        Defined   Sem     Coeff/Var     Write
+ Number at line  Error?   written       file   Header     Long Name
+ --------------------------------------------------------------------------------
+     1      227   no      MACSHK14_21     127  M142    Not defined by the user
+     2      229   no      CRLVSHK14_21    127  S142    Not defined by the user
+     3      230   no      MACSHK21_30     127  M213    Not defined by the user
+     4      231   no      CRLVSHK21_30    127  S213    Not defined by the user
+     5      262   no      BAUESSHK        127  BAES    Not defined by the user
+     6      290   no      PESGCALLESHK    127  PESG    Not defined by the user
+     7      297   no      PESGCNETESHK    127  NPEG    Not defined by the user
+     8      327   no      PESLCALLESHK    127  PESL    Not defined by the user
+     9      334   no      PESLCNETESHK    127  NPEL    Not defined by the user
+    10      336   no      PESLCLDTXSHK    127  PELT    Not defined by the user
+    11      365   no      SRLNDALLESHK    127  SRLD    Not defined by the user
+    12      372   no      SRLNDNETESHK    127  NSRL    Not defined by the user
+    13      374   no      SRLNDLDTXSHK    127  SRLT    Not defined by the user
+    14      403   no      SRRnDALLESHK    127  SRnD    Not defined by the user
+    15      410   no      SRRnDNETESHK    127  NSRD    Not defined by the user
+    16      412   no      SRRnD20PSHK     127  RnD     Not defined by the user
+    17      439   no      PESGRnDAESHK    127  PEGR    Not defined by the user
+    18      446   no      PESGRNETESHK    127  NPGR    Not defined by the user
+    19      474   no      PESGB2RD3AES    127  PEGB    Not defined by the user
+    20      481   no      PESGBNETESHK    127  NPGB    Not defined by the user
+    21      509   no      PESGCRndSRAE    127  PEGC    Not defined by the user
+    22      516   no      PESGCNETESK2    127  NPGC    Not defined by the user
+    23      544   no      RnDALLESHK      127  RnDE    Not defined by the user
+    24      551   no      RnDNETESHK      127  NRnD    Not defined by the user
+    25      579   no      SRRnDALLESHK    127  RDSR    Not defined by the user
+    26      586   no      SRnDNETESHK     127  NRDR    Not defined by the user
+    27      618   no      SRnDPESLCAES    127  SRLC    Not defined by the user
+    28      625   no      SRDPLCNETSHK    127  NSDL    Not defined by the user
+    29      627   no      PESLSRDTXSHK    127  TSRL    Not defined by the user
+    30      628   no      RnDHALFSHK      127  RnDH    Not defined by the user
+    31      658   no      SRnDPESLCAES    127  SPLC    Not defined by the user
+    32      665   no      SRPLCNETSHK     127  NSPL    Not defined by the user
+    33      667   no      SRPESLCTXSHK    127  TSLC    Not defined by the user
+    34      697   no      SRLPEGCAES      127  SLGC    Not defined by the user
+    35      704   no      SRLGCNETSHK     127  NSGL    Not defined by the user
+    36      706   no      SRLNDPGTXSHK    127  TSGC    Not defined by the user
+    37      734   no      BAUESCOLSHK     127  BAEC    Not defined by the user
+    38      741   no      COLNETSHK       127  CLPS    Not defined by the user
+    39      765   no      BAUEAMCOLSHK    127  AMZN    Not defined by the user
+
+
+   
+ ======================
+ ++ INPUT CHECK SUMMARY
+ ======================
+
+ Total number of statements is 591.
+ There are NO syntax errors or semantic problems.
+
+
+ ******************************************************************************
+ -3-
+ -->                     Starting CODE GENERATION
+
+ ******************************************************************************
+
+
+
+  CODE OPTIONS CHOSEN
+  -------------------
+
+
+                         TABLO PORTABLE
+               CODE OPTIONS   ( --> indicates those in effect )
+
+      NEQ Do no equations       --> PGS Prepare output for GEMSIM
+      NDS Do no displays            WFP Write a Fortran Program
+      NWR Do no writes                    (i.e. a TABLO-generated program)
+                                --> FC5 Fast Compile TG-prog under LF95
+      ACC All comment lines in      DMS Allow simulations even
+             code                         though are no UPDATEs
+                                --> CIN Code file name same as
+                                          Information file name
+                                    CDM Old option. Has no effect.
+                                    NRZ No run-time reports re use of
+                                           ZERODIVIDE default values
+                                    NXS No "extra" statements allowed
+
+  Select an option   :  <opt>      Deselect an option      : -<opt>
+  Help for an option : ?<opt>      Help on all options     : ??
+  Redisplay options  : /           Finish option selection : Carriage return
+
+  END OF CODE OPTIONS CHOSEN
+  --------------------------
+  
+
+ When used with GEMSIM, the GEMSIM Statement
+  and Table files produced in this run of TABLO
+     o can carry out 39 WRITEs
+
+ MXGSRS = 3, MXGSIS = 3.
+ MXGSLG = 0, MXGSIC = 1.
+
+ MXGSOP = 20, MXGSIN = 24.
+ MXGSRC = 1, MXGSNS=0.
+! (Model Information file is 'allshocks.min'.)
+
+ *******************************************************************
+ Successful completion of TABLO.
+
+ When used with GEMSIM, the GEMSIM Statement 
+  and Table files produced in this run of TABLO
+     o can carry out 39 WRITEs
+
+ *******************************************************************

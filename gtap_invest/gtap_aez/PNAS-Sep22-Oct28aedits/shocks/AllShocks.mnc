@@ -1,0 +1,1476 @@
+#FILES
+Logical Name         In/Out Ud  Type Actual Name
+MacFile01             In     n  HAR
+ macro file
+MacFile02             In     n  HAR
+ macro file
+MacFile03             In     n  HAR
+ macro file
+MacFile04             In     n  HAR
+ macro file
+MacFile05             In     n  HAR
+ macro file
+MacFile06             In     n  HAR
+ macro file
+MacFile07             In     n  HAR
+ macro file
+MacFile08             In     n  HAR
+ macro file
+MacFile09             In     n  HAR
+ macro file
+MacFile10             In     n  HAR
+ macro file
+SecFile01             In     n  HAR
+ crop productivity file 2014-21
+SecFile02             In     n  HAR
+ ruminant productivity file 2014-21
+SecFile03             In     n  HAR
+ non ruminant productivity file 2014-21
+SecFile04             In     n  HAR
+ crop productivity file 2021-30
+SecFile05             In     n  HAR
+ ruminant productivity file 2021-30
+SecFile06             In     n  HAR
+ non ruminant productivity file 2021-30
+InVFile01             In     n  HAR
+ marine_fisheries_bau_shock
+InVFile02             In     n  HAR
+ carbon_forestry_bau_shock
+InVFile03             In     n  HAR
+ pollination_bau_shock_pfb
+InVFile04             In     n  HAR
+ pollination_bau_shock_gro
+InVFile05             In     n  HAR
+ pollination_bau_shock_v_f
+InVFile06             In     n  HAR
+ pollination_bau_shock_osd
+InVFile07             In     n  HAR
+ pollination_bau_shock_ocr
+InVFile08             In     n  HAR
+ X2030_PESGC_marine_fisheries_shock
+InVFile09             In     n  HAR
+ X2030_PESGC_carbon_forestry_shock
+InVFile10             In     n  HAR
+ X2030_PESGC_pollination_shock_pfb
+InVFile11             In     n  HAR
+ X2030_PESGC_pollination_shock_gro
+InVFile12             In     n  HAR
+ X2030_PESGC_pollination_shock_v_f
+InVFile13             In     n  HAR
+ X2030_PESGC_pollination_shock_osd
+InVFile14             In     n  HAR
+ X2030_PESGC_pollination_shock_ocr
+InVFile15             In     n  HAR
+ X2030_PESLC_marine_fisheries_shock
+InVFile16             In     n  HAR
+ X2030_PESLC_carbon_forestry_shock
+InVFile17             In     n  HAR
+ X2030_PESLC_pollination_shock_pfb
+InVFile18             In     n  HAR
+ X2030_PESLC_pollination_shock_gro
+InVFile19             In     n  HAR
+ X2030_PESLC_pollination_shock_v_f
+InVFile20             In     n  HAR
+ X2030_PESLC_pollination_shock_osd
+InVFile21             In     n  HAR
+ X2030_PESLC_pollination_shock_ocr
+InVFile22             In     n  HAR
+ 2021_30_PESLC_shock
+InVFile23             In     n  HAR
+ X2030_SR_Land_marine_fisheries_shock.txt
+InVFile24             In     n  HAR
+ X2030_SR_Land_carbon_forestry_shock.txt
+InVFile25             In     n  HAR
+ X2030_SR_Land_pollination_shock_pfb.txt
+InVFile26             In     n  HAR
+ X2030_SR_Land_pollination_shock_gro.txt
+InVFile27             In     n  HAR
+ X2030_SR_Land_pollination_shock_v_f.txt
+InVFile28             In     n  HAR
+ X2030_SR_Land_pollination_shock_osd.txt
+InVFile29             In     n  HAR
+ X2030_SR_Land_pollination_shock_ocr.txt
+InVFile30             In     n  HAR
+ 2021_30_SR_Land_allES_shocks
+InVFile31             In     n  HAR
+ X2030_SR_RnD_20p_marine_fisheries_shock
+InVFile32             In     n  HAR
+ X2030_SR_RnD_20p_carbon_forestry_shock
+InVFile33             In     n  HAR
+ X2030_SR_RnD_20p_pollination_shock_pfb
+InVFile34             In     n  HAR
+ X2030_SR_RnD_20p_pollination_shock_gro
+InVFile35             In     n  HAR
+ X2030_SR_RnD_20p_pollination_shock_v_f
+InVFile36             In     n  HAR
+ X2030_SR_RnD_20p_pollination_shock_osd
+InVFile37             In     n  HAR
+ X2030_SR_RnD_20p_pollination_shock_ocr
+InVFile38             In     n  HAR
+ 2021_2030_RnD_20pct
+InVFile39             In     n  HAR
+ X2030_SR_RnD_20p_PESGC_marine_fisheries_shock
+InVFile40             In     n  HAR
+ X2030_SR_RnD_20p_PESGC_carbon_forestry_shock
+InVFile41             In     n  HAR
+ X2030_SR_RnD_20p_PESGC_pollination_shock_pfb
+InVFile42             In     n  HAR
+ X2030_SR_RnD_20p_PESGC_pollination_shock_gro
+InVFile43             In     n  HAR
+ X2030_SR_RnD_20p_PESGC_pollination_shock_v_f
+InVFile44             In     n  HAR
+ X2030_SR_RnD_20p_PESGC_pollination_shock_osd
+InVFile45             In     n  HAR
+ X2030_SR_RnD_20p_PESGC_pollination_shock_ocr
+InVFile46             In     n  HAR
+ X2030_SR_RnD_20p_PESGC_30_marine_fisheries_shock
+InVFile47             In     n  HAR
+ X2030_SR_RnD_20p_PESGC_30_carbon_forestry_shock
+InVFile48             In     n  HAR
+ X2030_SR_RnD_20p_PESGC_30_pollination_shock_pfb
+InVFile49             In     n  HAR
+ X2030_SR_RnD_20p_PESGC_30_pollination_shock_gro
+InVFile50             In     n  HAR
+ X2030_SR_RnD_20p_PESGC_30_pollination_shock_v_f
+InVFile51             In     n  HAR
+ X2030_SR_RnD_20p_PESGC_30_pollination_shock_osd
+InVFile52             In     n  HAR
+ X2030_SR_RnD_20p_PESGC_30_pollination_shock_ocr
+InVFile53             In     n  HAR
+ X2030_SR_RnD_PESGC_marine_fisheries_shock
+InVFile54             In     n  HAR
+ X2030_SR_RnD_PESGC_carbon_forestry_shock
+InVFile55             In     n  HAR
+ X2030_SR_RnD_PESGC_pollination_shock_pfb
+InVFile56             In     n  HAR
+ X2030_SR_RnD_PESGC_pollination_shock_gro
+InVFile57             In     n  HAR
+ X2030_SR_RnD_PESGC_pollination_shock_v_f
+InVFile58             In     n  HAR
+ X2030_SR_RnD_PESGC_pollination_shock_osd
+InVFile59             In     n  HAR
+ X2030_SR_RnD_PESGC_pollination_shock_ocr
+InVFile60             In     n  HAR
+ X2030_RnD_marine_fisheries_shock.har
+InVFile61             In     n  HAR
+ X2030_RnD_carbon_forestry_shock.har
+InVFile62             In     n  HAR
+ X2030_RnD_pollination_shock_pfb.har
+InVFile63             In     n  HAR
+ X2030_RnD_pollination_shock_gro.har
+InVFile64             In     n  HAR
+ X2030_RnD_pollination_shock_v_f.har
+InVFile65             In     n  HAR
+ X2030_RnD_pollination_shock_osd.har
+InVFile66             In     n  HAR
+ X2030_RnD_pollination_shock_ocr.har
+InVFile67             In     n  HAR
+ X2030_SR_RnD_marine_fisheries_shock.har
+InVFile68             In     n  HAR
+ X2030_SR_RnD_carbon_forestry_shock.har
+InVFile69             In     n  HAR
+ X2030_SR_RnD_pollination_shock_pfb.har
+InVFile70             In     n  HAR
+ X2030_SR_RnD_pollination_shock_gro.har
+InVFile71             In     n  HAR
+ X2030_SR_RnD_pollination_shock_v_f.har
+InVFile72             In     n  HAR
+ X2030_SR_RnD_pollination_shock_osd.har
+InVFile73             In     n  HAR
+ X2030_SR_RnD_pollination_shock_ocr.har
+InVFile74             In     n  HAR
+ X2030_SR_RnD_PESLC_marine_fisheries_shock.har
+InVFile75             In     n  HAR
+ X2030_SR_RnD_PESLC_carbon_forestry_shock .har
+InVFile76             In     n  HAR
+ X2030_SR_RnD_PESLC__pollination_shock_pfb.har
+InVFile77             In     n  HAR
+ X2030_SR_RnD_PESLC__pollination_shock_gro.har
+InVFile78             In     n  HAR
+ X2030_SR_RnD_PESLC__pollination_shock_v_f.har
+InVFile79             In     n  HAR
+ X2030_SR_RnD_PESLC__pollination_shock_osd.har
+InVFile80             In     n  HAR
+ X2030_SR_RnD_PESLC__pollination_shock_ocr.har
+InVFile81             In     n  HAR
+ 2021_30_SR_RnD_PESLC_allES.har
+InVFile82             In     n  HAR
+ 2021_2030_RnD_Half
+InVFile83             In     n  HAR
+ X2030_SR_PESLC_marine_fisheries_shock.har
+InVFile84             In     n  HAR
+ X2030_SR_PESLC_carbon_forestry_shock .har
+InVFile85             In     n  HAR
+ X2030_SR_PESLC_pollination_shock_pfb.har
+InVFile86             In     n  HAR
+ X2030_SR_PESLC_pollination_shock_gro.har
+InVFile87             In     n  HAR
+ X2030_SR_PESLC_pollination_shock_v_f.har
+InVFile88             In     n  HAR
+ X2030_SR_PESLC_pollination_shock_osd.har
+InVFile89             In     n  HAR
+ X2030_SR_PESLC_pollination_shock_ocr.har
+InVFile90             In     n  HAR
+ X2030_SR_PESLC tax
+InVFile91             In     n  HAR
+ X2030_SR_Land_PESGC_marine_fisheries_shock
+InVFile92             In     n  HAR
+ X2030_SR_Land_PESGC_carbon_forestry_shock
+InVFile93             In     n  HAR
+ X2030_SR_Land_PESGC_pollination_shock_pfb
+InVFile94             In     n  HAR
+ X2030_SR_Land_PESGC_pollination_shock_gro
+InVFile95             In     n  HAR
+ X2030_SR_Land_PESGC_pollination_shock_v_f
+InVFile96             In     n  HAR
+ X2030_SR_Land_PESGC_pollination_shock_osd
+InVFile97             In     n  HAR
+ X2030_SR_Land_PESGC_pollination_shock_ocr
+InVFile98             In     n  HAR
+ 2021_30_SR_Land_PESGC_allES_shocks
+InVFile99             In     n  HAR
+ BAU ES collapse: marine_fisheries_bau_shoc
+InVFile100            In     n  HAR
+ BAU ES collapse: carbon_forestry_bau_shock
+InVFile101            In     n  HAR
+ BAU ES collapse: pollination_bau_shock_pfb
+InVFile102            In     n  HAR
+ BAU ES collapse: pollination_bau_shock_gro
+InVFile103            In     n  HAR
+ BAU ES collapse: pollination_bau_shock_v_f
+InVFile104            In     n  HAR
+ BAU ES collapse: pollination_bau_shock_osd
+InVFile105            In     n  HAR
+ BAU ES collapse: pollination_bau_shock_ocr
+InVFile106            In     n  HAR
+ BAU ES Amazon collapse: pollination_bau_shock_pfb
+InVFile107            In     n  HAR
+ BAU ES Amazon collapse: pollination_bau_shock_gro
+InVFile108            In     n  HAR
+ BAU ES Amazon collapse: pollination_bau_shock_v_f
+InVFile109            In     n  HAR
+ BAU ES Amazon collapse: pollination_bau_shock_osd
+InVFile110            In     n  HAR
+ BAU ES Amazon collapse: pollination_bau_shock_ocr
+OutFile               Out    n  HAR
+ output file
+GTAPSETS              In     n  HAR
+ sets file
+(Display)             Out    n  DIS
+(Solution)            Out    n  SL4
+(Equations)           Out    n  EQ4
+#TABFILE
+AllShocks.tab
+#TMDATE
+at 12:18:02 on 18-OCT-2022
+#STIFILE
+TABmate.sif
+#SETS
+    4
+    1 REG                 -1  u regions
+    2 MACVAR               6  k macro variables
+qgdp        
+aoreg       
+usklab      
+sklab       
+cap         
+pop         
+    3 CROPLVSTK            3  k Crops and livestock
+crops       
+rum         
+nrum        
+    4 ECSEC                7  k Ecosystemt service activities
+fishery     
+forestsec   
+cotton      
+crsgrns     
+fruitveg    
+oilsds      
+othercrps   
+#VARIABLES
+         0
+#SUBSETS
+     0
+#COEFFICIENTS
+  158
+    1 qgdp14_21       1 r y n  gdp
+    1
+    2 usklab14_21     1 r y n  unskilled lab
+    1
+    3 sklab14_21      1 r y n  skilled lab
+    1
+    4 cap14_21        1 r y n  capital
+    1
+    5 pop14_21        1 r y n  population
+    1
+    6 MACSHK14_21     2 r n n  Macro shocks 2014-2021
+    1    2
+    7 MACSHK21_30     2 r n n  Macro shocks 2021-2030
+    1    2
+    8 aoreg21_30      1 r y n  aoreg
+    1
+    9 usklab21_30     1 r y n  unskilled lab
+    1
+   10 sklab21_30      1 r y n  skilled lab
+    1
+   11 cap21_30        1 r y n  capital
+    1
+   12 pop21_30        1 r y n  population
+    1
+   13 CRLVSHK14_21    2 r n n  Productivity shocks 2014-2021
+    1    3
+   14 aocrop14_21     1 r y n  ao for crops
+    1
+   15 aorum14_21      1 r y n  ao for ruminant
+    1
+   16 aonrum14_21     1 r y n  ao for non ruminant
+    1
+   17 CRLVSHK21_30    2 r n n  Productivity shocks 2021-2030
+    1    3
+   18 aocrop21_30     1 r y n  ao for crops
+    1
+   19 aorum21_30      1 r y n  ao for ruminant
+    1
+   20 aonrum21_30     1 r y n  ao for non ruminant
+    1
+   21 BAUESSHK        2 r n n  BAU Ecosystem services shocks
+    1    4
+   22 MARFishBAUES    1 r y n  BAU ES: marine_fisheries_bau_shoc
+    1
+   23 CARBforBAUES    1 r y n  BAU ES: carbon_forestry_bau_shock
+    1
+   24 POLIpfbBAUES    1 r y n  BAU ES: pollination_bau_shock_pfb
+    1
+   25 POLIgroBAUES    1 r y n  BAU ES: pollination_bau_shock_gro
+    1
+   26 POLIv_fBAUES    1 r y n  BAU ES: pollination_bau_shock_v_f
+    1
+   27 POLIosdBAUES    1 r y n  BAU ES: pollination_bau_shock_osd
+    1
+   28 POLIocrBAUES    1 r y n  BAU ES: pollination_bau_shock_ocr
+    1
+   29 PESGCALLESHK    2 r n n  PESGC all Ecosystem services shocks
+    1    4
+   30 MARFishPESGC    1 r y n  2030 PESGC: marine_fisheries_shoc
+    1
+   31 CARBforPESGC    1 r y n  2030 PESGC: carbon_forestry_shock
+    1
+   32 POLIpfbPESGC    1 r y n  2030 PESGC: pollination_shock_pfb
+    1
+   33 POLIgroPESGC    1 r y n  2030 PESGC: pollination_shock_gro
+    1
+   34 POLIv_fPESGC    1 r y n  2030 PESGC: pollination_shock_v_f
+    1
+   35 POLIosdPESGC    1 r y n  2030 PESGC: pollination_shock_osd
+    1
+   36 POLIocrPESGC    1 r y n  2030 PESGC: pollination_shock_ocr
+    1
+   37 PESGCNETESHK    2 r n n  Net shock for PESGC relative to BAU
+    1    4
+   38 PESLCALLESHK    2 r n n  PESLC all Ecosystem services shocks
+    1    4
+   39 MARFishPESLC    1 r y n  2030 PESLC: marine_fisheries_shoc
+    1
+   40 CARBforPESLC    1 r y n  2030 PESLC: carbon_forestry_shock
+    1
+   41 POLIpfbPESLC    1 r y n  2030 PESLC: pollination_shock_pfb
+    1
+   42 POLIgroPESLC    1 r y n  2030 PESLC: pollination_shock_gro
+    1
+   43 POLIv_fPESLC    1 r y n  2030 PESLC: pollination_shock_v_f
+    1
+   44 POLIosdPESLC    1 r y n  2030 PESLC: pollination_shock_osd
+    1
+   45 POLIocrPESLC    1 r y n  2030 PESLC: pollination_shock_ocr
+    1
+   46 PESLCLDTXSHK    1 r y n  PESLC land tax shock
+    1
+   47 PESLCNETESHK    2 r n n  Net shock for PESLC relative to BAU
+    1    4
+   48 SRLNDALLESHK    2 r n n  SRLND all Ecosystem services shocks
+    1    4
+   49 MARFishSRLND    1 r y n  2030 SRLNDALLES: marine_fisheries_shock
+    1
+   50 CARBforSRLND    1 r y n  2030 SRLNDALLES: carbon_forestry_shock
+    1
+   51 POLIpfbSRLND    1 r y n  2030 SRLNDALLES: pollination_shock_pfb
+    1
+   52 POLIgroSRLND    1 r y n  2030 SRLNDALLES: pollination_shock_gro
+    1
+   53 POLIv_fSRLND    1 r y n  2030 SRLNDALLES: pollination_shock_v_f
+    1
+   54 POLIosdSRLND    1 r y n  2030 SRLNDALLES: pollination_shock_osd
+    1
+   55 POLIocrSRLND    1 r y n  2030 SRLNDALLES: pollination_shock_ocr
+    1
+   56 SRLNDLDTXSHK    1 r y n  PESLC land tax shock
+    1
+   57 SRLNDNETESHK    2 r n n  Net shock for SRLND relative to BAU
+    1    4
+   58 SRRnDALLESHK    2 r n n  SRRnD20p all Ecosystem services shocks
+    1    4
+   59 MARFishSRRnD    1 r y n  2030 SRRnD20p: marine_fisheries_shoc
+    1
+   60 CARBforSRRnD    1 r y n  2030 SRRnD20p: carbon_forestry_shock
+    1
+   61 POLIpfbSRRnD    1 r y n  2030 SRRnD20p: pollination_shock_pfb
+    1
+   62 POLIgroSRRnD    1 r y n  2030 SRRnD20p: pollination_shock_gro
+    1
+   63 POLIv_fSRRnD    1 r y n  2030 SRRnD20p: pollination_shock_v_f
+    1
+   64 POLIosdSRRnD    1 r y n  2030 SRRnD20p: pollination_shock_osd
+    1
+   65 POLIocrSRRnD    1 r y n  2030 SRRnD20p: pollination_shock_ocr
+    1
+   66 SRRnD20PSHK     1 r y n  2021_2030_RnD_20pct.har
+    1
+   67 SRRnDNETESHK    2 r n n  Net shock for SRRnD relative to BAU
+    1    4
+   68 PESGRnDAESHK    2 r n n  PESGC all Ecosystem services shocks
+    1    4
+   69 MARFishPESGR    1 r y n  2030 SR_RnD_20p_PESGC: marine_fisheries_shock
+    1
+   70 CARBforPESGR    1 r y n  2030 SR_RnD_20p_PESGC: carbon_forestry_shock
+    1
+   71 POLIpfbPESGR    1 r y n  2030 SR_RnD_20p_PESGC: pollination_shock_pfb
+    1
+   72 POLIgroPESGR    1 r y n  2030 SR_RnD_20p_PESGC: pollination_shock_gro
+    1
+   73 POLIv_fPESGR    1 r y n  2030 SR_RnD_20p_PESGC: pollination_shock_v_f
+    1
+   74 POLIosdPESGR    1 r y n  2030 SR_RnD_20p_PESGC: pollination_shock_osd
+    1
+   75 POLIocrPESGR    1 r y n  2030 SR_RnD_20p_PESGC: pollination_shock_ocr
+    1
+   76 PESGRNETESHK    2 r n n  Net shock for PESGRnD relative to BAU
+    1    4
+   77 PESGB2RD3AES    2 r n n  2030 SR_RnD_20p_PESGB_30 all Ecosystem services shocks
+    1    4
+   78 FisPESGB2R3E    1 r y n  2030 SR_RnD_20p_PESGB_30: marine_fisheries_shock
+    1
+   79 ForPESGB2R3E    1 r y n  2030 SR_RnD_20p_PESGB_30: carbon_forestry_shock
+    1
+   80 PfbPESGB2R3E    1 r y n  2030 SR_RnD_20p_PESGB_30: pollination_shock_pfb
+    1
+   81 GroPESGB2R3E    1 r y n  2030 SR_RnD_20p_PESGB_30: pollination_shock_gro
+    1
+   82 V_fPESGB2R3E    1 r y n  2030 SR_RnD_20p_PESGB_30: pollination_shock_v_f
+    1
+   83 OsdPESGB2R3E    1 r y n  2030 SR_RnD_20p_PESGB_30: pollination_shock_osd
+    1
+   84 OcrPESGB2R3E    1 r y n  2030 SR_RnD_20p_PESGB_30: pollination_shock_ocr
+    1
+   85 PESGBNETESHK    2 r n n  Net shock for SR_RnD_20p_PESGB_30 relative to BAU
+    1    4
+   86 PESGCRndSRAE    2 r n n  2030 SR_RnD_PESGC all Ecosystem services shocks
+    1    4
+   87 FisPESGCRnd     1 r y n  2030 SR_RnD_PESGC: marine_fisheries_shock
+    1
+   88 ForPESGCRnd     1 r y n  2030 SR_RnD_PESGC: carbon_forestry_shock
+    1
+   89 PfbPESGCRnd     1 r y n  2030 SR_RnD_PESGC: pollination_shock_pfb
+    1
+   90 GroPESGCRnd     1 r y n  2030 SR_RnD_PESGC: pollination_shock_gro
+    1
+   91 V_fPESGCRnd     1 r y n  2030 SR_RnD_PESGC: pollination_shock_v_f
+    1
+   92 OsdPESGCRnd     1 r y n  2030 SR_RnD_PESGC: pollination_shock_osd
+    1
+   93 OcrPESGCRnd     1 r y n  2030 SR_RnD_PESGC: pollination_shock_ocr
+    1
+   94 PESGCNETESK2    2 r n n  Net shock for SR_RnD_20p_PESGB_30 relative to BAU
+    1    4
+   95 RnDALLESHK      2 r n n  SRRnD20p all Ecosystem services shocks
+    1    4
+   96 MARFishRnD      1 r y n  2030 SRRnD20p: marine_fisheries_shoc
+    1
+   97 CARBforRnD      1 r y n  2030 SRRnD20p: carbon_forestry_shock
+    1
+   98 POLIpfbRnD      1 r y n  2030 SRRnD20p: pollination_shock_pfb
+    1
+   99 POLIgroRnD      1 r y n  2030 SRRnD20p: pollination_shock_gro
+    1
+  100 POLIv_fRnD      1 r y n  2030 SRRnD20p: pollination_shock_v_f
+    1
+  101 POLIosdRnD      1 r y n  2030 SRRnD20p: pollination_shock_osd
+    1
+  102 POLIocrRnD      1 r y n  2030 SRRnD20p: pollination_shock_ocr
+    1
+  103 RnDNETESHK      2 r n n  Net shock for SRRnD relative to BAU
+    1    4
+  104 SRnDALLESHK     2 r n n  SRRnD20p all Ecosystem services shocks
+    1    4
+  105 MARFishSRnD     1 r y n  2030 SR_RnD: marine_fisheries_shoc
+    1
+  106 CARBforSRnD     1 r y n  2030 SR_RnD: carbon_forestry_shock
+    1
+  107 POLIpfbSRnD     1 r y n  2030 SR_RnD: pollination_shock_pfb
+    1
+  108 POLIgroSRnD     1 r y n  2030 SR_RnD: pollination_shock_gro
+    1
+  109 POLIv_fSRnD     1 r y n  2030 SR_RnD: pollination_shock_v_f
+    1
+  110 POLIosdSRnD     1 r y n  2030 SR_RnD: pollination_shock_osd
+    1
+  111 POLIocrSRnD     1 r y n  2030 SR_RnD: pollination_shock_ocr
+    1
+  112 SRnDNETESHK     2 r n n  Net shock for SRRnD relative to BAU
+    1    4
+  113 SRnDPESLCAES    2 r n n  SRRnD20p all Ecosystem services shocks
+    1    4
+  114 MARFishSRPLC    1 r y n  2030 SR_RnD_PESLC: marine_fisheries_shoc
+    1
+  115 CARBforSRPLC    1 r y n  2030 SR_RnD_PESLC: carbon_forestry_shock
+    1
+  116 POLIpfbSRPLC    1 r y n  2030 SR_RnD_PESLC: pollination_shock_pfb
+    1
+  117 POLIgroSRPLC    1 r y n  2030 SR_RnD_PESLC: pollination_shock_gro
+    1
+  118 POLIv_fSRPLC    1 r y n  2030 SR_RnD_PESLC: pollination_shock_v_f
+    1
+  119 POLIosdSRPLC    1 r y n  2030 SR_RnD_PESLC: pollination_shock_osd
+    1
+  120 POLIocrSRPLC    1 r y n  2030 SR_RnD_PESLC: pollination_shock_ocr
+    1
+  121 PESLSRDTXSHK    1 r y n  2021_30_SR_RnD_PESLC_allES tax shock
+    1
+  122 RnDHALFSHK      1 r y n  2021_2030_RnD_Half.har
+    1
+  123 SRDPLCNETSHK    2 r n n  Net shock for SRRnDPESLC relative to BAU
+    1    4
+  124 SRPESLCAES      2 r n n  SRRnD20p all Ecosystem services shocks
+    1    4
+  125 MARFishSPELC    1 r y n  2030 SR_PESLC: marine_fisheries_shoc
+    1
+  126 CARBforSPELC    1 r y n  2030 SR_PESLC: carbon_forestry_shock
+    1
+  127 POLIpfbSPELC    1 r y n  2030 SR_PESLC: pollination_shock_pfb
+    1
+  128 POLIgroSPELC    1 r y n  2030 SR_PESLC: pollination_shock_gro
+    1
+  129 POLIv_fSPELC    1 r y n  2030 SR_PESLC: pollination_shock_v_f
+    1
+  130 POLIosdSPELC    1 r y n  2030 SR_PESLC: pollination_shock_osd
+    1
+  131 POLIocrSPELC    1 r y n  2030 SR_PESLC: pollination_shock_ocr
+    1
+  132 SRPESLCTXSHK    1 r y n  2021_30_SR_PESLC tax shock
+    1
+  133 SRPLCNETSHK     2 r n n  Net shock for SRRnDPESLC relative to BAU
+    1    4
+  134 SRLPEGCAES      2 r n n  SRRnD20p all Ecosystem services shocks
+    1    4
+  135 MARFishSRPGC    1 r y n  2030 SR_LandPESGC: marine_fisheries_shoc
+    1
+  136 CARBforSRPGC    1 r y n  2030 SR_PESLC: carbon_forestry_shock
+    1
+  137 POLIpfbSRPGC    1 r y n  2030 SR_PESLC: pollination_shock_pfb
+    1
+  138 POLIgroSRPGC    1 r y n  2030 SR_PESLC: pollination_shock_gro
+    1
+  139 POLIv_fSRPGC    1 r y n  2030 SR_PESLC: pollination_shock_v_f
+    1
+  140 POLIosdSRPGC    1 r y n  2030 SR_PESLC: pollination_shock_osd
+    1
+  141 POLIocrSRPGC    1 r y n  2030 SR_PESLC: pollination_shock_ocr
+    1
+  142 SRLNDPGTXSHK    1 r y n  2021_30_SR_PESLC tax shock
+    1
+  143 SRLGCNETSHK     2 r n n  Net shock for SRLGCNETSHK relative to BAU
+    1    4
+  144 BAUESCOLSHK     2 r n n  BAU Ecosystem services shocks
+    1    4
+  145 MARFishBACES    1 r y n  BAU ES collapse: marine_fisheries_bau_shoc
+    1
+  146 CARBforBACES    1 r y n  BAU ES collapse: carbon_forestry_bau_shock
+    1
+  147 POLIpfbBACES    1 r y n  BAU ES collapse: pollination_bau_shock_pfb
+    1
+  148 POLIgroBACES    1 r y n  BAU ES collapse: pollination_bau_shock_gro
+    1
+  149 POLIv_fBACES    1 r y n  BAU ES collapse: pollination_bau_shock_v_f
+    1
+  150 POLIosdBACES    1 r y n  BAU ES collapse: pollination_bau_shock_osd
+    1
+  151 POLIocrBACES    1 r y n  BAU ES collapse: pollination_bau_shock_ocr
+    1
+  152 COLNETSHK       2 r n n  Net shock for all collapse relative to BAU
+    1    4
+  153 BAUEAMCOLSHK    2 r n n  BAU Ecosystem services shocks
+    1    4
+  154 POLIpfbBACAM    1 r y n  BAU ES Amazon collapse: pollination_bau_shock_pfb
+    1
+  155 POLIgroBACAM    1 r y n  BAU ES Amazon collapse: pollination_bau_shock_gro
+    1
+  156 POLIv_fBACAM    1 r y n  BAU ES Amazon collapse: pollination_bau_shock_v_f
+    1
+  157 POLIosdBACAM    1 r y n  BAU ES Amazon collapse: pollination_bau_shock_osd
+    1
+  158 POLIocrBACAM    1 r y n  BAU ES Amazon collapse: pollination_bau_shock_ocr
+    1
+#EQUATIONS
+    0
+#READS
+  126
+    1     1 qgdp14_21         1 MacFile01            N001 a h     1
+     1
+    2     2 usklab14_21       2 MacFile02            N001 a h     1
+     1
+    3     3 sklab14_21        3 MacFile03            N001 a h     1
+     1
+    4     4 cap14_21          4 MacFile04            N001 a h     1
+     1
+    5     5 pop14_21          5 MacFile05            N001 a h     1
+     1
+    6     8 aoreg21_30        6 MacFile06            N001 a h     1
+     1
+    7     9 usklab21_30       7 MacFile07            N001 a h     1
+     1
+    8    10 sklab21_30        8 MacFile08            N001 a h     1
+     1
+    9    11 cap21_30          9 MacFile09            N001 a h     1
+     1
+   10    12 pop21_30         10 MacFile10            N001 a h     1
+     1
+   11    14 aocrop14_21      11 SecFile01            N001 a h     1
+     1
+   12    15 aorum14_21       12 SecFile02            N001 a h     1
+     1
+   13    16 aonrum14_21      13 SecFile03            N001 a h     1
+     1
+   14    18 aocrop21_30      14 SecFile04            N001 a h     1
+     1
+   15    19 aorum21_30       15 SecFile05            N001 a h     1
+     1
+   16    20 aonrum21_30      16 SecFile06            N001 a h     1
+     1
+   17    22 MARFishBAUES     17 InVFile01            N001 a h     1
+     1
+   18    23 CARBforBAUES     18 InVFile02            N001 a h     1
+     1
+   19    24 POLIpfbBAUES     19 InVFile03            N001 a h     1
+     1
+   20    25 POLIgroBAUES     20 InVFile04            N001 a h     1
+     1
+   21    26 POLIv_fBAUES     21 InVFile05            N001 a h     1
+     1
+   22    27 POLIosdBAUES     22 InVFile06            N001 a h     1
+     1
+   23    28 POLIocrBAUES     23 InVFile07            N001 a h     1
+     1
+   24    30 MARFishPESGC     24 InVFile08            N001 a h     1
+     1
+   25    31 CARBforPESGC     25 InVFile09            N001 a h     1
+     1
+   26    32 POLIpfbPESGC     26 InVFile10            N001 a h     1
+     1
+   27    33 POLIgroPESGC     27 InVFile11            N001 a h     1
+     1
+   28    34 POLIv_fPESGC     28 InVFile12            N001 a h     1
+     1
+   29    35 POLIosdPESGC     29 InVFile13            N001 a h     1
+     1
+   30    36 POLIocrPESGC     30 InVFile14            N001 a h     1
+     1
+   31    39 MARFishPESLC     31 InVFile15            N001 a h     1
+     1
+   32    40 CARBforPESLC     32 InVFile16            N001 a h     1
+     1
+   33    41 POLIpfbPESLC     33 InVFile17            N001 a h     1
+     1
+   34    42 POLIgroPESLC     34 InVFile18            N001 a h     1
+     1
+   35    43 POLIv_fPESLC     35 InVFile19            N001 a h     1
+     1
+   36    44 POLIosdPESLC     36 InVFile20            N001 a h     1
+     1
+   37    45 POLIocrPESLC     37 InVFile21            N001 a h     1
+     1
+   38    46 PESLCLDTXSHK     38 InVFile22            N001 a h     1
+     1
+   39    49 MARFishSRLND     39 InVFile23            N001 a h     1
+     1
+   40    50 CARBforSRLND     40 InVFile24            N001 a h     1
+     1
+   41    51 POLIpfbSRLND     41 InVFile25            N001 a h     1
+     1
+   42    52 POLIgroSRLND     42 InVFile26            N001 a h     1
+     1
+   43    53 POLIv_fSRLND     43 InVFile27            N001 a h     1
+     1
+   44    54 POLIosdSRLND     44 InVFile28            N001 a h     1
+     1
+   45    55 POLIocrSRLND     45 InVFile29            N001 a h     1
+     1
+   46    56 SRLNDLDTXSHK     46 InVFile30            N001 a h     1
+     1
+   47    59 MARFishSRRnD     47 InVFile31            N001 a h     1
+     1
+   48    60 CARBforSRRnD     48 InVFile32            N001 a h     1
+     1
+   49    61 POLIpfbSRRnD     49 InVFile33            N001 a h     1
+     1
+   50    62 POLIgroSRRnD     50 InVFile34            N001 a h     1
+     1
+   51    63 POLIv_fSRRnD     51 InVFile35            N001 a h     1
+     1
+   52    64 POLIosdSRRnD     52 InVFile36            N001 a h     1
+     1
+   53    65 POLIocrSRRnD     53 InVFile37            N001 a h     1
+     1
+   54    66 SRRnD20PSHK      54 InVFile38            N001 a h     1
+     1
+   55    69 MARFishPESGR     55 InVFile39            N001 a h     1
+     1
+   56    70 CARBforPESGR     56 InVFile40            N001 a h     1
+     1
+   57    71 POLIpfbPESGR     57 InVFile41            N001 a h     1
+     1
+   58    72 POLIgroPESGR     58 InVFile42            N001 a h     1
+     1
+   59    73 POLIv_fPESGR     59 InVFile43            N001 a h     1
+     1
+   60    74 POLIosdPESGR     60 InVFile44            N001 a h     1
+     1
+   61    75 POLIocrPESGR     61 InVFile45            N001 a h     1
+     1
+   62    78 FisPESGB2R3E     62 InVFile46            N001 a h     1
+     1
+   63    79 ForPESGB2R3E     63 InVFile47            N001 a h     1
+     1
+   64    80 PfbPESGB2R3E     64 InVFile48            N001 a h     1
+     1
+   65    81 GroPESGB2R3E     65 InVFile49            N001 a h     1
+     1
+   66    82 V_fPESGB2R3E     66 InVFile50            N001 a h     1
+     1
+   67    83 OsdPESGB2R3E     67 InVFile51            N001 a h     1
+     1
+   68    84 OcrPESGB2R3E     68 InVFile52            N001 a h     1
+     1
+   69    87 FisPESGCRnd      69 InVFile53            N001 a h     1
+     1
+   70    88 ForPESGCRnd      70 InVFile54            N001 a h     1
+     1
+   71    89 PfbPESGCRnd      71 InVFile55            N001 a h     1
+     1
+   72    90 GroPESGCRnd      72 InVFile56            N001 a h     1
+     1
+   73    91 V_fPESGCRnd      73 InVFile57            N001 a h     1
+     1
+   74    92 OsdPESGCRnd      74 InVFile58            N001 a h     1
+     1
+   75    93 OcrPESGCRnd      75 InVFile59            N001 a h     1
+     1
+   76    96 MARFishRnD       76 InVFile60            N001 a h     1
+     1
+   77    97 CARBforRnD       77 InVFile61            N001 a h     1
+     1
+   78    98 POLIpfbRnD       78 InVFile62            N001 a h     1
+     1
+   79    99 POLIgroRnD       79 InVFile63            N001 a h     1
+     1
+   80   100 POLIv_fRnD       80 InVFile64            N001 a h     1
+     1
+   81   101 POLIosdRnD       81 InVFile65            N001 a h     1
+     1
+   82   102 POLIocrRnD       82 InVFile66            N001 a h     1
+     1
+   83   105 MARFishSRnD      83 InVFile67            N001 a h     1
+     1
+   84   106 CARBforSRnD      84 InVFile68            N001 a h     1
+     1
+   85   107 POLIpfbSRnD      85 InVFile69            N001 a h     1
+     1
+   86   108 POLIgroSRnD      86 InVFile70            N001 a h     1
+     1
+   87   109 POLIv_fSRnD      87 InVFile71            N001 a h     1
+     1
+   88   110 POLIosdSRnD      88 InVFile72            N001 a h     1
+     1
+   89   111 POLIocrSRnD      89 InVFile73            N001 a h     1
+     1
+   90   114 MARFishSRPLC     90 InVFile74            N001 a h     1
+     1
+   91   115 CARBforSRPLC     91 InVFile75            N001 a h     1
+     1
+   92   116 POLIpfbSRPLC     92 InVFile76            N001 a h     1
+     1
+   93   117 POLIgroSRPLC     93 InVFile77            N001 a h     1
+     1
+   94   118 POLIv_fSRPLC     94 InVFile78            N001 a h     1
+     1
+   95   119 POLIosdSRPLC     95 InVFile79            N001 a h     1
+     1
+   96   120 POLIocrSRPLC     96 InVFile80            N001 a h     1
+     1
+   97   121 PESLSRDTXSHK     97 InVFile81            N001 a h     1
+     1
+   98   122 RnDHALFSHK       98 InVFile82            N001 a h     1
+     1
+   99   125 MARFishSPELC     99 InVFile83            N001 a h     1
+     1
+  100   126 CARBforSPELC    100 InVFile84            N001 a h     1
+     1
+  101   127 POLIpfbSPELC    101 InVFile85            N001 a h     1
+     1
+  102   128 POLIgroSPELC    102 InVFile86            N001 a h     1
+     1
+  103   129 POLIv_fSPELC    103 InVFile87            N001 a h     1
+     1
+  104   130 POLIosdSPELC    104 InVFile88            N001 a h     1
+     1
+  105   131 POLIocrSPELC    105 InVFile89            N001 a h     1
+     1
+  106   132 SRPESLCTXSHK    106 InVFile90            N001 a h     1
+     1
+  107   135 MARFishSRPGC    107 InVFile91            N001 a h     1
+     1
+  108   136 CARBforSRPGC    108 InVFile92            N001 a h     1
+     1
+  109   137 POLIpfbSRPGC    109 InVFile93            N001 a h     1
+     1
+  110   138 POLIgroSRPGC    110 InVFile94            N001 a h     1
+     1
+  111   139 POLIv_fSRPGC    111 InVFile95            N001 a h     1
+     1
+  112   140 POLIosdSRPGC    112 InVFile96            N001 a h     1
+     1
+  113   141 POLIocrSRPGC    113 InVFile97            N001 a h     1
+     1
+  114   142 SRLNDPGTXSHK    114 InVFile98            N001 a h     1
+     1
+  115   145 MARFishBACES    115 InVFile99            N001 a h     1
+     1
+  116   146 CARBforBACES    116 InVFile100           N001 a h     1
+     1
+  117   147 POLIpfbBACES    117 InVFile101           N001 a h     1
+     1
+  118   148 POLIgroBACES    118 InVFile102           N001 a h     1
+     1
+  119   149 POLIv_fBACES    119 InVFile103           N001 a h     1
+     1
+  120   150 POLIosdBACES    120 InVFile104           N001 a h     1
+     1
+  121   151 POLIocrBACES    121 InVFile105           N001 a h     1
+     1
+  122   154 POLIpfbBACAM    122 InVFile106           N001 a h     1
+     1
+  123   155 POLIgroBACAM    123 InVFile107           N001 a h     1
+     1
+  124   156 POLIv_fBACAM    124 InVFile108           N001 a h     1
+     1
+  125   157 POLIosdBACAM    125 InVFile109           N001 a h     1
+     1
+  126   158 POLIocrBACAM    126 InVFile110           N001 a h     1
+     1
+#READ(EXTRA)
+    1
+    1 el
+ REG          GTAPSETS             H1  
+#NCVARIABLES
+    0
+#STATEMENTS
+       1   1 fl                                                  2  26    0 n
+       3   2 fl                                                  3  26    0 n
+       4   2 fl                                                  4  26    0 n
+       5   2 fl                                                  5  26    0 n
+       6   2 fl                                                  6  26    0 n
+       7   2 fl                                                  7  26    0 n
+       8   2 fl                                                  8  26    0 n
+       9   2 fl                                                  9  26    0 n
+      10   2 fl                                                 10  26    0 n
+      11   2 fl                                                 11  26    0 n
+      13   2 fl                                                 13  46    0 n
+      14   2 fl                                                 14  50    0 n
+      15   2 fl                                                 15  54    0 n
+      16   2 fl                                                 16  46    0 n
+      17   2 fl                                                 17  50    0 n
+      18   2 fl                                                 18  54    0 n
+      20   2 fl                                                 20  42    0 n
+      21   2 fl                                                 21  41    0 n
+      22   2 fl                                                 22  41    0 n
+      23   2 fl                                                 23  41    0 n
+      24   2 fl                                                 24  41    0 n
+      25   2 fl                                                 25  41    0 n
+      26   2 fl                                                 26  41    0 n
+      28   2 fl                                                 28  50    0 n
+      29   2 fl                                                 29  50    0 n
+      30   2 fl                                                 30  50    0 n
+      31   2 fl                                                 31  50    0 n
+      32   2 fl                                                 32  50    0 n
+      33   2 fl                                                 33  50    0 n
+      34   2 fl                                                 34  50    0 n
+      36   2 fl                                                 36  50    0 n
+      37   2 fl                                                 37  50    0 n
+      38   2 fl                                                 38  50    0 n
+      39   2 fl                                                 39  50    0 n
+      40   2 fl                                                 40  50    0 n
+      41   2 fl                                                 41  50    0 n
+      42   2 fl                                                 42  50    0 n
+      43   2 fl                                                 43  36    0 n
+      45   2 fl                                                 45  56    0 n
+      46   2 fl                                                 46  56    0 n
+      47   2 fl                                                 47  56    0 n
+      48   2 fl                                                 48  56    0 n
+      49   2 fl                                                 49  56    0 n
+      50   2 fl                                                 50  56    0 n
+      51   2 fl                                                 51  56    0 n
+      52   2 fl                                                 52  45    0 n
+      54   2 fl                                                 54  55    0 n
+      55   2 fl                                                 55  55    0 n
+      56   2 fl                                                 56  55    0 n
+      57   2 fl                                                 57  55    0 n
+      58   2 fl                                                 58  55    0 n
+      59   2 fl                                                 59  55    0 n
+      60   2 fl                                                 60  55    0 n
+      61   2 fl                                                 61  55    0 n
+      63   2 fl                                                 63  61    0 n
+      64   2 fl                                                 64  61    0 n
+      65   2 fl                                                 65  61    0 n
+      66   2 fl                                                 66  61    0 n
+      67   2 fl                                                 67  61    0 n
+      68   2 fl                                                 68  61    0 n
+      69   2 fl                                                 69  61    0 n
+      71   2 fl                                                 71  65    0 n
+      72   2 fl                                                 72  64    0 n
+      73   2 fl                                                 73  64    0 n
+      74   2 fl                                                 74  64    0 n
+      75   2 fl                                                 75  64    0 n
+      76   2 fl                                                 76  64    0 n
+      77   2 fl                                                 77  64    0 n
+      79   2 fl                                                 79  58    0 n
+      80   2 fl                                                 80  57    0 n
+      81   2 fl                                                 81  57    0 n
+      82   2 fl                                                 82  57    0 n
+      83   2 fl                                                 83  57    0 n
+      84   2 fl                                                 84  57    0 n
+      85   2 fl                                                 85  57    0 n
+      87   2 fl                                                 87  52    0 n
+      88   2 fl                                                 88  52    0 n
+      89   2 fl                                                 89  52    0 n
+      90   2 fl                                                 90  52    0 n
+      91   2 fl                                                 91  52    0 n
+      92   2 fl                                                 92  52    0 n
+      93   2 fl                                                 93  52    0 n
+      95   2 fl                                                 95  55    0 n
+      96   2 fl                                                 96  55    0 n
+      97   2 fl                                                 97  55    0 n
+      98   2 fl                                                 98  55    0 n
+      99   2 fl                                                 99  55    0 n
+     100   2 fl                                                100  55    0 n
+     101   2 fl                                                101  55    0 n
+     103   2 fl                                                103  61    0 n
+     104   2 fl                                                104  62    0 n
+     105   2 fl                                                105  62    0 n
+     106   2 fl                                                106  62    0 n
+     107   2 fl                                                107  62    0 n
+     108   2 fl                                                108  62    0 n
+     109   2 fl                                                109  62    0 n
+     110   2 fl                                                110  47    0 n
+     111   2 fl                                                111  47    0 n
+     113   2 fl                                                113  57    0 n
+     114   2 fl                                                114  58    0 n
+     115   2 fl                                                115  57    0 n
+     116   2 fl                                                116  57    0 n
+     117   2 fl                                                117  57    0 n
+     118   2 fl                                                118  57    0 n
+     119   2 fl                                                119  57    0 n
+     120   2 fl                                                120  35    0 n
+     122   2 fl                                                122  59    0 n
+     123   2 fl                                                123  59    0 n
+     124   2 fl                                                124  59    0 n
+     125   2 fl                                                125  59    0 n
+     126   2 fl                                                126  59    0 n
+     127   2 fl                                                127  59    0 n
+     128   2 fl                                                128  59    0 n
+     129   2 fl                                                129  59    0 n
+     131   2 fl                                                131  59    0 n
+     132   2 fl                                                132  59    0 n
+     133   2 fl                                                133  59    0 n
+     134   2 fl                                                134  59    0 n
+     135   2 fl                                                135  59    0 n
+     136   2 fl                                                136  59    0 n
+     137   2 fl                                                137  59    0 n
+     139   2 fl                                                139  66    0 n
+     140   2 fl                                                140  66    0 n
+     141   2 fl                                                141  66    0 n
+     142   2 fl                                                142  66    0 n
+     143   2 fl                                                143  66    0 n
+     145   2 fl                                                145  31    0 n
+     146   2 fl                                                146  25    0 n
+     147   1 st REG                                            148  65    0 n
+     149   2 st MACVAR                                         150  47    0 n
+     152   1 cs qgdp14_21                                      153  36    0 n
+     154   2 cs usklab14_21                                    154  46    0 n
+     155   2 cs sklab14_21                                     155  45    0 n
+     156   2 cs cap14_21                                       156  40    0 n
+     157   2 cs pop14_21                                       157  43    0 n
+     158   1 rd qgdp14_21            a                         159  47    0 n
+     160   2 rd usklab14_21          a                         160  47    0 n
+     161   2 rd sklab14_21           a                         161  47    0 n
+     162   2 rd cap14_21             a                         162  47    0 n
+     163   2 rd pop14_21             a                         163  47    0 n
+     165   1 cs MACSHK14_21                                    166  71    0 n
+     167   1 fm                                                168  50    0 n
+     169   2 fm                                                169  51    0 n
+     171   2 fm                                                171  53    0 n
+     172   2 fm                                                172  52    0 n
+     173   2 fm                                                173  50    0 n
+     174   2 fm                                                174  50    0 n
+     176   1 cs MACSHK21_30                                    177  71    0 n
+     178   2 cs aoreg21_30                                     178  38    0 n
+     179   2 cs usklab21_30                                    179  46    0 n
+     180   2 cs sklab21_30                                     180  44    0 n
+     181   2 cs cap21_30                                       181  40    0 n
+     182   2 cs pop21_30                                       182  43    0 n
+     183   1 rd aoreg21_30           a                         184  47    0 n
+     185   2 rd usklab21_30          a                         185  47    0 n
+     186   2 rd sklab21_30           a                         186  47    0 n
+     187   2 rd cap21_30             a                         187  47    0 n
+     188   2 rd pop21_30             a                         188  47    0 n
+     189   1 fm                                                190  50    0 n
+     191   2 fm                                                191  52    0 n
+     192   2 fm                                                192  53    0 n
+     193   2 fm                                                193  52    0 n
+     194   2 fm                                                194  50    0 n
+     195   2 fm                                                195  50    0 n
+     197   1 st CROPLVSTK                                      198  54    0 n
+     199   1 cs CRLVSHK14_21                                   200  82    0 n
+     201   2 cs aocrop14_21                                    201  46    0 n
+     202   2 cs aorum14_21                                     202  49    0 n
+     203   2 cs aonrum14_21                                    203  53    0 n
+     204   1 rd aocrop14_21          a                         205  48    0 n
+     206   2 rd aorum14_21           a                         206  48    0 n
+     207   2 rd aonrum14_21          a                         207  48    0 n
+     208   1 fm                                                209  54    0 n
+     210   2 fm                                                210  53    0 n
+     211   2 fm                                                211  54    0 n
+     213   1 cs CRLVSHK21_30                                   214  82    0 n
+     215   2 cs aocrop21_30                                    215  46    0 n
+     216   2 cs aorum21_30                                     216  49    0 n
+     217   2 cs aonrum21_30                                    217  53    0 n
+     218   1 rd aocrop21_30          a                         219  48    0 n
+     220   2 rd aorum21_30           a                         220  48    0 n
+     221   2 rd aonrum21_30          a                         221  48    0 n
+     222   1 fm                                                223  54    0 n
+     224   2 fm                                                224  53    0 n
+     225   2 fm                                                225  54    0 n
+     227   1 wr MACSHK14_21          a                         228  44    0 n
+     229   2 wr CRLVSHK14_21         a                         229  44    0 n
+     230   2 wr MACSHK21_30          a                         230  44    0 n
+     231   2 wr CRLVSHK21_30         a                         231  44    0 n
+     233   1 st ECSEC                                          235  68    0 n
+     237   1 cs BAUESSHK                                       238  74    0 n
+     239   2 cs MARFishBAUES                                   239  67    0 n
+     240   2 cs CARBforBAUES                                   240  67    0 n
+     241   2 cs POLIpfbBAUES                                   241  67    0 n
+     242   2 cs POLIgroBAUES                                   242  67    0 n
+     243   2 cs POLIv_fBAUES                                   243  67    0 n
+     244   2 cs POLIosdBAUES                                   244  67    0 n
+     245   2 cs POLIocrBAUES                                   245  67    0 n
+     246   1 rd MARFishBAUES         a                         247  48    0 n
+     248   2 rd CARBforBAUES         a                         248  48    0 n
+     249   2 rd POLIpfbBAUES         a                         249  48    0 n
+     250   2 rd POLIgroBAUES         a                         250  48    0 n
+     251   2 rd POLIv_fBAUES         a                         251  48    0 n
+     252   2 rd POLIosdBAUES         a                         252  48    0 n
+     253   2 rd POLIocrBAUES         a                         253  48    0 n
+     254   1 fm                                                255  55    0 n
+     256   2 fm                                                256  55    0 n
+     257   2 fm                                                257  55    0 n
+     258   2 fm                                                258  55    0 n
+     259   2 fm                                                259  55    0 n
+     260   2 fm                                                260  55    0 n
+     261   2 fm                                                261  55    0 n
+     262   1 wr BAUESSHK             a                         263  41    0 n
+     265   1 cs PESGCALLESHK                                   266  84    0 n
+     267   2 cs MARFishPESGC                                   267  67    0 n
+     268   2 cs CARBforPESGC                                   268  67    0 n
+     269   2 cs POLIpfbPESGC                                   269  67    0 n
+     270   2 cs POLIgroPESGC                                   270  67    0 n
+     271   2 cs POLIv_fPESGC                                   271  67    0 n
+     272   2 cs POLIosdPESGC                                   272  67    0 n
+     273   2 cs POLIocrPESGC                                   273  67    0 n
+     274   1 rd MARFishPESGC         a                         275  48    0 n
+     276   2 rd CARBforPESGC         a                         276  48    0 n
+     277   2 rd POLIpfbPESGC         a                         277  48    0 n
+     278   2 rd POLIgroPESGC         a                         278  48    0 n
+     279   2 rd POLIv_fPESGC         a                         279  48    0 n
+     280   2 rd POLIosdPESGC         a                         280  48    0 n
+     281   2 rd POLIocrPESGC         a                         281  48    0 n
+     282   1 fm                                                283  59    0 n
+     284   2 fm                                                284  59    0 n
+     285   2 fm                                                285  59    0 n
+     286   2 fm                                                286  59    0 n
+     287   2 fm                                                287  59    0 n
+     288   2 fm                                                288  59    0 n
+     289   2 fm                                                289  59    0 n
+     290   1 wr PESGCALLESHK         a                         291  45    0 n
+     293   1 cs PESGCNETESHK                                   294  84    0 n
+     295   1 fm                                                296  80    0 n
+     297   1 wr PESGCNETESHK         a                         298  45    0 n
+     300   1 cs PESLCALLESHK                                   301  84    0 n
+     302   2 cs MARFishPESLC                                   302  67    0 n
+     303   2 cs CARBforPESLC                                   303  67    0 n
+     304   2 cs POLIpfbPESLC                                   304  67    0 n
+     305   2 cs POLIgroPESLC                                   305  67    0 n
+     306   2 cs POLIv_fPESLC                                   306  67    0 n
+     307   2 cs POLIosdPESLC                                   307  67    0 n
+     308   2 cs POLIocrPESLC                                   308  67    0 n
+     309   2 cs PESLCLDTXSHK                                   309  54    0 n
+     310   1 rd MARFishPESLC         a                         311  48    0 n
+     312   2 rd CARBforPESLC         a                         312  48    0 n
+     313   2 rd POLIpfbPESLC         a                         313  48    0 n
+     314   2 rd POLIgroPESLC         a                         314  48    0 n
+     315   2 rd POLIv_fPESLC         a                         315  48    0 n
+     316   2 rd POLIosdPESLC         a                         316  48    0 n
+     317   2 rd POLIocrPESLC         a                         317  48    0 n
+     318   2 rd PESLCLDTXSHK         a                         318  48    0 n
+     319   1 fm                                                320  59    0 n
+     321   2 fm                                                321  59    0 n
+     322   2 fm                                                322  59    0 n
+     323   2 fm                                                323  59    0 n
+     324   2 fm                                                324  59    0 n
+     325   2 fm                                                325  59    0 n
+     326   2 fm                                                326  59    0 n
+     327   1 wr PESLCALLESHK         a                         328  45    0 n
+     330   1 cs PESLCNETESHK                                   331  84    0 n
+     332   1 fm                                                333  80    0 n
+     334   1 wr PESLCNETESHK         a                         335  44    0 n
+     336   2 wr PESLCLDTXSHK         a                         336  44    0 n
+     338   1 cs SRLNDALLESHK                                   339  84    0 n
+     340   2 cs MARFishSRLND                                   340  73    0 n
+     341   2 cs CARBforSRLND                                   341  73    0 n
+     342   2 cs POLIpfbSRLND                                   342  73    0 n
+     343   2 cs POLIgroSRLND                                   343  73    0 n
+     344   2 cs POLIv_fSRLND                                   344  73    0 n
+     345   2 cs POLIosdSRLND                                   345  73    0 n
+     346   2 cs POLIocrSRLND                                   346  73    0 n
+     347   2 cs SRLNDLDTXSHK                                   347  54    0 n
+     348   1 rd MARFishSRLND         a                         349  48    0 n
+     350   2 rd CARBforSRLND         a                         350  48    0 n
+     351   2 rd POLIpfbSRLND         a                         351  48    0 n
+     352   2 rd POLIgroSRLND         a                         352  48    0 n
+     353   2 rd POLIv_fSRLND         a                         353  48    0 n
+     354   2 rd POLIosdSRLND         a                         354  48    0 n
+     355   2 rd POLIocrSRLND         a                         355  48    0 n
+     356   2 rd SRLNDLDTXSHK         a                         356  48    0 n
+     357   1 fm                                                358  59    0 n
+     359   2 fm                                                359  59    0 n
+     360   2 fm                                                360  59    0 n
+     361   2 fm                                                361  59    0 n
+     362   2 fm                                                362  59    0 n
+     363   2 fm                                                363  59    0 n
+     364   2 fm                                                364  59    0 n
+     365   1 wr SRLNDALLESHK         a                         366  45    0 n
+     368   1 cs SRLNDNETESHK                                   369  84    0 n
+     370   1 fm                                                371  80    0 n
+     372   1 wr SRLNDNETESHK         a                         373  44    0 n
+     374   2 wr SRLNDLDTXSHK         a                         374  44    0 n
+     376   1 cs SRRnDALLESHK                                   377  87    0 n
+     378   2 cs MARFishSRRnD                                   378  70    0 n
+     379   2 cs CARBforSRRnD                                   379  70    0 n
+     380   2 cs POLIpfbSRRnD                                   380  70    0 n
+     381   2 cs POLIgroSRRnD                                   381  70    0 n
+     382   2 cs POLIv_fSRRnD                                   382  70    0 n
+     383   2 cs POLIosdSRRnD                                   383  70    0 n
+     384   2 cs POLIocrSRRnD                                   384  70    0 n
+     385   2 cs SRRnD20PSHK                                    385  57    0 n
+     386   1 rd MARFishSRRnD         a                         387  48    0 n
+     388   2 rd CARBforSRRnD         a                         388  48    0 n
+     389   2 rd POLIpfbSRRnD         a                         389  48    0 n
+     390   2 rd POLIgroSRRnD         a                         390  48    0 n
+     391   2 rd POLIv_fSRRnD         a                         391  48    0 n
+     392   2 rd POLIosdSRRnD         a                         392  48    0 n
+     393   2 rd POLIocrSRRnD         a                         393  48    0 n
+     394   2 rd SRRnD20PSHK          a                         394  48    0 n
+     395   1 fm                                                396  59    0 n
+     397   2 fm                                                397  59    0 n
+     398   2 fm                                                398  59    0 n
+     399   2 fm                                                399  59    0 n
+     400   2 fm                                                400  59    0 n
+     401   2 fm                                                401  59    0 n
+     402   2 fm                                                402  59    0 n
+     403   1 wr SRRnDALLESHK         a                         404  45    0 n
+     406   1 cs SRRnDNETESHK                                   407  84    0 n
+     408   1 fm                                                409  80    0 n
+     410   1 wr SRRnDNETESHK         a                         411  44    0 n
+     412   2 wr SRRnD20PSHK          a                         412  43    0 n
+     414   1 cs PESGRnDAESHK                                   415  84    0 n
+     416   2 cs MARFishPESGR                                   416  79    0 n
+     417   2 cs CARBforPESGR                                   417  78    0 n
+     418   2 cs POLIpfbPESGR                                   418  78    0 n
+     419   2 cs POLIgroPESGR                                   419  78    0 n
+     420   2 cs POLIv_fPESGR                                   420  78    0 n
+     421   2 cs POLIosdPESGR                                   421  78    0 n
+     422   2 cs POLIocrPESGR                                   422  78    0 n
+     423   1 rd MARFishPESGR         a                         424  48    0 n
+     425   2 rd CARBforPESGR         a                         425  48    0 n
+     426   2 rd POLIpfbPESGR         a                         426  48    0 n
+     427   2 rd POLIgroPESGR         a                         427  48    0 n
+     428   2 rd POLIv_fPESGR         a                         428  48    0 n
+     429   2 rd POLIosdPESGR         a                         429  48    0 n
+     430   2 rd POLIocrPESGR         a                         430  48    0 n
+     431   1 fm                                                432  59    0 n
+     433   2 fm                                                433  59    0 n
+     434   2 fm                                                434  59    0 n
+     435   2 fm                                                435  59    0 n
+     436   2 fm                                                436  59    0 n
+     437   2 fm                                                437  59    0 n
+     438   2 fm                                                438  59    0 n
+     439   1 wr PESGRnDAESHK         a                         440  45    0 n
+     442   1 cs PESGRNETESHK                                   443  86    0 n
+     444   1 fm                                                445  80    0 n
+     446   1 wr PESGRNETESHK         a                         447  45    0 n
+     449   1 cs PESGB2RD3AES                                   450 103    0 n
+     451   2 cs FisPESGB2R3E                                   451  82    0 n
+     452   2 cs ForPESGB2R3E                                   452  81    0 n
+     453   2 cs PfbPESGB2R3E                                   453  81    0 n
+     454   2 cs GroPESGB2R3E                                   454  81    0 n
+     455   2 cs V_fPESGB2R3E                                   455  81    0 n
+     456   2 cs OsdPESGB2R3E                                   456  81    0 n
+     457   2 cs OcrPESGB2R3E                                   457  81    0 n
+     458   1 rd FisPESGB2R3E         a                         459  48    0 n
+     460   2 rd ForPESGB2R3E         a                         460  48    0 n
+     461   2 rd PfbPESGB2R3E         a                         461  48    0 n
+     462   2 rd GroPESGB2R3E         a                         462  48    0 n
+     463   2 rd V_fPESGB2R3E         a                         463  48    0 n
+     464   2 rd OsdPESGB2R3E         a                         464  48    0 n
+     465   2 rd OcrPESGB2R3E         a                         465  48    0 n
+     466   1 fm                                                467  59    0 n
+     468   2 fm                                                468  59    0 n
+     469   2 fm                                                469  59    0 n
+     470   2 fm                                                470  59    0 n
+     471   2 fm                                                471  59    0 n
+     472   2 fm                                                472  59    0 n
+     473   2 fm                                                473  59    0 n
+     474   1 wr PESGB2RD3AES         a                         475  45    0 n
+     477   1 cs PESGBNETESHK                                   478  98    0 n
+     479   1 fm                                                480  80    0 n
+     481   1 wr PESGBNETESHK         a                         482  45    0 n
+     484   1 cs PESGCRndSRAE                                   485  96    0 n
+     486   2 cs FisPESGCRnd                                    486  73    0 n
+     487   2 cs ForPESGCRnd                                    487  73    0 n
+     488   2 cs PfbPESGCRnd                                    488  73    0 n
+     489   2 cs GroPESGCRnd                                    489  73    0 n
+     490   2 cs V_fPESGCRnd                                    490  73    0 n
+     491   2 cs OsdPESGCRnd                                    491  73    0 n
+     492   2 cs OcrPESGCRnd                                    492  73    0 n
+     493   1 rd FisPESGCRnd          a                         494  47    0 n
+     495   2 rd ForPESGCRnd          a                         495  47    0 n
+     496   2 rd PfbPESGCRnd          a                         496  47    0 n
+     497   2 rd GroPESGCRnd          a                         497  47    0 n
+     498   2 rd V_fPESGCRnd          a                         498  47    0 n
+     499   2 rd OsdPESGCRnd          a                         499  47    0 n
+     500   2 rd OcrPESGCRnd          a                         500  47    0 n
+     501   1 fm                                                502  58    0 n
+     503   2 fm                                                503  58    0 n
+     504   2 fm                                                504  58    0 n
+     505   2 fm                                                505  58    0 n
+     506   2 fm                                                506  58    0 n
+     507   2 fm                                                507  58    0 n
+     508   2 fm                                                508  58    0 n
+     509   1 wr PESGCRndSRAE         a                         510  45    0 n
+     512   1 cs PESGCNETESK2                                   513  98    0 n
+     514   1 fm                                                515  80    0 n
+     516   1 wr PESGCNETESK2         a                         517  45    0 n
+     519   1 cs RnDALLESHK                                     520  85    0 n
+     521   2 cs MARFishRnD                                     521  68    0 n
+     522   2 cs CARBforRnD                                     522  68    0 n
+     523   2 cs POLIpfbRnD                                     523  68    0 n
+     524   2 cs POLIgroRnD                                     524  68    0 n
+     525   2 cs POLIv_fRnD                                     525  68    0 n
+     526   2 cs POLIosdRnD                                     526  68    0 n
+     527   2 cs POLIocrRnD                                     527  68    0 n
+     528   1 rd MARFishRnD           a                         529  47    0 n
+     530   3 rd CARBforRnD           a                         530  47    0 n
+     531   3 rd POLIpfbRnD           a                         531  47    0 n
+     532   3 rd POLIgroRnD           a                         532  47    0 n
+     533   3 rd POLIv_fRnD           a                         533  47    0 n
+     534   3 rd POLIosdRnD           a                         534  47    0 n
+     535   3 rd POLIocrRnD           a                         535  47    0 n
+     536   1 fm                                                537  55    0 n
+     538   2 fm                                                538  55    0 n
+     539   2 fm                                                539  55    0 n
+     540   2 fm                                                540  55    0 n
+     541   2 fm                                                541  55    0 n
+     542   2 fm                                                542  55    0 n
+     543   2 fm                                                543  55    0 n
+     544   1 wr RnDALLESHK           a                         545  43    0 n
+     547   1 cs RnDNETESHK                                     548  82    0 n
+     549   1 fm                                                550  76    0 n
+     551   1 wr RnDNETESHK           a                         552  43    0 n
+     554   1 cs SRnDALLESHK                                    555  86    0 n
+     556   2 cs MARFishSRnD                                    556  67    0 n
+     557   2 cs CARBforSRnD                                    557  67    0 n
+     558   2 cs POLIpfbSRnD                                    558  67    0 n
+     559   2 cs POLIgroSRnD                                    559  67    0 n
+     560   2 cs POLIv_fSRnD                                    560  67    0 n
+     561   2 cs POLIosdSRnD                                    561  67    0 n
+     562   2 cs POLIocrSRnD                                    562  67    0 n
+     563   1 rd MARFishSRnD          a                         564  48    0 n
+     565   3 rd CARBforSRnD          a                         565  48    0 n
+     566   3 rd POLIpfbSRnD          a                         566  48    0 n
+     567   3 rd POLIgroSRnD          a                         567  48    0 n
+     568   3 rd POLIv_fSRnD          a                         568  48    0 n
+     569   3 rd POLIosdSRnD          a                         569  48    0 n
+     570   3 rd POLIocrSRnD          a                         570  48    0 n
+     571   1 fm                                                572  57    0 n
+     573   2 fm                                                573  57    0 n
+     574   2 fm                                                574  57    0 n
+     575   2 fm                                                575  57    0 n
+     576   2 fm                                                576  57    0 n
+     577   2 fm                                                577  57    0 n
+     578   2 fm                                                578  57    0 n
+     579   1 wr SRRnDALLESHK         a                         580  45    0 n
+     582   1 cs SRnDNETESHK                                    583  83    0 n
+     584   1 fm                                                585  78    0 n
+     586   1 wr SRnDNETESHK          a                         587  44    0 n
+     589   1 cs SRnDPESLCAES                                   590  87    0 n
+     591   2 cs MARFishSRPLC                                   591  74    0 n
+     592   2 cs CARBforSRPLC                                   592  74    0 n
+     593   2 cs POLIpfbSRPLC                                   593  74    0 n
+     594   2 cs POLIgroSRPLC                                   594  74    0 n
+     595   2 cs POLIv_fSRPLC                                   595  74    0 n
+     596   2 cs POLIosdSRPLC                                   596  74    0 n
+     597   2 cs POLIocrSRPLC                                   597  74    0 n
+     598   2 cs PESLSRDTXSHK                                   598  70    0 n
+     599   2 cs RnDHALFSHK                                     599  54    0 n
+     600   1 rd MARFishSRPLC         a                         601  48    0 n
+     602   2 rd CARBforSRPLC         a                         602  48    0 n
+     603   2 rd POLIpfbSRPLC         a                         603  48    0 n
+     604   2 rd POLIgroSRPLC         a                         604  48    0 n
+     605   2 rd POLIv_fSRPLC         a                         605  48    0 n
+     606   2 rd POLIosdSRPLC         a                         606  48    0 n
+     607   2 rd POLIocrSRPLC         a                         607  48    0 n
+     608   2 rd PESLSRDTXSHK         a                         608  48    0 n
+     609   2 rd RnDHALFSHK           a                         609  48    0 n
+     610   1 fm                                                611  59    0 n
+     612   2 fm                                                612  59    0 n
+     613   2 fm                                                613  59    0 n
+     614   2 fm                                                614  59    0 n
+     615   2 fm                                                615  59    0 n
+     616   2 fm                                                616  59    0 n
+     617   2 fm                                                617  59    0 n
+     618   1 wr SRnDPESLCAES         a                         619  45    0 n
+     621   1 cs SRDPLCNETSHK                                   622  89    0 n
+     623   1 fm                                                624  80    0 n
+     625   1 wr SRDPLCNETSHK         a                         626  44    0 n
+     627   2 wr PESLSRDTXSHK         a                         627  44    0 n
+     628   2 wr RnDHALFSHK           a                         628  44    0 n
+     630   1 cs SRPESLCAES                                     631  85    0 n
+     632   2 cs MARFishSPELC                                   632  70    0 n
+     633   2 cs CARBforSPELC                                   633  70    0 n
+     634   2 cs POLIpfbSPELC                                   634  70    0 n
+     635   2 cs POLIgroSPELC                                   635  70    0 n
+     636   2 cs POLIv_fSPELC                                   636  70    0 n
+     637   2 cs POLIosdSPELC                                   637  70    0 n
+     638   2 cs POLIocrSPELC                                   638  70    0 n
+     639   2 cs SRPESLCTXSHK                                   639  60    0 n
+     640   1 rd MARFishSPELC         a                         641  48    0 n
+     642   2 rd CARBforSPELC         a                         642  48    0 n
+     643   2 rd POLIpfbSPELC         a                         643  48    0 n
+     644   2 rd POLIgroSPELC         a                         644  48    0 n
+     645   2 rd POLIv_fSPELC         a                         645  48    0 n
+     646   2 rd POLIosdSPELC         a                         646  48    0 n
+     647   2 rd POLIocrSPELC         a                         647  48    0 n
+     648   2 rd SRPESLCTXSHK         a                         648  48    0 n
+     650   1 fm                                                651  57    0 n
+     652   2 fm                                                652  57    0 n
+     653   2 fm                                                653  57    0 n
+     654   2 fm                                                654  57    0 n
+     655   2 fm                                                655  57    0 n
+     656   2 fm                                                656  57    0 n
+     657   2 fm                                                657  57    0 n
+     658   1 wr SRnDPESLCAES         a                         659  45    0 n
+     661   1 cs SRPLCNETSHK                                    662  88    0 n
+     663   1 fm                                                664  77    0 n
+     665   1 wr SRPLCNETSHK          a                         666  44    0 n
+     667   2 wr SRPESLCTXSHK         a                         667  44    0 n
+     669   1 cs SRLPEGCAES                                     670  85    0 n
+     671   2 cs MARFishSRPGC                                   671  74    0 n
+     672   2 cs CARBforSRPGC                                   672  70    0 n
+     673   2 cs POLIpfbSRPGC                                   673  70    0 n
+     674   2 cs POLIgroSRPGC                                   674  70    0 n
+     675   2 cs POLIv_fSRPGC                                   675  70    0 n
+     676   2 cs POLIosdSRPGC                                   676  70    0 n
+     677   2 cs POLIocrSRPGC                                   677  70    0 n
+     678   2 cs SRLNDPGTXSHK                                   678  60    0 n
+     680   1 rd MARFishSRPGC         a                         681  48    0 n
+     682   2 rd CARBforSRPGC         a                         682  48    0 n
+     683   2 rd POLIpfbSRPGC         a                         683  48    0 n
+     684   2 rd POLIgroSRPGC         a                         684  48    0 n
+     685   2 rd POLIv_fSRPGC         a                         685  48    0 n
+     686   2 rd POLIosdSRPGC         a                         686  48    0 n
+     687   2 rd POLIocrSRPGC         a                         687  48    0 n
+     688   2 rd SRLNDPGTXSHK         a                         688  48    0 n
+     689   1 fm                                                690  57    0 n
+     691   2 fm                                                691  57    0 n
+     692   2 fm                                                692  57    0 n
+     693   2 fm                                                693  57    0 n
+     694   2 fm                                                694  57    0 n
+     695   2 fm                                                695  57    0 n
+     696   2 fm                                                696  57    0 n
+     697   1 wr SRLPEGCAES           a                         698  43    0 n
+     700   1 cs SRLGCNETSHK                                    701  89    0 n
+     702   1 fm                                                703  77    0 n
+     704   1 wr SRLGCNETSHK          a                         705  44    0 n
+     706   2 wr SRLNDPGTXSHK         a                         706  44    0 n
+     709   1 cs BAUESCOLSHK                                    710  77    0 n
+     711   2 cs MARFishBACES                                   711  76    0 n
+     712   2 cs CARBforBACES                                   712  76    0 n
+     713   2 cs POLIpfbBACES                                   713  76    0 n
+     714   2 cs POLIgroBACES                                   714  76    0 n
+     715   2 cs POLIv_fBACES                                   715  76    0 n
+     716   2 cs POLIosdBACES                                   716  76    0 n
+     717   2 cs POLIocrBACES                                   717  76    0 n
+     718   1 rd MARFishBACES         a                         719  48    0 n
+     720   2 rd CARBforBACES         a                         720  49    0 n
+     721   2 rd POLIpfbBACES         a                         721  49    0 n
+     722   2 rd POLIgroBACES         a                         722  49    0 n
+     723   2 rd POLIv_fBACES         a                         723  49    0 n
+     724   2 rd POLIosdBACES         a                         724  49    0 n
+     725   2 rd POLIocrBACES         a                         725  49    0 n
+     726   1 fm                                                727  58    0 n
+     728   2 fm                                                728  58    0 n
+     729   2 fm                                                729  58    0 n
+     730   2 fm                                                730  58    0 n
+     731   2 fm                                                731  58    0 n
+     732   2 fm                                                732  58    0 n
+     733   2 fm                                                733  58    0 n
+     734   1 wr BAUESCOLSHK          a                         735  44    0 n
+     737   1 cs COLNETSHK                                      738  88    0 n
+     739   1 fm                                                740  76    0 n
+     741   1 wr COLNETSHK            a                         742  42    0 n
+     744   1 cs BAUEAMCOLSHK                                   745  78    0 n
+     746   2 cs POLIpfbBACAM                                   746  83    0 n
+     747   2 cs POLIgroBACAM                                   747  83    0 n
+     748   2 cs POLIv_fBACAM                                   748  83    0 n
+     749   2 cs POLIosdBACAM                                   749  83    0 n
+     750   2 cs POLIocrBACAM                                   750  83    0 n
+     751   1 rd POLIpfbBACAM         a                         752  49    0 n
+     753   2 rd POLIgroBACAM         a                         753  49    0 n
+     754   2 rd POLIv_fBACAM         a                         754  49    0 n
+     755   2 rd POLIosdBACAM         a                         755  49    0 n
+     756   2 rd POLIocrBACAM         a                         756  49    0 n
+     757   1 fm                                                758  45    0 n
+     759   2 fm                                                759  45    0 n
+     760   2 fm                                                760  59    0 n
+     761   2 fm                                                761  59    0 n
+     762   2 fm                                                762  59    0 n
+     763   2 fm                                                763  59    0 n
+     764   2 fm                                                764  59    0 n
+     765   1 wr BAUEAMCOLSHK         a                         766  45    0 n
+     765   1 en BAUEAMCOLSHK         a                         766  45    0 n
+#GPVER
+  121004
+#PRVER
+    7000
+#FINAL_LEVEL
+#CSPSIM
+nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn

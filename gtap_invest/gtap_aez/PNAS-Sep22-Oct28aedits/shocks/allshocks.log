@@ -1,0 +1,2282 @@
+ 
+ This GEMPACK log file was created at 12:21:41 on 18-OCT-2022 by the program
+  <GEMSIM  Version 5.0   April 2018>
+ which accesses some of the routines in the GEMPACK software release
+  <GEMPACK Release 12.1.004   January 2020>
+ 
+ 
+ <GEMSIM  Version 5.0   April 2018>
+   This program accesses some of the routines in the GEMPACK software release
+ <GEMPACK Release 12.1.004   January 2020>
+ 
+ Licence file: C:\GP\licen.gem
+ Licence activation checked.
+ Licence is Activated
+ 
+     -------------------------------------------------------
+    !            GEMPACK Software System Licence            !
+    !  Source Code Licence for the GEMPACK Software System  !
+    !                 Licence No.  GFM-0048                 !
+    !          Licence for Release 12.1 of GEMPACK          !
+    !           Center for Global Trade Analysis            !
+    !         Department of Agricultural Economics          !
+    !                   Krannert Building                   !
+    !                   Purdue University                   !
+     -------------------------------------------------------
+ 
+     << COPYRIGHT 1993-2018: CoPS/Impact and KPSOFT >>
+ 
+  Current directory is: C:\Users\ecorong\OneDrive - purdue.edu\A_WorkTemp\PNAS-Sep22\shocks
+ 
+  Full path name of running EXE is: C:\GP\gemsim.exe
+  Fortran compiler = GF64   version 6.4.0 64 bit
+  BLAS library: OpenBlas
+  OPENMP number of threads: 24
+  Gempack source corresponds to revision 1187.
+  Operating System is Microsoft Windows 10 Education
+ 
+ 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 
+ 
+                    GEMSIM OPTIONS
+               ( --> indicates those in effect )
+ 
+       BAT Run in batch              STI Take inputs from a Stored-input file
+       BPR Brief prompts             SIF Store inputs on a file
+       LOG Output to log file        ASI Add to incomplete Stored-input file
+                                     CMF Take inputs from a Command file
+       EAA Echo all activity           SVX Select variables on XAC file (later)
+   --> CPU Report CPU times            RQF Required figures agreement (extrap)
+       NRP Don't reuse pivots        NIR Don't do solution iterative refinement
+                                 --> IZ1 Ignore zero coefficients in step 1
+                                     KZ2 Keep zero coefficients in steps 2,3 etc
+       NEQ Do no equations           NWE Don't warn how well equations solved
+       NDS Do no displays            SSI Several subintervals; extrap after each
+       NWR Do no writes              M28 Use MA28 routines (rather than MA48)
+       NAS Do no assertions          SUI Save updated formula(initial) data
+       NUD Do no final updates              Extra Options Screen
+       NSM Don't do simulation              --------------------
+       NWT Use Newton's method      DTO Display, Terminal/Text write Options
+       CR  Check-on-read options
+ 
+  Select an option   :  <opt>      Deselect an option      : -<opt>
+  Help for an option : ?<opt>      Help on all options     : ??
+  Redisplay options  : /           Finish option selection : Carriage return
+ 
+ (Opened, as text, existing file 'allshocks.cmf'.)
+  (Taking inputs from a command file.)
+ (Opened, as text, existing file 'allshocks.cmf'.)
+ 
+  !  (There is no CREATION information on this file.)
+ 
+ 
+  [Have translated parameters <px> occurring in the original Command file "allshocks.cmf".]
+ 
+ 
+  --> Reading the Command file.
+ 
+ auxiliary files = allshocks;
+ check-on-read elements = warn;
+ cpu=yes ;
+ log file = yes;
+ 
+ ! Input files:
+ File GTAPSETS = ..\data\sets.har;
+ 
+ File MacFile01 = 2014_2021_gdp.har;
+ File MacFile02 = 2014_2021_qo_usklab.har;
+ File MacFile03 = 2014_2021_qo_sklab.har;
+ File MacFile04 = 2014_2021_qo_cap.har;
+ File MacFile05 = 2014_2021_pop.har;
+ File MacFile06 = 2021_2030_aoreg.har;
+ File MacFile07 = 2021_2030_qo_usklab.har;
+ File MacFile08 = 2021_2030_qo_sklab.har;
+ File MacFile09 = 2021_2030_qo_cap.har;
+ File MacFile10 = 2021_2030_pop.har;
+ 
+ File SecFile01 = 2014_2021_ao_crop.har;
+ File SecFile02 = 2014_2021_ao_rum.har;
+ File SecFile03 = 2014_2021_ao_nrum.har;
+ File SecFile04 = 2021_2030_ao_crop.har;
+ File SecFile05 = 2021_2030_ao_rum.har;
+ File SecFile06 = 2021_2030_ao_nrum.har;
+ 
+ File InVFile01 = marine_fisheries_bau_shock.har;
+ File InVFile02 = carbon_forestry_bau_shock.har;
+ File InVFile03 = pollination_bau_shock_pfb.har;
+ File InVFile04 = pollination_bau_shock_gro.har;
+ File InVFile05 = pollination_bau_shock_v_f.har;
+ File InVFile06 = pollination_bau_shock_osd.har;
+ File InVFile07 = pollination_bau_shock_ocr.har;
+ 
+ File InVFile08 = X2030_PESGC_marine_fisheries_shock.har;
+ File InVFile09 = X2030_PESGC_carbon_forestry_shock.har;
+ File InVFile10 = X2030_PESGC_pollination_shock_pfb.har;
+ File InVFile11 = X2030_PESGC_pollination_shock_gro.har;
+ File InVFile12 = X2030_PESGC_pollination_shock_v_f.har;
+ File InVFile13 = X2030_PESGC_pollination_shock_osd.har;
+ File InVFile14 = X2030_PESGC_pollination_shock_ocr.har;
+ 
+ File InVFile15 = X2030_PESLC_marine_fisheries_shock.har;
+ File InVFile16 = X2030_PESLC_carbon_forestry_shock.har;
+ File InVFile17 = X2030_PESLC_pollination_shock_pfb.har;
+ File InVFile18 = X2030_PESLC_pollination_shock_gro.har;
+ File InVFile19 = X2030_PESLC_pollination_shock_v_f.har;
+ File InVFile20 = X2030_PESLC_pollination_shock_osd.har;
+ File InVFile21 = X2030_PESLC_pollination_shock_ocr.har;
+ File InVFile22 = 2021_30_PESLC_shockLand.har;
+ 
+ File InVFile23 = X2030_SR_Land_marine_fisheries_shock.har;
+ File InVFile24 = X2030_SR_Land_carbon_forestry_shock.har;
+ File InVFile25 = X2030_SR_Land_pollination_shock_pfb.har;
+ File InVFile26 = X2030_SR_Land_pollination_shock_gro.har;
+ File InVFile27 = X2030_SR_Land_pollination_shock_v_f.har;
+ File InVFile28 = X2030_SR_Land_pollination_shock_osd.har;
+ File InVFile29 = X2030_SR_Land_pollination_shock_ocr.har;
+ File InVFile30 = 2021_30_SR_Land_allES_shocks.har;
+ 
+ File InVFile31 = X2030_SR_RnD_20p_marine_fisheries_shock.har;
+ File InVFile32 = X2030_SR_RnD_20p_carbon_forestry_shock.har;
+ File InVFile33 = X2030_SR_RnD_20p_pollination_shock_pfb.har;
+ File InVFile34 = X2030_SR_RnD_20p_pollination_shock_gro.har;
+ File InVFile35 = X2030_SR_RnD_20p_pollination_shock_v_f.har;
+ File InVFile36 = X2030_SR_RnD_20p_pollination_shock_osd.har;
+ File InVFile37 = X2030_SR_RnD_20p_pollination_shock_ocr.har;
+ File InVFile38 = 2021_2030_RnD_20pct.har;
+ 
+ File InVFile39 = X2030_SR_RnD_20p_PESGC_marine_fisheries_shock.har;
+ File InVFile40 = X2030_SR_RnD_20p_PESGC_carbon_forestry_shock.har;
+ File InVFile41 = X2030_SR_RnD_20p_PESGC_pollination_shock_pfb.har;
+ File InVFile42 = X2030_SR_RnD_20p_PESGC_pollination_shock_gro.har;
+ File InVFile43 = X2030_SR_RnD_20p_PESGC_pollination_shock_v_f.har;
+ File InVFile44 = X2030_SR_RnD_20p_PESGC_pollination_shock_osd.har;
+ File InVFile45 = X2030_SR_RnD_20p_PESGC_pollination_shock_ocr.har;
+ 
+ File InVFile46 = X2030_SR_RnD_20p_PESGC_30_marine_fisheries_shock.har;
+ File InVFile47 = X2030_SR_RnD_20p_PESGC_30_carbon_forestry_shock.har;
+ File InVFile48 = X2030_SR_RnD_20p_PESGC_30_pollination_shock_pfb.har;
+ File InVFile49 = X2030_SR_RnD_20p_PESGC_30_pollination_shock_gro.har;
+ File InVFile50 = X2030_SR_RnD_20p_PESGC_30_pollination_shock_v_f.har;
+ File InVFile51 = X2030_SR_RnD_20p_PESGC_30_pollination_shock_osd.har;
+ File InVFile52 = X2030_SR_RnD_20p_PESGC_30_pollination_shock_ocr.har;
+ 
+ File InVFile53 = X2030_SR_RnD_PESGC_marine_fisheries_shock.har;
+ File InVFile54 = X2030_SR_RnD_PESGC_carbon_forestry_shock.har;
+ File InVFile55 = X2030_SR_RnD_PESGC_pollination_shock_pfb.har;
+ File InVFile56 = X2030_SR_RnD_PESGC_pollination_shock_gro.har;
+ File InVFile57 = X2030_SR_RnD_PESGC_pollination_shock_v_f.har;
+ File InVFile58 = X2030_SR_RnD_PESGC_pollination_shock_osd.har;
+ File InVFile59 = X2030_SR_RnD_PESGC_pollination_shock_ocr.har;
+ 
+ File InVFile60 = X2030_RnD_marine_fisheries_shock.har;
+ File InVFile61 = X2030_RnD_carbon_forestry_shock.har;
+ File InVFile62 = X2030_RnD_pollination_shock_pfb.har;
+ File InVFile63 = X2030_RnD_pollination_shock_gro.har;
+ File InVFile64 = X2030_RnD_pollination_shock_v_f.har;
+ File InVFile65 = X2030_RnD_pollination_shock_osd.har;
+ File InVFile66 = X2030_RnD_pollination_shock_ocr.har;
+ 
+ File InVFile67 = X2030_SR_RnD_marine_fisheries_shock.har;
+ File InVFile68 = X2030_SR_RnD_carbon_forestry_shock.har;
+ File InVFile69 = X2030_SR_RnD_pollination_shock_pfb.har;
+ File InVFile70 = X2030_SR_RnD_pollination_shock_gro.har;
+ File InVFile71 = X2030_SR_RnD_pollination_shock_v_f.har;
+ File InVFile72 = X2030_SR_RnD_pollination_shock_osd.har;
+ File InVFile73 = X2030_SR_RnD_pollination_shock_ocr.har;
+ 
+ File InVFile74 = X2030_SR_RnD_PESLC_marine_fisheries_shock.har;
+ File InVFile75 = X2030_SR_RnD_PESLC_carbon_forestry_shock.har ;
+ File InVFile76 = X2030_SR_RnD_PESLC_pollination_shock_pfb.har;
+ File InVFile77 = X2030_SR_RnD_PESLC_pollination_shock_gro.har;
+ File InVFile78 = X2030_SR_RnD_PESLC_pollination_shock_v_f.har;
+ File InVFile79 = X2030_SR_RnD_PESLC_pollination_shock_osd.har;
+ File InVFile80 = X2030_SR_RnD_PESLC_pollination_shock_ocr.har;
+ File InVFile81 = 2021_30_SR_RnD_PESLC_allES.har;
+ File InVFile82 = 2021_2030_RnD_half.har;
+ 
+ File InVFile83 = X2030_SR_RnD_PESLC_marine_fisheries_shock.har;
+ File InVFile84 = X2030_SR_RnD_PESLC_carbon_forestry_shock.har ;
+ File InVFile85 = X2030_SR_RnD_PESLC_pollination_shock_pfb.har;
+ File InVFile86 = X2030_SR_RnD_PESLC_pollination_shock_gro.har;
+ File InVFile87 = X2030_SR_RnD_PESLC_pollination_shock_v_f.har;
+ File InVFile88 = X2030_SR_RnD_PESLC_pollination_shock_osd.har;
+ File InVFile89 = X2030_SR_RnD_PESLC_pollination_shock_ocr.har;
+ File InVFile90 = 2021_30_SR_PESLC_shock-LTAX.har;
+ 
+ File InVFile91 = X2030_SR_Land_PESGC_marine_fisheries_shock.har;
+ File InVFile92 = X2030_SR_Land_PESGC_carbon_forestry_shock.har;
+ File InVFile93 = X2030_SR_Land_PESGC_pollination_shock_pfb.har;
+ File InVFile94 = X2030_SR_Land_PESGC_pollination_shock_gro.har;
+ File InVFile95 = X2030_SR_Land_PESGC_pollination_shock_v_f.har;
+ File InVFile96 = X2030_SR_Land_PESGC_pollination_shock_osd.har;
+ File InVFile97 = X2030_SR_Land_PESGC_pollination_shock_ocr.har;
+ File InVFile98 = 2021_30_SR_Land_PESGC_allES_shocks.har;
+ 
+ File InVFile99=marine_fisheries_fishcol_shock.har;
+ File InVFile100=carbon_forestry_amazoncol_shock.har;
+ File InVFile101=pollination_polcol_shock_pfb.har;
+ File InVFile102=pollination_polcol_shock_gro.har;
+ File InVFile103=pollination_polcol_shock_v_f.har;
+ File InVFile104=pollination_polcol_shock_osd.har;
+ File InVFile105=pollination_polcol_shock_ocr.har;
+ 
+ File InVFile106=pollination_amazoncol_shock_pfb.har;
+ File InVFile107=pollination_amazoncol_shock_gro.har;
+ File InVFile108=pollination_amazoncol_shock_v_f.har;
+ File InVFile109=pollination_amazoncol_shock_osd.har;
+ File InVFile110=pollination_amazoncol_shock_ocr.har;
+ 
+ ! Output file:
+ File OutFile = AllShocks.har;
+ 
+  (Finished reading the command file.)
+ 
+  GEMSIM Statement File
+  ---------------------
+ (Opened, as binary, existing file 'allshocks.gss'.)
+ 
+  GEMSIM Table File
+  -----------------
+ (Opened, as header, existing file 'allshocks.gst'.)
+ 
+  !  This file was created at 12:21:41 on 18-OCT-2022 by the program
+  !    <TABLO  Version 7.0   August 2018>
+  !  which accesses some of the routines in the GEMPACK software release
+  !    <GEMPACK Release 12.1.004   January 2020>
+  !  [The program which created this file was compiled with GF64.]
+ 
+ GEMSIM Table File was created by TABLO at 12:21:41 on 18-OCT-2022
+ [TABLO file used here is "allshocks.tab".]
+ [No TABLO STI file used when TABLO was run.]
+ 
+  (Writing output to log file, and also to the terminal.)
+ (Opened new text file 'allshocks.log'.)
+  [Reporting CPU times]
+ 
+  Using Gempack optimized version of LU decompositions
+  With this option active several old options are obsolete.
+  These options concern: Markowitz pivots, and those starting with pivots, MA48 and MA28.
+ 
+  Search depth for LU is set to 32
+  Column Filter threshold is set to 5.0000001E-02
+  Harwell paramter for reuse is set to -1.000000
+ 
+ 
+  [Starting to check "extra" statements on the Command file.]
+  
+ 
+  [Finished checking "extra" statements on the Command file.]
+  
+ 
+ ++++++++++++++++++++++++++++++++++++++++++++++++++
+  The instructions for this run of GEMSIM were produced
+  from the run of TABLO described in the Information file
+  'allshocks.inf'
+ 
+  This run of GEMSIM
+      o can carry out 39 WRITEs
+ 
+ ++++++++++++++++++++++++++++++++++++++++++++++++++
+ (Range test of initial values will produce warnings.)
+ 
+  (Data file with logical name 'MacFile01')
+ (Opened, as header, existing file '2014_2021_gdp.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'MacFile02')
+ (Opened, as header, existing file '2014_2021_qo_usklab.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'MacFile03')
+ (Opened, as header, existing file '2014_2021_qo_sklab.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'MacFile04')
+ (Opened, as header, existing file '2014_2021_qo_cap.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'MacFile05')
+ (Opened, as header, existing file '2014_2021_pop.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'MacFile06')
+ (Opened, as header, existing file '2021_2030_aoreg.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'MacFile07')
+ (Opened, as header, existing file '2021_2030_qo_usklab.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'MacFile08')
+ (Opened, as header, existing file '2021_2030_qo_sklab.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'MacFile09')
+ (Opened, as header, existing file '2021_2030_qo_cap.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'MacFile10')
+ (Opened, as header, existing file '2021_2030_pop.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'SecFile01')
+ (Opened, as header, existing file '2014_2021_ao_crop.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'SecFile02')
+ (Opened, as header, existing file '2014_2021_ao_rum.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'SecFile03')
+ (Opened, as header, existing file '2014_2021_ao_nrum.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'SecFile04')
+ (Opened, as header, existing file '2021_2030_ao_crop.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'SecFile05')
+ (Opened, as header, existing file '2021_2030_ao_rum.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'SecFile06')
+ (Opened, as header, existing file '2021_2030_ao_nrum.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile01')
+ (Opened, as header, existing file 'marine_fisheries_bau_shock.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile02')
+ (Opened, as header, existing file 'carbon_forestry_bau_shock.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile03')
+ (Opened, as header, existing file 'pollination_bau_shock_pfb.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile04')
+ (Opened, as header, existing file 'pollination_bau_shock_gro.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile05')
+ (Opened, as header, existing file 'pollination_bau_shock_v_f.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile06')
+ (Opened, as header, existing file 'pollination_bau_shock_osd.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile07')
+ (Opened, as header, existing file 'pollination_bau_shock_ocr.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile08')
+ (Opened, as header, existing file 'X2030_PESGC_marine_fisheries_shock.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile09')
+ (Opened, as header, existing file 'X2030_PESGC_carbon_forestry_shock.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile10')
+ (Opened, as header, existing file 'X2030_PESGC_pollination_shock_pfb.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile11')
+ (Opened, as header, existing file 'X2030_PESGC_pollination_shock_gro.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile12')
+ (Opened, as header, existing file 'X2030_PESGC_pollination_shock_v_f.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile13')
+ (Opened, as header, existing file 'X2030_PESGC_pollination_shock_osd.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile14')
+ (Opened, as header, existing file 'X2030_PESGC_pollination_shock_ocr.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile15')
+ (Opened, as header, existing file 'X2030_PESLC_marine_fisheries_shock.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile16')
+ (Opened, as header, existing file 'X2030_PESLC_carbon_forestry_shock.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile17')
+ (Opened, as header, existing file 'X2030_PESLC_pollination_shock_pfb.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile18')
+ (Opened, as header, existing file 'X2030_PESLC_pollination_shock_gro.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile19')
+ (Opened, as header, existing file 'X2030_PESLC_pollination_shock_v_f.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile20')
+ (Opened, as header, existing file 'X2030_PESLC_pollination_shock_osd.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile21')
+ (Opened, as header, existing file 'X2030_PESLC_pollination_shock_ocr.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile22')
+ (Opened, as header, existing file '2021_30_PESLC_shockLand.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile23')
+ (Opened, as header, existing file
+   'X2030_SR_Land_marine_fisheries_shock.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile24')
+ (Opened, as header, existing file 'X2030_SR_Land_carbon_forestry_shock.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile25')
+ (Opened, as header, existing file 'X2030_SR_Land_pollination_shock_pfb.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile26')
+ (Opened, as header, existing file 'X2030_SR_Land_pollination_shock_gro.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile27')
+ (Opened, as header, existing file 'X2030_SR_Land_pollination_shock_v_f.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile28')
+ (Opened, as header, existing file 'X2030_SR_Land_pollination_shock_osd.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile29')
+ (Opened, as header, existing file 'X2030_SR_Land_pollination_shock_ocr.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile30')
+ (Opened, as header, existing file '2021_30_SR_Land_allES_shocks.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile31')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_marine_fisheries_shock.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile32')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_carbon_forestry_shock.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile33')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_pollination_shock_pfb.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile34')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_pollination_shock_gro.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile35')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_pollination_shock_v_f.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile36')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_pollination_shock_osd.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile37')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_pollination_shock_ocr.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile38')
+ (Opened, as header, existing file '2021_2030_RnD_20pct.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile39')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_PESGC_marine_fisheries_shock.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile40')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_PESGC_carbon_forestry_shock.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile41')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_PESGC_pollination_shock_pfb.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile42')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_PESGC_pollination_shock_gro.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile43')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_PESGC_pollination_shock_v_f.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile44')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_PESGC_pollination_shock_osd.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile45')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_PESGC_pollination_shock_ocr.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile46')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_PESGC_30_marine_fisheries_shock.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile47')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_PESGC_30_carbon_forestry_shock.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile48')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_PESGC_30_pollination_shock_pfb.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile49')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_PESGC_30_pollination_shock_gro.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile50')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_PESGC_30_pollination_shock_v_f.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile51')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_PESGC_30_pollination_shock_osd.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile52')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_PESGC_30_pollination_shock_ocr.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile53')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESGC_marine_fisheries_shock.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile54')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESGC_carbon_forestry_shock.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile55')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESGC_pollination_shock_pfb.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile56')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESGC_pollination_shock_gro.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile57')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESGC_pollination_shock_v_f.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile58')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESGC_pollination_shock_osd.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile59')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESGC_pollination_shock_ocr.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile60')
+ (Opened, as header, existing file 'X2030_RnD_marine_fisheries_shock.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile61')
+ (Opened, as header, existing file 'X2030_RnD_carbon_forestry_shock.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile62')
+ (Opened, as header, existing file 'X2030_RnD_pollination_shock_pfb.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile63')
+ (Opened, as header, existing file 'X2030_RnD_pollination_shock_gro.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile64')
+ (Opened, as header, existing file 'X2030_RnD_pollination_shock_v_f.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile65')
+ (Opened, as header, existing file 'X2030_RnD_pollination_shock_osd.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile66')
+ (Opened, as header, existing file 'X2030_RnD_pollination_shock_ocr.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile67')
+ (Opened, as header, existing file 'X2030_SR_RnD_marine_fisheries_shock.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile68')
+ (Opened, as header, existing file 'X2030_SR_RnD_carbon_forestry_shock.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile69')
+ (Opened, as header, existing file 'X2030_SR_RnD_pollination_shock_pfb.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile70')
+ (Opened, as header, existing file 'X2030_SR_RnD_pollination_shock_gro.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile71')
+ (Opened, as header, existing file 'X2030_SR_RnD_pollination_shock_v_f.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile72')
+ (Opened, as header, existing file 'X2030_SR_RnD_pollination_shock_osd.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile73')
+ (Opened, as header, existing file 'X2030_SR_RnD_pollination_shock_ocr.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile74')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESLC_marine_fisheries_shock.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile75')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESLC_carbon_forestry_shock.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile76')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESLC_pollination_shock_pfb.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile77')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESLC_pollination_shock_gro.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile78')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESLC_pollination_shock_v_f.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile79')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESLC_pollination_shock_osd.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile80')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESLC_pollination_shock_ocr.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile81')
+ (Opened, as header, existing file '2021_30_SR_RnD_PESLC_allES.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile82')
+ (Opened, as header, existing file '2021_2030_RnD_half.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile83')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESLC_marine_fisheries_shock.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile84')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESLC_carbon_forestry_shock.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile85')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESLC_pollination_shock_pfb.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile86')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESLC_pollination_shock_gro.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile87')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESLC_pollination_shock_v_f.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile88')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESLC_pollination_shock_osd.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile89')
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESLC_pollination_shock_ocr.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile90')
+ (Opened, as header, existing file '2021_30_SR_PESLC_shock-LTAX.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile91')
+ (Opened, as header, existing file
+   'X2030_SR_Land_PESGC_marine_fisheries_shock.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile92')
+ (Opened, as header, existing file
+   'X2030_SR_Land_PESGC_carbon_forestry_shock.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile93')
+ (Opened, as header, existing file
+   'X2030_SR_Land_PESGC_pollination_shock_pfb.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile94')
+ (Opened, as header, existing file
+   'X2030_SR_Land_PESGC_pollination_shock_gro.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile95')
+ (Opened, as header, existing file
+   'X2030_SR_Land_PESGC_pollination_shock_v_f.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile96')
+ (Opened, as header, existing file
+   'X2030_SR_Land_PESGC_pollination_shock_osd.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile97')
+ (Opened, as header, existing file
+   'X2030_SR_Land_PESGC_pollination_shock_ocr.har'.)
+ 
+  !  This file was created at 8/19/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile98')
+ (Opened, as header, existing file '2021_30_SR_Land_PESGC_allES_shocks.har'.)
+ 
+  !  This file was created at 5/11/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile99')
+ (Opened, as header, existing file 'marine_fisheries_fishcol_shock.har'.)
+ 
+  !  This file was created at 10/18/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile100')
+ (Opened, as header, existing file 'carbon_forestry_amazoncol_shock.har'.)
+ 
+  !  This file was created at 10/18/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile101')
+ (Opened, as header, existing file 'pollination_polcol_shock_pfb.har'.)
+ 
+  !  This file was created at 10/18/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile102')
+ (Opened, as header, existing file 'pollination_polcol_shock_gro.har'.)
+ 
+  !  This file was created at 10/18/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile103')
+ (Opened, as header, existing file 'pollination_polcol_shock_v_f.har'.)
+ 
+  !  This file was created at 10/18/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile104')
+ (Opened, as header, existing file 'pollination_polcol_shock_osd.har'.)
+ 
+  !  This file was created at 10/18/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile105')
+ (Opened, as header, existing file 'pollination_polcol_shock_ocr.har'.)
+ 
+  !  This file was created at 10/18/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile106')
+ (Opened, as header, existing file 'pollination_amazoncol_shock_pfb.har'.)
+ 
+  !  This file was created at 10/18/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile107')
+ (Opened, as header, existing file 'pollination_amazoncol_shock_gro.har'.)
+ 
+  !  This file was created at 10/18/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile108')
+ (Opened, as header, existing file 'pollination_amazoncol_shock_v_f.har'.)
+ 
+  !  This file was created at 10/18/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile109')
+ (Opened, as header, existing file 'pollination_amazoncol_shock_osd.har'.)
+ 
+  !  This file was created at 10/18/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'InVFile110')
+ (Opened, as header, existing file 'pollination_amazoncol_shock_ocr.har'.)
+ 
+  !  This file was created at 10/18/2022 by the program
+  !    Txt2HAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 18/Feb/2020
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  (Data file with logical name 'OutFile')
+ (Opened new header file 'AllShocks.har'.)
+ 
+  (Data file with logical name 'GTAPSETS')
+ (Opened, as header, existing file '..\data\sets.har'.)
+ 
+  !  This file was created at 6/21/2020 9:36:17 AM by the program
+  !    ViewHAR
+  !  which accesses some of the routines in the GEMPACK software release
+  !    HARFILE.PAS 29/Feb/2016
+  !  [The program which created this file was compiled with DELPHI.]
+  
+ 
+  --->  Beginning the preliminary pass (aimed at sets and subsets).
+ Set 'REG'
+ (Opened, as header, existing file '..\data\sets.har'.)
+   [Set has size 37.]
+ Set 'MACVAR'
+   [Set has size 6.]
+ Set 'CROPLVSTK'
+   [Set has size 3.]
+ Set 'ECSEC'
+   [Set has size 7.]
+ [CPU for reads, formulas etc is 0.00 seconds.]
+ Elapsed time for reads, formulas etc is: less than one second.
+   (1 character strings, each of length 1 read. Header "SVFM")
+ 
+  Total memory currently used for all arrays is approximately 0.25 megabytes.
+  [Add about 5-10 megabytes for the memory used by the code.]
+  [Total memory currently allocated for Coefficients and Updated
+   Coefficients is about        0.0 and        0.0 MB respectively.]
+ 
+  --->  Beginning the reads, formulas (etc).
+ (Opened, as header, existing file '2014_2021_gdp.har'.)
+ Reading qgdp14_21(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file '2014_2021_qo_usklab.har'.)
+ Reading usklab14_21(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file '2014_2021_qo_sklab.har'.)
+ Reading sklab14_21(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file '2014_2021_qo_cap.har'.)
+ Reading cap14_21(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file '2014_2021_pop.har'.)
+ Reading pop14_21(REG)
+ (Read real array, size 37, header "N001".)
+  Formula for 'MACSHK14_21'
+  Formula for 'MACSHK14_21'
+  Formula for 'MACSHK14_21'
+  Formula for 'MACSHK14_21'
+  Formula for 'MACSHK14_21'
+  Formula for 'MACSHK14_21'
+ (Opened, as header, existing file '2021_2030_aoreg.har'.)
+ Reading aoreg21_30(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file '2021_2030_qo_usklab.har'.)
+ Reading usklab21_30(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file '2021_2030_qo_sklab.har'.)
+ Reading sklab21_30(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file '2021_2030_qo_cap.har'.)
+ Reading cap21_30(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file '2021_2030_pop.har'.)
+ Reading pop21_30(REG)
+ (Read real array, size 37, header "N001".)
+  Formula for 'MACSHK21_30'
+  Formula for 'MACSHK21_30'
+  Formula for 'MACSHK21_30'
+  Formula for 'MACSHK21_30'
+  Formula for 'MACSHK21_30'
+  Formula for 'MACSHK21_30'
+ (Opened, as header, existing file '2014_2021_ao_crop.har'.)
+ Reading aocrop14_21(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file '2014_2021_ao_rum.har'.)
+ Reading aorum14_21(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file '2014_2021_ao_nrum.har'.)
+ Reading aonrum14_21(REG)
+ (Read real array, size 37, header "N001".)
+  Formula for 'CRLVSHK14_21'
+  Formula for 'CRLVSHK14_21'
+  Formula for 'CRLVSHK14_21'
+ (Opened, as header, existing file '2021_2030_ao_crop.har'.)
+ Reading aocrop21_30(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file '2021_2030_ao_rum.har'.)
+ Reading aorum21_30(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file '2021_2030_ao_nrum.har'.)
+ Reading aonrum21_30(REG)
+ (Read real array, size 37, header "N001".)
+  Formula for 'CRLVSHK21_30'
+  Formula for 'CRLVSHK21_30'
+  Formula for 'CRLVSHK21_30'
+ (Opened, for writing, header file 'AllShocks.har'.)
+ Writing MACSHK14_21(REG,MACVAR)
+ (Written real array, size 37x6, header "M142".)
+ Writing CRLVSHK14_21(REG,CROPLVSTK)
+ (Written real array, size 37x3, header "S142".)
+ Writing MACSHK21_30(REG,MACVAR)
+ (Written real array, size 37x6, header "M213".)
+ Writing CRLVSHK21_30(REG,CROPLVSTK)
+ (Written real array, size 37x3, header "S213".)
+ (Opened, as header, existing file 'marine_fisheries_bau_shock.har'.)
+ Reading MARFishBAUES(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'carbon_forestry_bau_shock.har'.)
+ Reading CARBforBAUES(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'pollination_bau_shock_pfb.har'.)
+ Reading POLIpfbBAUES(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'pollination_bau_shock_gro.har'.)
+ Reading POLIgroBAUES(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'pollination_bau_shock_v_f.har'.)
+ Reading POLIv_fBAUES(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'pollination_bau_shock_osd.har'.)
+ Reading POLIosdBAUES(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'pollination_bau_shock_ocr.har'.)
+ Reading POLIocrBAUES(REG)
+ (Read real array, size 37, header "N001".)
+  Formula for 'BAUESSHK'
+  Formula for 'BAUESSHK'
+  Formula for 'BAUESSHK'
+  Formula for 'BAUESSHK'
+  Formula for 'BAUESSHK'
+  Formula for 'BAUESSHK'
+  Formula for 'BAUESSHK'
+ Writing BAUESSHK(REG,ECSEC)
+ (Written real array, size 37x7, header "BAES".)
+ (Opened, as header, existing file 'X2030_PESGC_marine_fisheries_shock.har'.)
+ Reading MARFishPESGC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'X2030_PESGC_carbon_forestry_shock.har'.)
+ Reading CARBforPESGC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'X2030_PESGC_pollination_shock_pfb.har'.)
+ Reading POLIpfbPESGC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'X2030_PESGC_pollination_shock_gro.har'.)
+ Reading POLIgroPESGC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'X2030_PESGC_pollination_shock_v_f.har'.)
+ Reading POLIv_fPESGC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'X2030_PESGC_pollination_shock_osd.har'.)
+ Reading POLIosdPESGC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'X2030_PESGC_pollination_shock_ocr.har'.)
+ Reading POLIocrPESGC(REG)
+ (Read real array, size 37, header "N001".)
+  Formula for 'PESGCALLESHK'
+  Formula for 'PESGCALLESHK'
+  Formula for 'PESGCALLESHK'
+  Formula for 'PESGCALLESHK'
+  Formula for 'PESGCALLESHK'
+  Formula for 'PESGCALLESHK'
+  Formula for 'PESGCALLESHK'
+ Writing PESGCALLESHK(REG,ECSEC)
+ (Written real array, size 37x7, header "PESG".)
+  Formula for 'PESGCNETESHK'
+ Writing PESGCNETESHK(REG,ECSEC)
+ (Written real array, size 37x7, header "NPEG".)
+ (Opened, as header, existing file 'X2030_PESLC_marine_fisheries_shock.har'.)
+ Reading MARFishPESLC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'X2030_PESLC_carbon_forestry_shock.har'.)
+ Reading CARBforPESLC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'X2030_PESLC_pollination_shock_pfb.har'.)
+ Reading POLIpfbPESLC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'X2030_PESLC_pollination_shock_gro.har'.)
+ Reading POLIgroPESLC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'X2030_PESLC_pollination_shock_v_f.har'.)
+ Reading POLIv_fPESLC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'X2030_PESLC_pollination_shock_osd.har'.)
+ Reading POLIosdPESLC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'X2030_PESLC_pollination_shock_ocr.har'.)
+ Reading POLIocrPESLC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file '2021_30_PESLC_shockLand.har'.)
+ Reading PESLCLDTXSHK(REG)
+ (Read real array, size 37, header "N001".)
+  Formula for 'PESLCALLESHK'
+  Formula for 'PESLCALLESHK'
+  Formula for 'PESLCALLESHK'
+  Formula for 'PESLCALLESHK'
+  Formula for 'PESLCALLESHK'
+  Formula for 'PESLCALLESHK'
+  Formula for 'PESLCALLESHK'
+ Writing PESLCALLESHK(REG,ECSEC)
+ (Written real array, size 37x7, header "PESL".)
+  Formula for 'PESLCNETESHK'
+ Writing PESLCNETESHK(REG,ECSEC)
+ (Written real array, size 37x7, header "NPEL".)
+ Writing PESLCLDTXSHK(REG)
+ (Written real array, size 37, header "PELT".)
+ (Opened, as header, existing file
+   'X2030_SR_Land_marine_fisheries_shock.har'.)
+ Reading MARFishSRLND(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'X2030_SR_Land_carbon_forestry_shock.har'.)
+ Reading CARBforSRLND(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'X2030_SR_Land_pollination_shock_pfb.har'.)
+ Reading POLIpfbSRLND(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'X2030_SR_Land_pollination_shock_gro.har'.)
+ Reading POLIgroSRLND(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'X2030_SR_Land_pollination_shock_v_f.har'.)
+ Reading POLIv_fSRLND(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'X2030_SR_Land_pollination_shock_osd.har'.)
+ Reading POLIosdSRLND(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'X2030_SR_Land_pollination_shock_ocr.har'.)
+ Reading POLIocrSRLND(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file '2021_30_SR_Land_allES_shocks.har'.)
+ Reading SRLNDLDTXSHK(REG)
+ (Read real array, size 37, header "N001".)
+  Formula for 'SRLNDALLESHK'
+  Formula for 'SRLNDALLESHK'
+  Formula for 'SRLNDALLESHK'
+  Formula for 'SRLNDALLESHK'
+  Formula for 'SRLNDALLESHK'
+  Formula for 'SRLNDALLESHK'
+  Formula for 'SRLNDALLESHK'
+ Writing SRLNDALLESHK(REG,ECSEC)
+ (Written real array, size 37x7, header "SRLD".)
+  Formula for 'SRLNDNETESHK'
+ Writing SRLNDNETESHK(REG,ECSEC)
+ (Written real array, size 37x7, header "NSRL".)
+ Writing SRLNDLDTXSHK(REG)
+ (Written real array, size 37, header "SRLT".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_marine_fisheries_shock.har'.)
+ Reading MARFishSRRnD(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_carbon_forestry_shock.har'.)
+ Reading CARBforSRRnD(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_pollination_shock_pfb.har'.)
+ Reading POLIpfbSRRnD(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_pollination_shock_gro.har'.)
+ Reading POLIgroSRRnD(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_pollination_shock_v_f.har'.)
+ Reading POLIv_fSRRnD(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_pollination_shock_osd.har'.)
+ Reading POLIosdSRRnD(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_pollination_shock_ocr.har'.)
+ Reading POLIocrSRRnD(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file '2021_2030_RnD_20pct.har'.)
+ Reading SRRnD20PSHK(REG)
+ (Read real array, size 37, header "N001".)
+  Formula for 'SRRnDALLESHK'
+  Formula for 'SRRnDALLESHK'
+  Formula for 'SRRnDALLESHK'
+  Formula for 'SRRnDALLESHK'
+  Formula for 'SRRnDALLESHK'
+  Formula for 'SRRnDALLESHK'
+  Formula for 'SRRnDALLESHK'
+ Writing SRRnDALLESHK(REG,ECSEC)
+ (Written real array, size 37x7, header "SRnD".)
+  Formula for 'SRRnDNETESHK'
+ Writing SRRnDNETESHK(REG,ECSEC)
+ (Written real array, size 37x7, header "NSRD".)
+ Writing SRRnD20PSHK(REG)
+ (Written real array, size 37, header "RnD".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_PESGC_marine_fisheries_shock.har'.)
+ Reading MARFishPESGR(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_PESGC_carbon_forestry_shock.har'.)
+ Reading CARBforPESGR(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_PESGC_pollination_shock_pfb.har'.)
+ Reading POLIpfbPESGR(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_PESGC_pollination_shock_gro.har'.)
+ Reading POLIgroPESGR(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_PESGC_pollination_shock_v_f.har'.)
+ Reading POLIv_fPESGR(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_PESGC_pollination_shock_osd.har'.)
+ Reading POLIosdPESGR(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_PESGC_pollination_shock_ocr.har'.)
+ Reading POLIocrPESGR(REG)
+ (Read real array, size 37, header "N001".)
+  Formula for 'PESGRnDAESHK'
+  Formula for 'PESGRnDAESHK'
+  Formula for 'PESGRnDAESHK'
+  Formula for 'PESGRnDAESHK'
+  Formula for 'PESGRnDAESHK'
+  Formula for 'PESGRnDAESHK'
+  Formula for 'PESGRnDAESHK'
+ Writing PESGRnDAESHK(REG,ECSEC)
+ (Written real array, size 37x7, header "PEGR".)
+  Formula for 'PESGRNETESHK'
+ Writing PESGRNETESHK(REG,ECSEC)
+ (Written real array, size 37x7, header "NPGR".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_PESGC_30_marine_fisheries_shock.har'.)
+ Reading FisPESGB2R3E(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_PESGC_30_carbon_forestry_shock.har'.)
+ Reading ForPESGB2R3E(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_PESGC_30_pollination_shock_pfb.har'.)
+ Reading PfbPESGB2R3E(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_PESGC_30_pollination_shock_gro.har'.)
+ Reading GroPESGB2R3E(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_PESGC_30_pollination_shock_v_f.har'.)
+ Reading V_fPESGB2R3E(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_PESGC_30_pollination_shock_osd.har'.)
+ Reading OsdPESGB2R3E(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_20p_PESGC_30_pollination_shock_ocr.har'.)
+ Reading OcrPESGB2R3E(REG)
+ (Read real array, size 37, header "N001".)
+  Formula for 'PESGB2RD3AES'
+  Formula for 'PESGB2RD3AES'
+  Formula for 'PESGB2RD3AES'
+  Formula for 'PESGB2RD3AES'
+  Formula for 'PESGB2RD3AES'
+  Formula for 'PESGB2RD3AES'
+  Formula for 'PESGB2RD3AES'
+ Writing PESGB2RD3AES(REG,ECSEC)
+ (Written real array, size 37x7, header "PEGB".)
+  Formula for 'PESGBNETESHK'
+ Writing PESGBNETESHK(REG,ECSEC)
+ (Written real array, size 37x7, header "NPGB".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESGC_marine_fisheries_shock.har'.)
+ Reading FisPESGCRnd(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESGC_carbon_forestry_shock.har'.)
+ Reading ForPESGCRnd(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESGC_pollination_shock_pfb.har'.)
+ Reading PfbPESGCRnd(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESGC_pollination_shock_gro.har'.)
+ Reading GroPESGCRnd(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESGC_pollination_shock_v_f.har'.)
+ Reading V_fPESGCRnd(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESGC_pollination_shock_osd.har'.)
+ Reading OsdPESGCRnd(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESGC_pollination_shock_ocr.har'.)
+ Reading OcrPESGCRnd(REG)
+ (Read real array, size 37, header "N001".)
+  Formula for 'PESGCRndSRAE'
+  Formula for 'PESGCRndSRAE'
+  Formula for 'PESGCRndSRAE'
+  Formula for 'PESGCRndSRAE'
+  Formula for 'PESGCRndSRAE'
+  Formula for 'PESGCRndSRAE'
+  Formula for 'PESGCRndSRAE'
+ Writing PESGCRndSRAE(REG,ECSEC)
+ (Written real array, size 37x7, header "PEGC".)
+  Formula for 'PESGCNETESK2'
+ Writing PESGCNETESK2(REG,ECSEC)
+ (Written real array, size 37x7, header "NPGC".)
+ (Opened, as header, existing file 'X2030_RnD_marine_fisheries_shock.har'.)
+ Reading MARFishRnD(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'X2030_RnD_carbon_forestry_shock.har'.)
+ Reading CARBforRnD(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'X2030_RnD_pollination_shock_pfb.har'.)
+ Reading POLIpfbRnD(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'X2030_RnD_pollination_shock_gro.har'.)
+ Reading POLIgroRnD(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'X2030_RnD_pollination_shock_v_f.har'.)
+ Reading POLIv_fRnD(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'X2030_RnD_pollination_shock_osd.har'.)
+ Reading POLIosdRnD(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'X2030_RnD_pollination_shock_ocr.har'.)
+ Reading POLIocrRnD(REG)
+ (Read real array, size 37, header "N001".)
+  Formula for 'RnDALLESHK'
+  Formula for 'RnDALLESHK'
+  Formula for 'RnDALLESHK'
+  Formula for 'RnDALLESHK'
+  Formula for 'RnDALLESHK'
+  Formula for 'RnDALLESHK'
+  Formula for 'RnDALLESHK'
+ Writing RnDALLESHK(REG,ECSEC)
+ (Written real array, size 37x7, header "RnDE".)
+  Formula for 'RnDNETESHK'
+ Writing RnDNETESHK(REG,ECSEC)
+ (Written real array, size 37x7, header "NRnD".)
+ (Opened, as header, existing file 'X2030_SR_RnD_marine_fisheries_shock.har'.)
+ Reading MARFishSRnD(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'X2030_SR_RnD_carbon_forestry_shock.har'.)
+ Reading CARBforSRnD(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'X2030_SR_RnD_pollination_shock_pfb.har'.)
+ Reading POLIpfbSRnD(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'X2030_SR_RnD_pollination_shock_gro.har'.)
+ Reading POLIgroSRnD(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'X2030_SR_RnD_pollination_shock_v_f.har'.)
+ Reading POLIv_fSRnD(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'X2030_SR_RnD_pollination_shock_osd.har'.)
+ Reading POLIosdSRnD(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'X2030_SR_RnD_pollination_shock_ocr.har'.)
+ Reading POLIocrSRnD(REG)
+ (Read real array, size 37, header "N001".)
+  Formula for 'SRnDALLESHK'
+  Formula for 'SRnDALLESHK'
+  Formula for 'SRnDALLESHK'
+  Formula for 'SRnDALLESHK'
+  Formula for 'SRnDALLESHK'
+  Formula for 'SRnDALLESHK'
+  Formula for 'SRnDALLESHK'
+ Writing SRRnDALLESHK(REG,ECSEC)
+ (Written real array, size 37x7, header "RDSR".)
+  Formula for 'SRnDNETESHK'
+ Writing SRnDNETESHK(REG,ECSEC)
+ (Written real array, size 37x7, header "NRDR".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESLC_marine_fisheries_shock.har'.)
+ Reading MARFishSRPLC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESLC_carbon_forestry_shock.har'.)
+ Reading CARBforSRPLC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESLC_pollination_shock_pfb.har'.)
+ Reading POLIpfbSRPLC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESLC_pollination_shock_gro.har'.)
+ Reading POLIgroSRPLC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESLC_pollination_shock_v_f.har'.)
+ Reading POLIv_fSRPLC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESLC_pollination_shock_osd.har'.)
+ Reading POLIosdSRPLC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESLC_pollination_shock_ocr.har'.)
+ Reading POLIocrSRPLC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file '2021_30_SR_RnD_PESLC_allES.har'.)
+ Reading PESLSRDTXSHK(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file '2021_2030_RnD_half.har'.)
+ Reading RnDHALFSHK(REG)
+ (Read real array, size 37, header "N001".)
+  Formula for 'SRnDPESLCAES'
+  Formula for 'SRnDPESLCAES'
+  Formula for 'SRnDPESLCAES'
+  Formula for 'SRnDPESLCAES'
+  Formula for 'SRnDPESLCAES'
+  Formula for 'SRnDPESLCAES'
+  Formula for 'SRnDPESLCAES'
+ Writing SRnDPESLCAES(REG,ECSEC)
+ (Written real array, size 37x7, header "SRLC".)
+  Formula for 'SRDPLCNETSHK'
+ Writing SRDPLCNETSHK(REG,ECSEC)
+ (Written real array, size 37x7, header "NSDL".)
+ Writing PESLSRDTXSHK(REG)
+ (Written real array, size 37, header "TSRL".)
+ Writing RnDHALFSHK(REG)
+ (Written real array, size 37, header "RnDH".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESLC_marine_fisheries_shock.har'.)
+ Reading MARFishSPELC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESLC_carbon_forestry_shock.har'.)
+ Reading CARBforSPELC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESLC_pollination_shock_pfb.har'.)
+ Reading POLIpfbSPELC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESLC_pollination_shock_gro.har'.)
+ Reading POLIgroSPELC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESLC_pollination_shock_v_f.har'.)
+ Reading POLIv_fSPELC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESLC_pollination_shock_osd.har'.)
+ Reading POLIosdSPELC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_RnD_PESLC_pollination_shock_ocr.har'.)
+ Reading POLIocrSPELC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file '2021_30_SR_PESLC_shock-LTAX.har'.)
+ Reading SRPESLCTXSHK(REG)
+ (Read real array, size 37, header "N001".)
+  Formula for 'SRPESLCAES'
+  Formula for 'SRPESLCAES'
+  Formula for 'SRPESLCAES'
+  Formula for 'SRPESLCAES'
+  Formula for 'SRPESLCAES'
+  Formula for 'SRPESLCAES'
+  Formula for 'SRPESLCAES'
+ Writing SRnDPESLCAES(REG,ECSEC)
+ (Written real array, size 37x7, header "SPLC".)
+  Formula for 'SRPLCNETSHK'
+ Writing SRPLCNETSHK(REG,ECSEC)
+ (Written real array, size 37x7, header "NSPL".)
+ Writing SRPESLCTXSHK(REG)
+ (Written real array, size 37, header "TSLC".)
+ (Opened, as header, existing file
+   'X2030_SR_Land_PESGC_marine_fisheries_shock.har'.)
+ Reading MARFishSRPGC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_Land_PESGC_carbon_forestry_shock.har'.)
+ Reading CARBforSRPGC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_Land_PESGC_pollination_shock_pfb.har'.)
+ Reading POLIpfbSRPGC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_Land_PESGC_pollination_shock_gro.har'.)
+ Reading POLIgroSRPGC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_Land_PESGC_pollination_shock_v_f.har'.)
+ Reading POLIv_fSRPGC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_Land_PESGC_pollination_shock_osd.har'.)
+ Reading POLIosdSRPGC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file
+   'X2030_SR_Land_PESGC_pollination_shock_ocr.har'.)
+ Reading POLIocrSRPGC(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file '2021_30_SR_Land_PESGC_allES_shocks.har'.)
+ Reading SRLNDPGTXSHK(REG)
+ (Read real array, size 37, header "N001".)
+  Formula for 'SRLPEGCAES'
+  Formula for 'SRLPEGCAES'
+  Formula for 'SRLPEGCAES'
+  Formula for 'SRLPEGCAES'
+  Formula for 'SRLPEGCAES'
+  Formula for 'SRLPEGCAES'
+  Formula for 'SRLPEGCAES'
+ Writing SRLPEGCAES(REG,ECSEC)
+ (Written real array, size 37x7, header "SLGC".)
+  Formula for 'SRLGCNETSHK'
+ Writing SRLGCNETSHK(REG,ECSEC)
+ (Written real array, size 37x7, header "NSGL".)
+ Writing SRLNDPGTXSHK(REG)
+ (Written real array, size 37, header "TSGC".)
+ (Opened, as header, existing file 'marine_fisheries_fishcol_shock.har'.)
+ Reading MARFishBACES(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'carbon_forestry_amazoncol_shock.har'.)
+ Reading CARBforBACES(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'pollination_polcol_shock_pfb.har'.)
+ Reading POLIpfbBACES(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'pollination_polcol_shock_gro.har'.)
+ Reading POLIgroBACES(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'pollination_polcol_shock_v_f.har'.)
+ Reading POLIv_fBACES(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'pollination_polcol_shock_osd.har'.)
+ Reading POLIosdBACES(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'pollination_polcol_shock_ocr.har'.)
+ Reading POLIocrBACES(REG)
+ (Read real array, size 37, header "N001".)
+  Formula for 'BAUESCOLSHK'
+  Formula for 'BAUESCOLSHK'
+  Formula for 'BAUESCOLSHK'
+  Formula for 'BAUESCOLSHK'
+  Formula for 'BAUESCOLSHK'
+  Formula for 'BAUESCOLSHK'
+  Formula for 'BAUESCOLSHK'
+ Writing BAUESCOLSHK(REG,ECSEC)
+ (Written real array, size 37x7, header "BAEC".)
+  Formula for 'COLNETSHK'
+ Writing COLNETSHK(REG,ECSEC)
+ (Written real array, size 37x7, header "CLPS".)
+ (Opened, as header, existing file 'pollination_amazoncol_shock_pfb.har'.)
+ Reading POLIpfbBACAM(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'pollination_amazoncol_shock_gro.har'.)
+ Reading POLIgroBACAM(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'pollination_amazoncol_shock_v_f.har'.)
+ Reading POLIv_fBACAM(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'pollination_amazoncol_shock_osd.har'.)
+ Reading POLIosdBACAM(REG)
+ (Read real array, size 37, header "N001".)
+ (Opened, as header, existing file 'pollination_amazoncol_shock_ocr.har'.)
+ Reading POLIocrBACAM(REG)
+ (Read real array, size 37, header "N001".)
+  Formula for 'BAUEAMCOLSHK'
+  Formula for 'BAUEAMCOLSHK'
+  Formula for 'BAUEAMCOLSHK'
+  Formula for 'BAUEAMCOLSHK'
+  Formula for 'BAUEAMCOLSHK'
+  Formula for 'BAUEAMCOLSHK'
+  Formula for 'BAUEAMCOLSHK'
+ Writing BAUEAMCOLSHK(REG,ECSEC)
+ (Written real array, size 37x7, header "AMZN".)
+ [CPU for reads, formulas etc is 0.16 seconds.]
+ Elapsed time for reads, formulas etc is: less than one second.
+ [CPU for all of this 0-step calculation is 0.16 seconds.]
+ Elapsed time for all this 0-step calculation is: less than one second.
+  [Total CPU is 0.36 seconds.]
+ 
+  (Inputs have been taken from the Command file "C:\Users\ecorong\OneDrive - purdue.edu\A_WorkTemp\PNAS-Sep22\shocks\allshocks.cmf")
+ 
+  (The program has completed without error.)
+  (The program has completed without warnings.)
+  
+  Total elapsed time is:  1 seconds.
+
+ This run ended at 12:21:42 on 18-OCT-2022

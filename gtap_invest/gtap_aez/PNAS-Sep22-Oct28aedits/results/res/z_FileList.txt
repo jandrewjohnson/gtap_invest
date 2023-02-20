@@ -1,0 +1,34 @@
+ALLRES.har
+enda.csv	- endowment price and supply by AGGREGATE region
+enda.xlsx	- endowment price and supply by AGGREGATE region (Pivot table)
+ends.csv	- endowment price and supply by region
+ends.xlsx	- endowment price and supply by region (Pivot table)
+EVAC.csv	- EV decomposition by AGGREGATE region
+EVAC.xlsx   - EV decomposition by AGGREGATE region (Pivot table)
+EVAR.csv	- EV by AGGREGATE region
+EVAR.xlsx   - EV by AGGREGATE region (Pivot table)
+EVR.csv		- EV region
+EVR.xlsx    - EV region (Pivot table)
+faca.csv	- Factor demand and price results (qfe and pfe) by AGGREGATE region
+faca.xlsx   - Factor demand and price results (qfe and pfe) by AGGREGATE region (Pivot table)
+facs.csv	- Factor demand and price results (qfe and pfe) by region (Pivot table)
+GDAR.csv	- GDP by AGGREGATE region
+GDAR.xlsx   - GDP by AGGREGATE region (Pivot table)
+GDPR.csv	- GDP by region
+GDPR.xlsx   - GDP by region (Pivot table)
+GEAC.csv	- GDP expenditure-side decomposition by AGGREGATE region
+GEAC.xlsx   - GDP expenditure-side decomposition by AGGREGATE region (Pivot table)
+GERC.csv	- GDP expenditure-side decomposition by region
+GERC.xlsx   - GDP expenditure-side decomposition by  region (Pivot table)
+GIAC.csv	- GDP income-side decomposition by AGGREGATE region
+GIAC.xlsx   - GDP income-side decomposition by AGGREGATE region (Pivot table)
+GIRC.csv	- GDP income-side decomposition by region
+GIRC.xlsx	- GDP income-side decomposition by region (Pivot table)
+raca.csv    - Output price and supply by AGGREGATE region
+raca.xlsx	- Output price and supply by AGGREGATE region (Pivot table)
+ract.csv	- Output price and supply by region
+ract.xlsx   - Output price and supply by  region (Pivot table)
+trda.csv    - Bilateral trade results by AGGREGATE region
+trda.xlsx	- Bilateral trade results by AGGREGATE region (Pivot table)
+trad.csv	- Bilateral trade results by region 
+trad.csv	- Bilateral trade results by region (Pivot table)

@@ -1,0 +1,85 @@
+start with mmnz = 200000000;  ! Assign largest starting memory allocation (max is 2100000000) 
+MA48 increase_MMNZ = veryfast; ! If largest memory is not enough, allow     
+CPU = yes;
+NDS = yes;
+Extrapolation accuracy file = NO;
+
+aux files = "GTAPAEZ";
+
+! Input files
+file GTAPSETS = <p1>\sets.har;
+file GTAPDATA = <p2>\2021_30_BAU_allES.upd;
+file GTAPPARM = <p1>\default.prm;
+file GTAPSUPP = <p1>\<cmf>_SUPP.har;
+
+! Output files
+file GTAPSUM          = <p2>\<cmf>_sum.har;
+Updated file GTAPDATA = <p2>\<cmf>.upd;
+Solution file         = <p2>\<cmf>.sl4;
+
+Verbal Description =<cmf> ;
+
+log file  =  <p2>\<cmf>.log;
+
+Method = Euler;
+Steps = 2 4 6;
+automatic accuracy = yes;
+!accuracy figures = 4;
+!accuracy percent = 90;
+!minimum subinterval length =  0.0001;
+!minimum subinterval fails = stop;
+!accuracy criterion = Both;
+!subintervals =5;
+exogenous
+          pop
+          psaveslack pfactwld
+          profitslack incomeslack endwslack
+          cgdslack tradslack
+          ams atm atf ats atd
+          aosec aoreg 
+          avasec avareg
+          afcom afsec afreg afecom afesec afereg
+          aoall afall afeall aoall2 aoall3 aoall4
+          au dppriv dpgov dpsave
+          to_1 to_2 !to
+!EC change for revenue neutral scenario
+          tfijr
+          tfreg
+!End: EC change for revenue neutral scenario
+          tp tm tms tx txs
+          qo("UnSkLab",REG) 
+          qo("SkLab",REG) 
+          qo("Capital",REG) 
+          qo("NatRes",REG)
+          tfm tfd;  
+Exogenous p_slacklandr;
+Exogenous p_ECONLAND  = zero value    on file <p1>\basedata.har header "MAXL" ;
+Exogenous p_slackland = nonzero value on file <p1>\basedata.har header "MAXL" ; 
+Exogenous p_LANDCOVER_L(AEZ_COMM,"UNMNGLAND",REG);
+Exogenous c_MAX_LAND;
+
+Rest Endogenous ;
+!===========  
+! Shocks
+!===========  
+! (1) Fishery and Forestry shocks
+Shock aoall2("fishery",REG)    = file <p3>\ALLSHOCKS.har header "NPEG" slice "fishery";
+Shock aoall2("forestsec",REG)  = file <p3>\ALLSHOCKS.har header "NPEG" slice "forestsec"; 
+
+! (2) Pollination shocks from InVEST : Pollination Collapse
+Shock aoall3("cotton",REG)     = file <p3>\ALLSHOCKS.har header "NPEG" slice "cotton";
+Shock aoall3("crsgrns",REG)    = file <p3>\ALLSHOCKS.har header "NPEG" slice "crsgrns";
+Shock aoall3("fruitveg",REG)   = file <p3>\ALLSHOCKS.har header "NPEG" slice "fruitveg";
+Shock aoall3("oilsds",REG)     = file <p3>\ALLSHOCKS.har header "NPEG" slice "oilsds";
+Shock aoall3("othercrps",REG)  = file <p3>\ALLSHOCKS.har header "NPEG" slice "othercrps";
+
+! (3) Land PES shocks
+change c_MAX_LAND(AEZ_COMM, REG) =  file <p3>\2021_30_PESGC_shock.HAR header "PES";
+
+!===========  
+! Subtotal
+!===========
+Subtotal aoall2("fishery",REG)    = fish;
+Subtotal aoall2("forestsec",REG)  = forest;
+Subtotal aoall3("crsgrns",REG) aoall3("fruitveg",REG) aoall3("oilsds",REG) aoall3("cotton",REG) aoall3("othercrps",REG)  = polli;
+Subtotal c_MAX_LAND = landPES;

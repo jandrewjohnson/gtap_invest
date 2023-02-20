@@ -1,0 +1,300 @@
+
+::=====================================================================
+:: Step 1: Assign filename macros
+::=====================================================================           
+
+set mactxt01=2014_2021_gdp
+set mactxt02=2014_2021_qo_usklab
+set mactxt03=2014_2021_qo_sklab
+set mactxt04=2014_2021_qo_cap
+set mactxt05=2014_2021_pop
+
+set mactxt06=2021_2030_aoreg
+set mactxt07=2021_2030_qo_usklab
+set mactxt08=2021_2030_qo_sklab
+set mactxt09=2021_2030_qo_cap
+set mactxt10=2021_2030_pop
+
+set sectxt01=2014_2021_ao_crop
+set sectxt02=2014_2021_ao_rum
+set sectxt03=2014_2021_ao_nrum
+set sectxt04=2021_2030_ao_crop
+set sectxt05=2021_2030_ao_rum
+set sectxt06=2021_2030_ao_nrum
+
+set InVFile01=marine_fisheries_bau_shock
+set InVFile02=carbon_forestry_bau_shock
+set InVFile03=pollination_bau_shock_pfb
+set InVFile04=pollination_bau_shock_gro
+set InVFile05=pollination_bau_shock_v_f
+set InVFile06=pollination_bau_shock_osd
+set InVFile07=pollination_bau_shock_ocr
+
+set InVFile08=X2030_PESGC_marine_fisheries_shock
+set InVFile09=X2030_PESGC_carbon_forestry_shock
+set InVFile10=X2030_PESGC_pollination_shock_pfb
+set InVFile11=X2030_PESGC_pollination_shock_gro
+set InVFile12=X2030_PESGC_pollination_shock_v_f
+set InVFile13=X2030_PESGC_pollination_shock_osd
+set InVFile14=X2030_PESGC_pollination_shock_ocr
+
+set InVFile15=X2030_PESLC_marine_fisheries_shock
+set InVFile16=X2030_PESLC_carbon_forestry_shock
+set InVFile17=X2030_PESLC_pollination_shock_pfb
+set InVFile18=X2030_PESLC_pollination_shock_gro
+set InVFile19=X2030_PESLC_pollination_shock_v_f
+set InVFile20=X2030_PESLC_pollination_shock_osd
+set InVFile21=X2030_PESLC_pollination_shock_ocr
+set InVFile22=2021_30_PESLC_shock
+
+set InVFile23=X2030_SR_Land_marine_fisheries_shock
+set InVFile24=X2030_SR_Land_carbon_forestry_shock
+set InVFile25=X2030_SR_Land_pollination_shock_pfb
+set InVFile26=X2030_SR_Land_pollination_shock_gro
+set InVFile27=X2030_SR_Land_pollination_shock_v_f
+set InVFile28=X2030_SR_Land_pollination_shock_osd
+set InVFile29=X2030_SR_Land_pollination_shock_ocr
+set InVFile30=2021_30_SR_Land_allES_shocks
+
+set InVFile31=X2030_SR_RnD_20p_marine_fisheries_shock
+set InVFile32=X2030_SR_RnD_20p_carbon_forestry_shock
+set InVFile33=X2030_SR_RnD_20p_pollination_shock_pfb
+set InVFile34=X2030_SR_RnD_20p_pollination_shock_gro
+set InVFile35=X2030_SR_RnD_20p_pollination_shock_v_f
+set InVFile36=X2030_SR_RnD_20p_pollination_shock_osd
+set InVFile37=X2030_SR_RnD_20p_pollination_shock_ocr
+set InVFile38=2021_2030_RnD_20pct
+
+set InVFile39=X2030_SR_RnD_20p_PESGC_marine_fisheries_shock
+set InVFile40=X2030_SR_RnD_20p_PESGC_carbon_forestry_shock
+set InVFile41=X2030_SR_RnD_20p_PESGC_pollination_shock_pfb
+set InVFile42=X2030_SR_RnD_20p_PESGC_pollination_shock_gro
+set InVFile43=X2030_SR_RnD_20p_PESGC_pollination_shock_v_f
+set InVFile44=X2030_SR_RnD_20p_PESGC_pollination_shock_osd
+set InVFile45=X2030_SR_RnD_20p_PESGC_pollination_shock_ocr
+
+set InVFile46=X2030_SR_RnD_20p_PESGC_30_marine_fisheries_shock
+set InVFile47=X2030_SR_RnD_20p_PESGC_30_carbon_forestry_shock
+set InVFile48=X2030_SR_RnD_20p_PESGC_30_pollination_shock_pfb
+set InVFile49=X2030_SR_RnD_20p_PESGC_30_pollination_shock_gro
+set InVFile50=X2030_SR_RnD_20p_PESGC_30_pollination_shock_v_f
+set InVFile51=X2030_SR_RnD_20p_PESGC_30_pollination_shock_osd
+set InVFile52=X2030_SR_RnD_20p_PESGC_30_pollination_shock_ocr
+
+set InVFile53=X2030_SR_RnD_PESGC_marine_fisheries_shock
+set InVFile54=X2030_SR_RnD_PESGC_carbon_forestry_shock
+set InVFile55=X2030_SR_RnD_PESGC_pollination_shock_pfb
+set InVFile56=X2030_SR_RnD_PESGC_pollination_shock_gro
+set InVFile57=X2030_SR_RnD_PESGC_pollination_shock_v_f
+set InVFile58=X2030_SR_RnD_PESGC_pollination_shock_osd
+set InVFile59=X2030_SR_RnD_PESGC_pollination_shock_ocr
+
+set InVFile60=X2030_RnD_marine_fisheries_shock
+set InVFile61=X2030_RnD_carbon_forestry_shock
+set InVFile62=X2030_RnD_pollination_shock_pfb
+set InVFile63=X2030_RnD_pollination_shock_gro
+set InVFile64=X2030_RnD_pollination_shock_v_f
+set InVFile65=X2030_RnD_pollination_shock_osd
+set InVFile66=X2030_RnD_pollination_shock_ocr
+
+set InVFile67=X2030_SR_RnD_marine_fisheries_shock
+set InVFile68=X2030_SR_RnD_carbon_forestry_shock
+set InVFile69=X2030_SR_RnD_pollination_shock_pfb
+set InVFile70=X2030_SR_RnD_pollination_shock_gro
+set InVFile71=X2030_SR_RnD_pollination_shock_v_f
+set InVFile72=X2030_SR_RnD_pollination_shock_osd
+set InVFile73=X2030_SR_RnD_pollination_shock_ocr
+
+set InVFile74=X2030_SR_RnD_PESLC_marine_fisheries_shock
+set InVFile75=X2030_SR_RnD_PESLC_carbon_forestry_shock
+set InVFile76=X2030_SR_RnD_PESLC_pollination_shock_pfb
+set InVFile77=X2030_SR_RnD_PESLC_pollination_shock_gro
+set InVFile78=X2030_SR_RnD_PESLC_pollination_shock_v_f
+set InVFile79=X2030_SR_RnD_PESLC_pollination_shock_osd
+set InVFile80=X2030_SR_RnD_PESLC_pollination_shock_ocr
+set InVFile81=2021_30_SR_RnD_PESLC_allES
+set InVFile82=2021_2030_RnD_half
+
+set InVFile83=X2030_SR_PESLC_marine_fisheries_shock
+set InVFile84=X2030_SR_PESLC_carbon_forestry_shock
+set InVFile85=X2030_SR_PESLC_pollination_shock_pfb
+set InVFile86=X2030_SR_PESLC_pollination_shock_gro
+set InVFile87=X2030_SR_PESLC_pollination_shock_v_f
+set InVFile88=X2030_SR_PESLC_pollination_shock_osd
+set InVFile89=X2030_SR_PESLC_pollination_shock_ocr
+set InVFile90=2021_30_SR_PESLC_shock
+              
+set InVFile91=X2030_SR_Land_PESGC_marine_fisheries_shock
+set InVFile92=X2030_SR_Land_PESGC_carbon_forestry_shock
+set InVFile93=X2030_SR_Land_PESGC_pollination_shock_pfb
+set InVFile94=X2030_SR_Land_PESGC_pollination_shock_gro
+set InVFile95=X2030_SR_Land_PESGC_pollination_shock_v_f
+set InVFile96=X2030_SR_Land_PESGC_pollination_shock_osd
+set InVFile97=X2030_SR_Land_PESGC_pollination_shock_ocr
+set InVFile98=2021_30_SR_Land_PESGC_allES_shocks
+
+set InVFile99=marine_fisheries_fishcol_shock 
+set InVFile100=carbon_forestry_amazoncol_shock
+set InVFile101=pollination_polcol_shock_pfb
+set InVFile102=pollination_polcol_shock_gro
+set InVFile103=pollination_polcol_shock_v_f
+set InVFile104=pollination_polcol_shock_osd
+set InVFile105=pollination_polcol_shock_ocr
+                
+set InVFile106=pollination_amazoncol_shock_pfb.txt
+set InVFile107=pollination_amazoncol_shock_gro.txt
+set InVFile108=pollination_amazoncol_shock_v_f.txt
+set InVFile109=pollination_amazoncol_shock_osd.txt
+set InVFile110=pollination_amazoncol_shock_ocr.txt
+
+::=====================================================================
+:: Step 2: Text2Har
+::=====================================================================           
+goto skip 
+txt2har %mactxt01%.txt  %mactxt01%.har
+txt2har %mactxt02%.txt  %mactxt02%.har
+txt2har %mactxt03%.txt  %mactxt03%.har
+txt2har %mactxt04%.txt  %mactxt04%.har
+txt2har %mactxt05%.txt  %mactxt05%.har
+
+txt2har %mactxt06%.txt  %mactxt06%.har
+txt2har %mactxt07%.txt  %mactxt07%.har
+txt2har %mactxt08%.txt  %mactxt08%.har
+txt2har %mactxt09%.txt  %mactxt09%.har
+txt2har %mactxt10%.txt  %mactxt10%.har
+
+txt2har %sectxt01%.txt  %sectxt01%.har
+txt2har %sectxt02%.txt  %sectxt02%.har
+txt2har %sectxt03%.txt  %sectxt03%.har
+txt2har %sectxt04%.txt  %sectxt04%.har
+txt2har %sectxt05%.txt  %sectxt05%.har
+txt2har %sectxt06%.txt  %sectxt06%.har
+
+
+txt2har %InVFile01%.txt  %InVFile01%.har
+txt2har %InVFile02%.txt  %InVFile02%.har
+txt2har %InVFile03%.txt  %InVFile03%.har
+txt2har %InVFile04%.txt  %InVFile04%.har
+txt2har %InVFile05%.txt  %InVFile05%.har
+txt2har %InVFile06%.txt  %InVFile06%.har
+txt2har %InVFile07%.txt  %InVFile07%.har
+
+txt2har %InVFile08%.txt  %InVFile08%.har
+txt2har %InVFile09%.txt  %InVFile09%.har
+txt2har %InVFile10%.txt  %InVFile10%.har
+txt2har %InVFile11%.txt  %InVFile11%.har
+txt2har %InVFile12%.txt  %InVFile12%.har
+txt2har %InVFile13%.txt  %InVFile13%.har
+txt2har %InVFile14%.txt  %InVFile14%.har
+
+txt2har %InVFile15%.txt  %InVFile15%.har
+txt2har %InVFile16%.txt  %InVFile16%.har
+txt2har %InVFile17%.txt  %InVFile17%.har
+txt2har %InVFile18%.txt  %InVFile18%.har
+txt2har %InVFile19%.txt  %InVFile19%.har
+txt2har %InVFile20%.txt  %InVFile20%.har
+txt2har %InVFile21%.txt  %InVFile21%.har
+txt2har %InVFile22%.txt  %InVFile22%Land.har
+
+txt2har %InVFile23%.txt  %InVFile23%.har
+txt2har %InVFile24%.txt  %InVFile24%.har
+txt2har %InVFile25%.txt  %InVFile25%.har
+txt2har %InVFile26%.txt  %InVFile26%.har
+txt2har %InVFile27%.txt  %InVFile27%.har
+txt2har %InVFile28%.txt  %InVFile28%.har
+txt2har %InVFile29%.txt  %InVFile29%.har
+txt2har %InVFile30%.txt  %InVFile30%.har
+
+txt2har %InVFile31%.txt  %InVFile31%.har
+txt2har %InVFile32%.txt  %InVFile32%.har
+txt2har %InVFile33%.txt  %InVFile33%.har
+txt2har %InVFile34%.txt  %InVFile34%.har
+txt2har %InVFile35%.txt  %InVFile35%.har
+txt2har %InVFile36%.txt  %InVFile36%.har
+txt2har %InVFile37%.txt  %InVFile37%.har
+txt2har %InVFile38%.txt  %InVFile38%.har
+
+txt2har %InVFile38%.txt  %InVFile38%.har
+
+txt2har %InVFile39%.txt  %InVFile39%.har
+txt2har %InVFile40%.txt  %InVFile40%.har
+txt2har %InVFile41%.txt  %InVFile41%.har
+txt2har %InVFile42%.txt  %InVFile42%.har
+txt2har %InVFile43%.txt  %InVFile43%.har
+txt2har %InVFile44%.txt  %InVFile44%.har
+txt2har %InVFile45%.txt  %InVFile45%.har
+
+txt2har %InVFile46%.txt  %InVFile46%.har
+txt2har %InVFile47%.txt  %InVFile47%.har
+txt2har %InVFile48%.txt  %InVFile48%.har
+txt2har %InVFile49%.txt  %InVFile49%.har
+txt2har %InVFile50%.txt  %InVFile50%.har
+txt2har %InVFile51%.txt  %InVFile51%.har
+txt2har %InVFile52%.txt  %InVFile52%.har
+
+txt2har %InVFile53%.txt  %InVFile53%.har
+txt2har %InVFile54%.txt  %InVFile54%.har
+txt2har %InVFile55%.txt  %InVFile55%.har
+txt2har %InVFile56%.txt  %InVFile56%.har
+txt2har %InVFile57%.txt  %InVFile57%.har
+txt2har %InVFile58%.txt  %InVFile58%.har
+txt2har %InVFile59%.txt  %InVFile59%.har
+
+txt2har %InVFile60%.txt  %InVFile60%.har
+txt2har %InVFile61%.txt  %InVFile61%.har
+txt2har %InVFile62%.txt  %InVFile62%.har
+txt2har %InVFile63%.txt  %InVFile63%.har
+txt2har %InVFile64%.txt  %InVFile64%.har
+txt2har %InVFile65%.txt  %InVFile65%.har
+txt2har %InVFile66%.txt  %InVFile66%.har
+
+txt2har %InVFile67%.txt  %InVFile67%.har
+txt2har %InVFile68%.txt  %InVFile68%.har
+txt2har %InVFile69%.txt  %InVFile69%.har
+txt2har %InVFile70%.txt  %InVFile70%.har
+txt2har %InVFile71%.txt  %InVFile71%.har
+txt2har %InVFile72%.txt  %InVFile72%.har
+txt2har %InVFile73%.txt  %InVFile73%.har
+
+txt2har %InVFile74%.txt  %InVFile74%.har
+txt2har %InVFile75%.txt  %InVFile75%.har
+txt2har %InVFile76%.txt  %InVFile76%.har
+txt2har %InVFile77%.txt  %InVFile77%.har
+txt2har %InVFile78%.txt  %InVFile78%.har
+txt2har %InVFile79%.txt  %InVFile79%.har
+txt2har %InVFile80%.txt  %InVFile80%.har
+txt2har %InVFile81%.txt  %InVFile81%.har
+txt2har %InVFile82%.txt  %InVFile82%.har
+
+txt2har %InVFile83%.txt  %InVFile83%.har
+txt2har %InVFile84%.txt  %InVFile84%.har
+txt2har %InVFile85%.txt  %InVFile85%.har
+txt2har %InVFile86%.txt  %InVFile86%.har
+txt2har %InVFile87%.txt  %InVFile87%.har
+txt2har %InVFile88%.txt  %InVFile88%.har
+txt2har %InVFile89%.txt  %InVFile89%.har
+txt2har %InVFile90%.txt  %InVFile90%-Ltax.har
+
+txt2har %InVFile91%.txt  %InVFile91%.har
+txt2har %InVFile92%.txt  %InVFile92%.har
+txt2har %InVFile93%.txt  %InVFile93%.har
+txt2har %InVFile94%.txt  %InVFile94%.har
+txt2har %InVFile95%.txt  %InVFile95%.har
+txt2har %InVFile96%.txt  %InVFile96%.har
+txt2har %InVFile97%.txt  %InVFile97%.har
+txt2har %InVFile98%.txt  %InVFile97%.har
+:skip
+
+txt2har %InVFile99%.txt   %InVFile99%.har
+txt2har %InVFile100%.txt  %InVFile100%.har
+txt2har %InVFile101%.txt  %InVFile101%.har
+txt2har %InVFile102%.txt  %InVFile102%.har
+txt2har %InVFile103%.txt  %InVFile103%.har
+txt2har %InVFile104%.txt  %InVFile104%.har
+txt2har %InVFile105%.txt  %InVFile105%.har
+
+txt2har %InVFile106%.txt  %InVFile106%.har
+txt2har %InVFile107%.txt  %InVFile107%.har
+txt2har %InVFile108%.txt  %InVFile108%.har
+txt2har %InVFile109%.txt  %InVFile109%.har
+txt2har %InVFile110%.txt  %InVFile110%.har

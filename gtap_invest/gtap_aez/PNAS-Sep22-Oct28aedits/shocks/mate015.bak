@@ -1,0 +1,139 @@
+auxiliary files = <p0>;
+check-on-read elements = warn; 
+cpu=yes ; 
+log file = yes;
+
+! Input files:
+File GTAPSETS = <p1>\sets.har;
+
+File MacFile01 = 2014_2021_gdp.har;
+File MacFile02 = 2014_2021_qo_usklab.har;
+File MacFile03 = 2014_2021_qo_sklab.har;
+File MacFile04 = 2014_2021_qo_cap.har;
+File MacFile05 = 2014_2021_pop.har;
+File MacFile06 = 2021_2030_aoreg.har;
+File MacFile07 = 2021_2030_qo_usklab.har;
+File MacFile08 = 2021_2030_qo_sklab.har;
+File MacFile09 = 2021_2030_qo_cap.har;
+File MacFile10 = 2021_2030_pop.har;
+
+File SecFile01 = 2014_2021_ao_crop.har;
+File SecFile02 = 2014_2021_ao_rum.har;
+File SecFile03 = 2014_2021_ao_nrum.har;
+File SecFile04 = 2021_2030_ao_crop.har;
+File SecFile05 = 2021_2030_ao_rum.har;
+File SecFile06 = 2021_2030_ao_nrum.har;
+
+File InVFile01 = marine_fisheries_bau_shock.har;
+File InVFile02 = carbon_forestry_bau_shock.har;
+File InVFile03 = pollination_bau_shock_pfb.har;
+File InVFile04 = pollination_bau_shock_gro.har;
+File InVFile05 = pollination_bau_shock_v_f.har;
+File InVFile06 = pollination_bau_shock_osd.har;
+File InVFile07 = pollination_bau_shock_ocr.har;
+
+File InVFile08 = X2030_PESGC_marine_fisheries_shock.har;
+File InVFile09 = X2030_PESGC_carbon_forestry_shock.har;
+File InVFile10 = X2030_PESGC_pollination_shock_pfb.har;
+File InVFile11 = X2030_PESGC_pollination_shock_gro.har;
+File InVFile12 = X2030_PESGC_pollination_shock_v_f.har;
+File InVFile13 = X2030_PESGC_pollination_shock_osd.har;
+File InVFile14 = X2030_PESGC_pollination_shock_ocr.har;
+
+File InVFile15 = X2030_PESLC_marine_fisheries_shock.har;
+File InVFile16 = X2030_PESLC_carbon_forestry_shock.har;
+File InVFile17 = X2030_PESLC_pollination_shock_pfb.har;
+File InVFile18 = X2030_PESLC_pollination_shock_gro.har;
+File InVFile19 = X2030_PESLC_pollination_shock_v_f.har;
+File InVFile20 = X2030_PESLC_pollination_shock_osd.har;
+File InVFile21 = X2030_PESLC_pollination_shock_ocr.har;
+File InVFile22 = 2021_30_PESLC_shockLand.har;
+
+File InVFile23 = X2030_SR_Land_marine_fisheries_shock.har;
+File InVFile24 = X2030_SR_Land_carbon_forestry_shock.har;
+File InVFile25 = X2030_SR_Land_pollination_shock_pfb.har;
+File InVFile26 = X2030_SR_Land_pollination_shock_gro.har;
+File InVFile27 = X2030_SR_Land_pollination_shock_v_f.har;
+File InVFile28 = X2030_SR_Land_pollination_shock_osd.har;
+File InVFile29 = X2030_SR_Land_pollination_shock_ocr.har;
+File InVFile30 = 2021_30_SR_Land_allES_shocks.har;
+
+File InVFile31 = X2030_SR_RnD_20p_marine_fisheries_shock.har;
+File InVFile32 = X2030_SR_RnD_20p_carbon_forestry_shock.har;
+File InVFile33 = X2030_SR_RnD_20p_pollination_shock_pfb.har;
+File InVFile34 = X2030_SR_RnD_20p_pollination_shock_gro.har;
+File InVFile35 = X2030_SR_RnD_20p_pollination_shock_v_f.har;
+File InVFile36 = X2030_SR_RnD_20p_pollination_shock_osd.har;
+File InVFile37 = X2030_SR_RnD_20p_pollination_shock_ocr.har;
+File InVFile38 = 2021_2030_RnD_20pct.har;
+
+File InVFile39 = X2030_SR_RnD_20p_PESGC_marine_fisheries_shock.har;
+File InVFile40 = X2030_SR_RnD_20p_PESGC_carbon_forestry_shock.har;
+File InVFile41 = X2030_SR_RnD_20p_PESGC_pollination_shock_pfb.har;
+File InVFile42 = X2030_SR_RnD_20p_PESGC_pollination_shock_gro.har;
+File InVFile43 = X2030_SR_RnD_20p_PESGC_pollination_shock_v_f.har;
+File InVFile44 = X2030_SR_RnD_20p_PESGC_pollination_shock_osd.har;
+File InVFile45 = X2030_SR_RnD_20p_PESGC_pollination_shock_ocr.har;
+
+File InVFile46 = X2030_SR_RnD_20p_PESGC_30_marine_fisheries_shock.har;
+File InVFile47 = X2030_SR_RnD_20p_PESGC_30_carbon_forestry_shock.har;
+File InVFile48 = X2030_SR_RnD_20p_PESGC_30_pollination_shock_pfb.har;
+File InVFile49 = X2030_SR_RnD_20p_PESGC_30_pollination_shock_gro.har;
+File InVFile50 = X2030_SR_RnD_20p_PESGC_30_pollination_shock_v_f.har;
+File InVFile51 = X2030_SR_RnD_20p_PESGC_30_pollination_shock_osd.har;
+File InVFile52 = X2030_SR_RnD_20p_PESGC_30_pollination_shock_ocr.har;
+
+File InVFile53 = X2030_SR_RnD_PESGC_marine_fisheries_shock.har;
+File InVFile54 = X2030_SR_RnD_PESGC_carbon_forestry_shock.har;
+File InVFile55 = X2030_SR_RnD_PESGC_pollination_shock_pfb.har;
+File InVFile56 = X2030_SR_RnD_PESGC_pollination_shock_gro.har;
+File InVFile57 = X2030_SR_RnD_PESGC_pollination_shock_v_f.har;
+File InVFile58 = X2030_SR_RnD_PESGC_pollination_shock_osd.har;
+File InVFile59 = X2030_SR_RnD_PESGC_pollination_shock_ocr.har;
+
+File InVFile60 = X2030_RnD_marine_fisheries_shock.har;
+File InVFile61 = X2030_RnD_carbon_forestry_shock.har;
+File InVFile62 = X2030_RnD_pollination_shock_pfb.har;
+File InVFile63 = X2030_RnD_pollination_shock_gro.har;
+File InVFile64 = X2030_RnD_pollination_shock_v_f.har;
+File InVFile65 = X2030_RnD_pollination_shock_osd.har;
+File InVFile66 = X2030_RnD_pollination_shock_ocr.har;
+
+File InVFile67 = X2030_SR_RnD_marine_fisheries_shock.har;
+File InVFile68 = X2030_SR_RnD_carbon_forestry_shock.har;
+File InVFile69 = X2030_SR_RnD_pollination_shock_pfb.har;
+File InVFile70 = X2030_SR_RnD_pollination_shock_gro.har;
+File InVFile71 = X2030_SR_RnD_pollination_shock_v_f.har;
+File InVFile72 = X2030_SR_RnD_pollination_shock_osd.har;
+File InVFile73 = X2030_SR_RnD_pollination_shock_ocr.har;
+
+File InVFile74 = X2030_SR_RnD_PESLC_marine_fisheries_shock.har;
+File InVFile75 = X2030_SR_RnD_PESLC_carbon_forestry_shock.har ;
+File InVFile76 = X2030_SR_RnD_PESLC_pollination_shock_pfb.har;
+File InVFile77 = X2030_SR_RnD_PESLC_pollination_shock_gro.har;
+File InVFile78 = X2030_SR_RnD_PESLC_pollination_shock_v_f.har;
+File InVFile79 = X2030_SR_RnD_PESLC_pollination_shock_osd.har;
+File InVFile80 = X2030_SR_RnD_PESLC_pollination_shock_ocr.har;
+File InVFile81 = 2021_30_SR_RnD_PESLC_allES.har;
+File InVFile82 = 2021_2030_RnD_half.har;
+
+File InVFile83 = X2030_SR_RnD_PESLC_marine_fisheries_shock.har;
+File InVFile84 = X2030_SR_RnD_PESLC_carbon_forestry_shock.har ;
+File InVFile85 = X2030_SR_RnD_PESLC_pollination_shock_pfb.har;
+File InVFile86 = X2030_SR_RnD_PESLC_pollination_shock_gro.har;
+File InVFile87 = X2030_SR_RnD_PESLC_pollination_shock_v_f.har;
+File InVFile88 = X2030_SR_RnD_PESLC_pollination_shock_osd.har;
+File InVFile89 = X2030_SR_RnD_PESLC_pollination_shock_ocr.har;
+File InVFile90 = 2021_30_SR_PESLC_shock-LTAX.har;
+
+File InVFile91 = X2030_SR_Land_PESGC_marine_fisheries_shock.har;
+File InVFile92 = X2030_SR_Land_PESGC_carbon_forestry_shock.har;
+File InVFile93 = X2030_SR_Land_PESGC_pollination_shock_pfb.har;
+File InVFile94 = X2030_SR_Land_PESGC_pollination_shock_gro.har;
+File InVFile95 = X2030_SR_Land_PESGC_pollination_shock_v_f.har;
+File InVFile96 = X2030_SR_Land_PESGC_pollination_shock_osd.har;
+File InVFile97 = X2030_SR_Land_PESGC_pollination_shock_ocr.har;
+File InVFile98 = 2021_30_SR_Land_PESGC_allES_shocks.har;
+
+! Output file:
+File OutFile = AllShocks.har; 
