@@ -2,7 +2,7 @@
 
 GTAP-InVEST is a global earth economy model that integrates a comutable general equilibrium model, a land-use change model, and a ecosystem services model. It arises from several academic papers, including "Closing yield gap is crucial to avoid potential surge in global carbon emissions" (Suh et al. 2020) and the Global Futures Project from the World Wildlife Fund in "Global Future: Assessing The Global Economic Impacts of Environmental Change to Support Policy-Making" (Roxburg et al. 2020). This repository is from the Road to Kunming project, commissioned by the World Bank, and contains version 0.8 of the GTAP-InVEST model, dubbed the "feedback version" of the model, which was developed to support this (currently forthcoming) report. This readme file documents how to run this version of GTAP-InVEST.
 
-# Model components
+## Model components
 
 The GTAP-InVEST model is written in python, C, R, Matlab and GEMPACK. All of the code specific to GTAP-InVEST is open source, but it requires a proprietary license for GEMPACK to recompile the CGE executable and it requires access/purchase of version 10 of the GTAP database. The three building blocks of the model, documented in more detail below are:
 
@@ -12,29 +12,30 @@ The GTAP-InVEST model is written in python, C, R, Matlab and GEMPACK. All of the
 
 # Software Installation
 
-GTAP-InVEST requires a considerable amoutn of technical skill to run and involves multiple different programming languages and paradigms. Python is used as the main "glue" of the model. This section describes how to get the model software running.
+GTAP-InVEST requires a considerable amount of technical skill to run and involves multiple different programming languages and paradigms. Python is used as the main "glue" of the model. This section describes how to get the model software running.
 
-## Hazelbean
+## Python Installation
+
 GTAP-InVEST uses the open-source Hazelbean library to organize and manage the code. Hazelbean is a collection of geospatial processing tools based on gdal, numpy, scipy, cython, pygeoprocessing, taskgraph, natcap.invest, geopandas and many others to assist in common spatial analysis tasks in sustainability science, ecosystem service assessment, global integrated modelling assessment,  natural capital accounting, and/or calculable general equilibrium modelling.
 
-Hazelbean is able to be installed like any python library via the command "pip install hazelbean". Note that hazelbean only provides a Python 3.6+, 64 bit, Windows version, however with the exception of precompiled cython files, it should be cross-platform and cross-version. The precompiled files are only loaded as needed.
+- Install Mambaforge from https://github.com/conda-forge/miniforge#mambaforge
+- For convenience, during installation, I select yes for "Add Mambaforge to my PATH environment Variable"
+- (PC) Open the Miniforge Prompt (search for it in the start menu) or (Mac) just type "mamba init"
+- Create a new mamba environment with the following commands (here it is named 8222env1):
 
-Pip installing Hazelbean will attempt to install required libraries, but many of these must be compiled for your computer. You can solve each one manually for your chosen opperating system, or you can use these Anaconda-based steps here:
+```mamba create -n 8222env1 -c conda-forge```
 
-- Install Anaconda3 with the newest python version (tested at python 3.6.3)
-- Install libraries using conda command: "conda install -c conda-forge geopandas"
-- Install libraries using conda command: "conda install -c conda-forge rasterstats"
-- Install libraries using conda command: "conda install -c conda-forge netCDF4"
-- Install libraries using conda command: "conda install -c conda-forge cartopy"
-- Install libraries using conda command: "conda install -c conda-forge xlrd, markdown"
-- Install libraries using conda command: "conda install -c conda-forge qtpy, qtawesome"
-- Install libraries using conda command: "conda install -c conda-forge plotly, descartes"
-- Pip install anytree
-- Pip install pygeoprocessing
-- Pip install taskgraph
+- Activate the environment 
+  
+```mamba activate 8222env1```
 
-And then finally,
-- Install hazelbean with "pip install hazelbean"
+- Install libraries using conda command: 
+
+```mamba install -c conda-forge natcap.invest geopandas rasterstats netCDF4 cartopy xlrd markdown qtpy qtawesome plotly descartes pygeoprocessing taskgraph cython rioxarray dask google-cloud-datastore google-cloud-storage aenum anytree statsmodels openpyxl seaborn twine pyqt ipykernel imageio pandoc```
+
+- And then finally, install non-conda distributions via pip:
+
+```pip install mglearn pandoc datascience hazelbean```
 
 ## Project Flow
 
@@ -74,7 +75,7 @@ The documentation for each task is included in the task's call signature, which 
 
 # GTAP-AEZ
 
-Summary: This version of the GTAP-AEZ model is based on the project with University of Minnesota and World Bank i.e. “The Economic Case for Nature”. Land use change in GTAP is fed to the InVEST model to generate changes in ecosystem services (mainly pollination, forestry carbon and marine fisheries). These changes are fed back to the GTAP-AEZ model as productivity shocks to the crop sector, forestry sector and marine fisheries sector. 
+The version of the GTAP-AEZ model in this repository is based on the project with University of Minnesota and World Bank i.e. “The Economic Case for Nature”. Land use change in GTAP is fed to the InVEST model to generate changes in ecosystem services (mainly pollination, forestry carbon and marine fisheries). These changes are fed back to the GTAP-AEZ model as productivity shocks to the crop sector, forestry sector and marine fisheries sector. 
 
 There are two methods by which the GTAP-AEZ model can be run. 
 
@@ -95,6 +96,17 @@ Instead of running the bat file, you can also just run run GTAP-AEZ via the corr
 
 ## Errata
 The above commands are valid for Windows users. For Mac users, replace `-v %cd%` with ``` -v `pwd` ```
+
+## Numpy errors
+
+If numpy throws "wrong size or changes size binary": upgrade numpy at the end of the installation process. See for details: https://stackoverflow.com/questions/66060487/valueerror-numpy-ndarray-size-changed-may-indicate-binary-incompatibility-exp
+
+## Mac specific errors
+
+Your python environment has to have permissions to access and write to the base data folder.
+
+# More information
+See the author's personal webpage, https://justinandrewjohnson.com/ for more details about the underlying research.
 
 
 
