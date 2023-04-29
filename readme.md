@@ -1,6 +1,6 @@
-# Overview
+# Overview of GTAP-InVEST 0.8.0, used in the "The Economic Case for Nature"
 
-GTAP-InVEST is a global earth economy model that integrates a comutable general equilibrium model, a land-use change model, and a ecosystem services model. It arises from several academic papers, including "Closing yield gap is crucial to avoid potential surge in global carbon emissions" (Suh et al. 2020) and the Global Futures Project from the World Wildlife Fund in "Global Future: Assessing The Global Economic Impacts of Environmental Change to Support Policy-Making" (Roxburg et al. 2020). This repository is from the Road to Kunming project, commissioned by the World Bank, and contains version 0.8 of the GTAP-InVEST model, dubbed the "feedback version" of the model, which was developed to support this (currently forthcoming) report. This readme file documents how to run this version of GTAP-InVEST.
+GTAP-InVEST is a global earth economy model that integrates a comutable general equilibrium model, a land-use change model, and a ecosystem services model. It arises from several academic papers, including "Closing yield gap is crucial to avoid potential surge in global carbon emissions" (Suh et al. 2020) and the Global Futures Project from the World Wildlife Fund in "Global Future: Assessing The Global Economic Impacts of Environmental Change to Support Policy-Making" (Roxburg et al. 2020). This repository is from the Road to Kunming project, commissioned by the World Bank, and contains version 0.8 of the GTAP-InVEST model, dubbed the "Economic Case for Nature" version of the model, which was developed to support this The Economic Case for Nature (Johnson et al. 2021) report. This readme file documents how to run this version of GTAP-InVEST.  This version is superceeded by GTAP-InVEST 0.9.0, which is the "PNAS version" of the model, corresponding to a "provisionaly-accepted" manuscript that improves and expands on the Economic Case for Nature version of the model.
 
 ## Model components
 
@@ -10,11 +10,11 @@ The GTAP-InVEST model is written in python, C, R, Matlab and GEMPACK. All of the
 2. The Spatial Economic Allocation Landscape Simulator (SEALS), which downscales regional estimates of land-use change from GTAP-AEZ to a high enough resolution (300m) to run ecosystem service models. 
 3. InVEST, which takes the downscaled land-use, land-cover maps from SEALS to calculate changes in ecosystem service provision. These ecosystem service changes are then further expressed as shocks to the economy and used as inputs into a second run of GTAP-AEZ, which calculates how losses of ecosystem services affect economic performance.
 
-# Software Installation
+## Software Installation
 
 GTAP-InVEST requires a considerable amount of technical skill to run and involves multiple different programming languages and paradigms. Python is used as the main "glue" of the model. This section describes how to get the model software running.
 
-## Python Installation
+### Python Installation
 
 GTAP-InVEST uses the open-source Hazelbean library to organize and manage the code. Hazelbean is a collection of geospatial processing tools based on gdal, numpy, scipy, cython, pygeoprocessing, taskgraph, natcap.invest, geopandas and many others to assist in common spatial analysis tasks in sustainability science, ecosystem service assessment, global integrated modelling assessment,  natural capital accounting, and/or calculable general equilibrium modelling.
 
@@ -37,7 +37,7 @@ GTAP-InVEST uses the open-source Hazelbean library to organize and manage the co
 
 ```pip install mglearn pandoc datascience hazelbean```
 
-## Project Flow
+### Project Flow
 
 One key component of Hazelbean is that it manages directories, base_data, etc. using a concept called ProjectFlow. ProjectFlow defines a tree of tasks that can easily be run in parallel where needed and keeping track of task-dependencies. ProjectFlow borrows heavily in concept (though not in code) from the task_graph library produced by Rich Sharp but adds a predefined file structure suited to research and exploration tasks. Project flow works by initializing a ProjectFlow object in run.py, which then calls all subsequent tasks and functions defined in other python files. The run.py file is the only place where user supplied (possibly absolute but can be relative) path is stated. The ProjectFlow object, denoted p by convention, is the one global variable used throughout all parts of hazelbean and GTAP-InVEST. Here, we give code examples of using ProjectFlow.
 
