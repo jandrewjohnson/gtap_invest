@@ -2,6 +2,10 @@
 
 # Identifying areas biophyscially unsuitable for agriculture 
 
+# NOTE: This was not used in the final analysis but instead was used on Leijten et al. 2023.
+# Future versions of GTAP-InVEST might incorporate this code. For now, 
+# see the land-supply functions in gtap_invest/gtap_invest_main.py
+
 library(raster)
 library(sf)
 
