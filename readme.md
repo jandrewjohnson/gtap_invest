@@ -2,15 +2,17 @@
 
 GTAP-InVEST is a global earth economy model that integrates a computable general equilibrium (CGE) model, a land-use change (LUC) model, and a ecosystem services (ES) model. This repository contains the version (v0.9.0, dubbed "PNAS version") of GTAP-InVEST that corresponds to Johnson et al. (2023) in the Proceedings of the National Academy of Sciences. This readme file documents how to run version 0.9.0 or GTAP-InVEST from a technical point of view. For broader information, please also see the [Project Website](https://justinandrewjohnson.com/gtap_invest/), the [GTAP-InVEST User Guide](https://justinandrewjohnson.com/gtap_invest/user_guide/), or the download page of [results from the PNAS article](https://justinandrewjohnson.com/gtap_invest/results/). Additionally, we are hosting a live, visualization tool at <https://mygeohub.org/tools/gtapinvest>, which should be coming online shortly after official publication.
 
-GTAP-InVEST (or its sub-models) originated from several academic papers, including:
+![](images/paste-1.png)
+
+GTAP-InVEST originated from several academic papers, including:
+
+-   "The Economic Case for Nature" (Johnson et al. 2021, World Bank Report, <https://www.worldbank.org/en/topic/environment/publication/the-economic-case-for-nature>)
+
+-   "Projected landscape-scale repercussions of global action for climate and biodiversity protection" (von Jeetze et al. 2023, Nature Communications, <https://www.nature.com/articles/s41467-023-38043-1>)
 
 -   "Closing yield gap is crucial to avoid potential surge in global carbon emissions" (Suh et al. 2020, Global Environmental Change, <https://doi.org/10.1016/j.gloenvcha.2020.102100>)
 
 -   "Global Future: Assessing The Global Economic Impacts of Environmental Change to Support Policy-Making" (Roxburg et al. 2020, World Wildlife Fund, <https://www.gtap.agecon.purdue.edu/resources/res_display.asp?RecordID=5987>).
-
--   "Projected landscape-scale repercussions of global action for climate and biodiversity protection" (von Jeetze et al. 2023, Nature Communications, <https://www.nature.com/articles/s41467-023-38043-1>)
-
--   "The Economic Case for Nature" (Johnson et al. 2021, World Bank Report, <https://www.worldbank.org/en/topic/environment/publication/the-economic-case-for-nature>)
 
 Prior versions of this repository include v0.8.0, which was the version used in the Economic Case for Nature under the Road to Kunming project, commissioned by the World Ban.
 
@@ -21,6 +23,8 @@ The GTAP-InVEST model is written in Python, C, R, and GEMPACK. All of the code s
 1.  The GTAP-AEZ (Agroecological Zones) model, which calculates equilibrium prices, quantities, GDP, trade and many other economic variables, and most notably for this exercise, endogenously calculates how land is used in different sectors and how natural land is brought into economic use through agricultural, pasture and managed forest expansion.
 2.  The Spatial Economic Allocation Landscape Simulator (SEALS) model, which downscales regional estimates of land-use change from GTAP-AEZ to a high enough resolution (300m) to run ecosystem service models.
 3.  InVEST, which takes the downscaled land-use, land-cover maps from SEALS to calculate changes in ecosystem service provision. These ecosystem service changes are then further expressed as shocks to the economy and used as inputs into a second run of GTAP-AEZ, which calculates how losses of ecosystem services affect economic performance.
+
+![](images/paste-3.png)
 
 ## Software Installation
 
