@@ -14,7 +14,7 @@ GTAP-InVEST originated from several academic papers, including:
 
 -   "Global Future: Assessing The Global Economic Impacts of Environmental Change to Support Policy-Making" (Roxburg et al. 2020, World Wildlife Fund, <https://www.gtap.agecon.purdue.edu/resources/res_display.asp?RecordID=5987>).
 
-Prior versions of this repository include v0.8.0, which was the version used in the Economic Case for Nature under the Road to Kunming project, commissioned by the World Ban.
+Prior versions of this repository include v0.8.0, which was the version used in the Economic Case for Nature under the Road to Kunming project, commissioned by the World Bank.
 
 ## Model components
 
